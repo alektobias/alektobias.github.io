@@ -1,0 +1,28 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/common/Navbar.astro";
+import Footer from "../components/common/Footer.astro";
+import HeroSection from "../components/home/HeroSection.astro";
+import JourneySection from "../components/home/JourneySection.astro";
+import BlogShowcase from "../components/home/BlogShowcase.astro";
+import SkillSets from "../components/home/SkillSets.astro";
+import ProjectsShowcase from "../components/home/ProjectsShowcase.astro";
+import TimelineSection from "../components/home/TimelineSection.astro";
+import ContactSection from "../components/home/ContactSection.astro";
+import { LanguagePicker } from "../components/common/LanguagePicker";
+---
+
+<Layout title="Alek Tobias | Full Stack Developer & Architect">
+	<main class="bg-black relative">
+		
+		<HeroSection lang="en" />
+		<JourneySection lang="en" />
+		<!-- <BlogShowcase /> -->
+		<SkillSets lang="en" />
+		<!-- <ProjectsShowcase /> -->
+		<TimelineSection lang="en" />
+		<ContactSection lang="en" />
+	</main>
+
+	<Footer lang="en" />
+</Layout>

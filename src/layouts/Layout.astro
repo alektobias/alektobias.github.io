@@ -1,0 +1,40 @@
+---
+import { LanguagePicker } from "@/components/common/LanguagePicker";
+import "../styles/global.css";
+import { ClientRouter } from "astro:transitions";
+
+interface Props {
+	title: string;
+	description?: string;
+	lang?: string;
+}
+
+const { title, description = "My Portfolio", lang = "en" } = Astro.props;
+---
+
+<!doctype html>
+<html lang={lang}>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<meta name="description" content={description} />
+		<title>{title}</title>
+		<ClientRouter />
+
+		<!-- Preload fonts or add google fonts here later -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body
+		class="bg-gray-50 text-gray-900 antialiased dark:bg-gray-950 dark:text-gray-100 font-sans relative"
+	>
+		<LanguagePicker client:load currentLang={lang} />
+		<slot />
+	</body>
+</html>
