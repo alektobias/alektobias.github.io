@@ -1,0 +1,43 @@
+{
+  "name": "Alek Tobias",
+  "title": [
+    "Senior Full Stack Engineer",
+    "Solution Architect",
+    "AI Cleanup Specialist",
+    "Critical Thinker"
+  ],
+  "location": "Natal, RN, Brazil",
+  "summary": "Senior Full Stack Engineer with 8+ years of experience architecting high-performance, distributed systems for global markets. Proven track record of delivering top-tier projects at global scale, focusing on modernizing legacy infrastructures and ensuring high availability. Expert in the JavaScript ecosystem (Next.js, Node.js, Bun, React Native) and Infrastructure as Code (Terraform, AWS).",
+  "interests": [
+    {
+      "name": "Martial Arts & Mental Resilience",
+      "icon": "Gi/Fist",
+      "description": "My passion for Mixed Martial Arts (MMA) and Brazilian Jiu-Jitsu (BJJ) goes beyond physical fitness. It is a practice of mental fortitude—learning to stay calm, analytical, and strategic even when under immense pressure. It teaches that technique and leverage often triumph over raw strength.",
+      "items": [
+        "Brazilian Jiu-Jitsu: The chess match of body mechanics.",
+        "MMA: Adapting to dynamic and chaotic scenarios.",
+        "Resilience: Becoming comfortable with the uncomfortable."
+      ]
+    },
+    {
+      "name": "Nature, Culinary Arts & Community",
+      "icon": "Leaf/Bowl",
+      "description": "I believe in a grounded lifestyle that connects us to our environment and each other. It starts with sustainability—observing animals, gardening, and cultivating plants—and flows into the kitchen. Cooking is my way of transforming nature's gifts into shared moments of joy with friends and family.",
+      "items": [
+        "Gardening & Sustainability: Understanding ecosystems and patience.",
+        "Cooking: The creative act of nourishing others.",
+        "Community: Strengthening bonds through shared meals."
+      ]
+    },
+    {
+      "name": "Strategic Puzzles & Cognitive Challenges",
+      "icon": "Cube/Chess",
+      "description": "I have an innate curiosity for 'hard things' and complex systems. Whether it is solving a Rubik's cube, diving into a heavy strategy board game, or unraveling a mystery in an investigation game, I thrive on the challenge. It is not just about winning; it is about the investigative process and the satisfaction of overcoming obstacles.",
+      "items": [
+        "Mechanical Puzzles: Rubik's cubes and spatial logic.",
+        "Tabletop Strategy: Board games that require deep foresight and investigation.",
+        "Curiosity: The drive to understand how things work and how to fix them."
+      ]
+    }
+  ]
+}

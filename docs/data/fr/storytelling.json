@@ -1,0 +1,22 @@
+[
+  {
+    "title": "L'Élément Humain",
+    "icon": "Heart",
+    "content": "J'ai toujours cru que la technologie est, à la base, centrée sur les gens. Mon parcours n'a pas commencé par une fascination pour les algorithmes, mais par un désir d'aider. De l'enseignement aux nouveaux arrivants à la création d'outils pour le service public, l'objectif n'a jamais été seulement la pile technique, mais d'être utile. J'écris du code pour résoudre des problèmes humains. J'ai réalisé très tôt que le meilleur code ne concerne pas seulement le logiciel lui-même ; il s'agit des barrières qu'il supprime et des vies qu'il facilite."
+  },
+  {
+    "title": "Rester Ancré",
+    "icon": "Snowflake",
+    "content": "Les environnements rapides deviennent bruyants. J'ai appris que la meilleure façon de gérer la pression n'est pas d'accélérer, mais de ralentir. Empruntant à ma formation en arts martiaux, je reste ancré quand les autres paniquent. Il ne s'agit pas de combattre le feu par le feu ; il s'agit de garder la tête froide pour trouver la sortie la plus intelligente."
+  },
+  {
+    "title": "La Mécanique du Pourquoi",
+    "icon": "Puzzle",
+    "content": "J'ai une curiosité insatiable pour le fonctionnement des choses. Passer à l'échelle mondiale m'a donné la chance de m'attaquer à des énigmes à grande échelle : optimiser les performances pour des millions d'utilisateurs ou architecturer des systèmes à toute épreuve. Mais pour moi, le frisson n'est pas seulement dans la victoire technique ; c'est dans l'artisanat. C'est la satisfaction de prendre un problème complexe et désordonné et de le raffiner jusqu'à ce qu'il ronronne."
+  },
+  {
+    "title": "Les Fondations D'abord",
+    "icon": "Castle",
+    "content": "Dernièrement, mon attention s'est naturellement tournée vers le côté structurel du logiciel : architecturer des systèmes qui ne sont pas seulement fonctionnels, mais durables. Il ne s'agit pas seulement de livrer une fonctionnalité ; c'est s'assurer que le système peut gérer les cent prochaines. Je veux construire une architecture qui dure, créant un espace où l'équipe avance vite sans rien casser. Il s'agit de laisser la base de code meilleure que je ne l'ai trouvée, à chaque fois."
+  }
+]

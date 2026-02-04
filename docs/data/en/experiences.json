@@ -1,0 +1,172 @@
+{
+  "work": [
+    {
+      "company": "AlertD",
+      "role": "Full Stack Developer",
+      "startDate": "10/2025",
+      "endDate": "12/2025",
+      "location": "San Francisco, CA, USA",
+      "description": "Architecting high-availability AI-driven platforms designed to eliminate operational toil for DevOps/SRE teams, ensuring seamless scalability. Modernizing UI/UX strategies in close collaboration with product design, implementing robust component systems that drive user retention. Engineering resilient workflows to identify and resolve critical anomalies in AI processes.",
+      "techStack": [
+        "React",
+        "TypeScript",
+        "Bun",
+        "AWS",
+        "LangChain",
+        "Tailwind CSS",
+        "Shadcn/UI",
+        "Claude Code"
+      ]
+    },
+    {
+      "company": "TOTVS",
+      "role": "Senior Full Stack Developer",
+      "startDate": "11/2023",
+      "endDate": "06/2025",
+      "location": "São Paulo, SP, Brazil",
+      "description": "Spearheaded full-cycle development of strategic internal tools, directly translating complex business requirements into high-efficiency software solutions. Engineered custom tooling to optimize internal workflows, reducing process latency and boosting cross-team productivity. Acted as a key technical advisor, defining architectural standards for long-term scalability and maintainability.",
+      "techStack": [
+        "Next.js",
+        "Angular",
+        "NestJS",
+        "TypeScript",
+        "PostgreSQL",
+        "Docker",
+        "AWS",
+        "Agile",
+        "CI/CD",
+        "TDD",
+        "Clean Architecture"
+      ]
+    },
+    {
+      "company": "WHIMworks Inc.",
+      "role": "Full Stack Developer",
+      "startDate": "01/2022",
+      "endDate": "05/2023",
+      "location": "Montreal, QC, Canada",
+      "description": "Engineered immersive, high-performance digital experiences for Tier-1 global clients including Spotify, Sonos, Sony, and Samsung. Led the refactoring of legacy codebases using React and Svelte, achieving significant gains in UI performance and SEO rankings. Developed high-fidelity interactive sales platforms, integrating complex animations and seamless state management.",
+      "techStack": [
+        "React",
+        "Svelte",
+        "Tailwind CSS",
+        "TypeScript",
+        "SEO",
+        "Motion",
+        "Shopify"
+      ]
+    },
+    {
+      "company": "Impulso (Mosaico)",
+      "role": "Full Stack Developer",
+      "startDate": "04/2021",
+      "endDate": "12/2021",
+      "location": "Rio de Janeiro, RJ, Brazil",
+      "description": "Optimized high-traffic SEO modules for Brazil’s largest content and sales platform. Implemented serverless architecture using AWS Lambda, drastically reducing infrastructure overhead and response times. Orchestrated comprehensive CI/CD pipelines to streamline deployment across multiple testing and production environments.",
+      "techStack": [
+        "React",
+        "Tailwind CSS",
+        "AWS Lambda",
+        "Serverless",
+        "SEO",
+        "Strapi",
+        "TypeScript",
+        "CI/CD"
+      ]
+    },
+    {
+      "company": "Codeby",
+      "role": "Full Stack Developer",
+      "startDate": "01/2021",
+      "endDate": "05/2021",
+      "location": "São Paulo, SP, Brazil",
+      "description": "Delivered complex, multi-language e-commerce solutions (VTEX/Shopify) for international markets. Built custom serverless integrations using TypeScript and AWS to extend platform capabilities beyond native limits.",
+      "techStack": [
+        "VTEX IO",
+        "Shopify",
+        "React",
+        "Node.js",
+        "AWS",
+        "TypeScript"
+      ]
+    },
+    {
+      "company": "Bossabox",
+      "role": "Tech Lead",
+      "startDate": "12/2020",
+      "endDate": "02/2021",
+      "location": "São Paulo, SP, Brazil",
+      "description": "Led technical discovery and benchmarking phases for a strategic new internal tool, conducting feasibility studies and architectural assessments to define the project's technological foundation.",
+      "techStack": [
+        "Technical Discovery",
+        "Benchmarking",
+        "Architecture",
+        "Strategy"
+      ]
+    },
+    {
+      "company": "Buzzmonitor",
+      "role": "Tech Lead & Full Stack Developer",
+      "startDate": "06/2019",
+      "endDate": "05/2021",
+      "location": "Recife, PE, Brazil",
+      "description": "Rapid Progression: Promoted from Frontend Developer to Tech Lead within 12 months due to technical excellence. Directed a development team in building a microservices-based SaaS for social data analytics using Elasticsearch for complex querying. Managed cloud infrastructure on AWS, ensuring 99.9% availability for a growing user base.",
+      "techStack": [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "TypeScript",
+        "Elasticsearch",
+        "AWS",
+        "Microservices",
+        "Node.js"
+      ]
+    },
+    {
+      "company": "TJRN - Tribunal de Justiça do Rio Grande do Norte",
+      "role": "Intern Software Developer",
+      "startDate": "08/2017",
+      "endDate": "12/2018",
+      "location": "Natal, RN, Brazil",
+      "description": "Developed and maintained internal tools for the judicial system, improving efficiency and accessibility for judges and staff.",
+      "techStack": [
+        "Java",
+        "React Native",
+        "Angular",
+        "Internal Tools",
+        "SQL"
+      ]
+    },
+    {
+      "company": "TEAM - UFRN",
+      "role": "Research Assistant",
+      "startDate": "02/2016",
+      "endDate": "12/2018",
+      "location": "Natal, RN, Brazil",
+      "description": "Assisted in the creation of innovative projects for professional master's students. Taught web development fundamentals to help students build and deploy their research-driven applications.",
+      "techStack": [
+        "Web Development",
+        "HTML/CSS",
+        "JavaScript",
+        "React",
+        "Node.js"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Rocketseat",
+      "degree": "Postgraduate Degree - Tech Developer 360",
+      "startDate": "11/2025",
+      "endDate": "Present",
+      "location": "Brazil"
+    },
+    {
+      "institution": "Universidade Federal do Rio Grande do Norte (UFRN)",
+      "degree": "Bachelor of Science in Computer Engineering",
+      "startDate": "02/2015",
+      "endDate": "02/2019",
+      "location": "Brazil"
+    }
+  ]
+}

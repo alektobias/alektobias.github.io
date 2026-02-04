@@ -1,0 +1,91 @@
+{
+  "nav": {
+    "home": "Início",
+    "about": "Sobre",
+    "skills": "Habilidades",
+    "projects": "Projetos",
+    "experience": "Experiência",
+    "blog": "Blog",
+    "contact": "Contato",
+    "openMenu": "Abrir menu principal"
+  },
+  "hero": {
+    "greeting": "Olá, sou",
+    "scrollIndicator": "Role para explorar",
+    "stats": [
+      {
+        "metric": "+8",
+        "label": "Anos",
+        "title": "Engenheiro Experiente",
+        "subtitle": "De startups a grandes empresas"
+      },
+      {
+        "icon": "globe",
+        "title": "Colaborador Internacional",
+        "subtitle": "Entregando para o mundo"
+      },
+      {
+        "icon": "sparkles",
+        "title": "Entrega de Alto Nível",
+        "subtitle": "Construindo para escalar globalmente"
+      }
+    ]
+  },
+  "cv": {
+    "download": "Baixar CV",
+    "filename": "alek-tobias-resume-pt.pdf"
+  },
+  "journey": {
+    "title": "A História",
+    "subtitle": "Por trás do código"
+  },
+  "skills": {
+    "title": "Minhas Habilidades",
+    "subtitle": "Refinadas pela experiência.",
+    "softSkillsTitle": "Habilidades Interpessoais",
+    "softSkillsHeading": "O Elemento Humano",
+    "techSkillsTitle": "Arsenal Técnico",
+    "techSkillsHeading": "A Arte Técnica",
+    "categories": {
+      "runtime": "Runtime",
+      "frontend": "Frontend",
+      "frameworks&tools": "Frameworks & Ferramentas",
+      "backend": "Backend",
+      "databases": "Banco de Dados",
+      "orm": "ORM",
+      "ai": "IA / ML",
+      "testing": "Testes",
+      "devops": "DevOps",
+      "tools": "Ferramentas"
+    }
+  },
+  "timeline": {
+    "title": "Experiência",
+    "subtitle": "Minha jornada profissional",
+    "education": "Educação",
+    "work": "Experiência Profissional"
+  },
+  "projects": {
+    "title": "Projetos Selecionados",
+    "subtitle": "Uma vitrine de excelência arquitetural e resolução de problemas através do código.",
+    "viewArchive": "Ver Arquivo de Projetos"
+  },
+  "blog": {
+    "title": "Últimos Artigos",
+    "subtitle": "Pensamentos sobre código, arquitetura e tecnologia.",
+    "readAll": "Ler todos os artigos"
+  },
+  "contact": {
+    "title": "Vamos Construir Algo",
+    "highlight": "Incrível",
+    "subtitle": "Tem um projeto em mente? Vamos transformar suas ideias em realidade.",
+    "email": "Enviar um Email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "whatsapp": "Conversar no WhatsApp"
+  },
+  "footer": {
+    "rights": "Todos os direitos reservados.",
+    "builtWith": "Construído com Astro & React"
+  }
+}

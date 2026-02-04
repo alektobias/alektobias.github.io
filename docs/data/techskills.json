@@ -1,0 +1,247 @@
+{
+  "runtime": [
+    {
+      "name": "TypeScript",
+      "icon": "SiTypescript",
+      "color": "#3178C6"
+    },
+    {
+      "name": "Bun",
+      "icon": "SiBun",
+      "color": "#FBF0DF"
+    },
+    {
+      "name": "Deno",
+      "icon": "SiDeno",
+      "color": "#000000"
+    },
+    {
+      "name": "JavaScript",
+      "icon": "SiJavascript",
+      "color": "#F7DF1E"
+    }
+  ],
+  "frontend": [
+    {
+      "name": "React",
+      "icon": "SiReact",
+      "color": "#61DAFB"
+    },
+    {
+      "name": "Svelte",
+      "icon": "SiSvelte",
+      "color": "#FF3E00"
+    },
+    {
+      "name": "Vue",
+      "icon": "SiVuedotjs",
+      "color": "#4FC08D"
+    },
+    {
+      "name": "React Native",
+      "icon": "SiReact",
+      "color": "#61DAFB"
+    },
+    {
+      "name": "Angular",
+      "icon": "SiAngular",
+      "color": "#DD0031"
+    },
+    {
+      "name": "Astro",
+      "icon": "SiAstro",
+      "color": "#FF5D01"
+    }
+  ],
+  "frameworks&tools": [
+    {
+      "name": "Next.js",
+      "icon": "SiNextdotjs",
+      "color": "#FFFFFF"
+    },
+    {
+      "name": "Expo",
+      "icon": "SiExpo",
+      "color": "#FFFFFF"
+    },
+    {
+      "name": "Tailwind CSS",
+      "icon": "SiTailwindcss",
+      "color": "#06B6D4"
+    },
+    {
+      "name": "Shadcn/UI",
+      "icon": "SiShadcnui",
+      "color": "#FFFFFF"
+    },
+    {
+      "name": "Sass",
+      "icon": "SiSass",
+      "color": "#FFFFFF"
+    }
+  ],
+  "backend": [
+    {
+      "name": "ElysiaJS",
+      "icon": "SiBun",
+      "color": "#FBF0DF"
+    },
+    {
+      "name": "NestJS",
+      "icon": "SiNestjs",
+      "color": "#E0234E"
+    },
+    {
+      "name": "Fastify",
+      "icon": "SiFastify",
+      "color": "#FFFFFF"
+    },
+    {
+      "name": "Express",
+      "icon": "SiExpress",
+      "color": "#FFFFFF"
+    },
+    {
+      "name": "tRPC",
+      "icon": "SiTrpc",
+      "color": "#FFFFFF"
+    }
+  ],
+  "databases": [
+    {
+      "name": "PostgreSQL",
+      "icon": "SiPostgresql",
+      "color": "#4169E1"
+    },
+    {
+      "name": "MongoDB",
+      "icon": "SiMongodb",
+      "color": "#47A248"
+    },
+    {
+      "name": "SQLite",
+      "icon": "SiSqlite",
+      "color": "#003760"
+    },
+    {
+      "name": "Redis",
+      "icon": "SiRedis",
+      "color": "#DC382D"
+    },
+    {
+      "name": "Elasticsearch",
+      "icon": "SiElasticsearch",
+      "color": "#005571"
+    }
+  ],
+  "orm": [
+    {
+      "name": "Prisma",
+      "icon": "SiPrisma",
+      "color": "#2D3748"
+    },
+    {
+      "name": "Drizzle ORM",
+      "icon": "SiDrizzle",
+      "color": "#C5F74F"
+    },
+    {
+      "name": "Supabase",
+      "icon": "SiSupabase",
+      "color": "#3ECF8E"
+    }
+  ],
+  "ai": [
+    {
+      "name": "LangChain",
+      "icon": "SiLangchain",
+      "color": "#8E75B2"
+    },
+    {
+      "name": "OpenAI",
+      "icon": "SiOpenai",
+      "color": "#8E75B2"
+    },
+    {
+      "name": "Gemini",
+      "icon": "SiGooglegemini",
+      "color": "#8E75B2"
+    },
+    {
+      "name": "Claude Code",
+      "icon": "SiAnthropic",
+      "color": "#D97757"
+    }
+  ],
+  "testing": [
+    {
+      "name": "Vitest",
+      "icon": "SiVitest",
+      "color": "#646CFF"
+    },
+    {
+      "name": "Playwright",
+      "icon": "SiPlaywright",
+      "color": "#2496ED"
+    },
+    {
+      "name": "Cypress",
+      "icon": "SiCypress",
+      "color": "#171717"
+    }
+  ],
+  "devops": [
+    {
+      "name": "AWS",
+      "icon": "SiAmazonwebservices",
+      "color": "#232F3E"
+    },
+    {
+      "name": "GCP",
+      "icon": "SiGooglecloud",
+      "color": "#4285F4"
+    },
+    {
+      "name": "Firebase",
+      "icon": "SiFirebase",
+      "color": "#FFCA28"
+    },
+    {
+      "name": "Docker",
+      "icon": "SiDocker",
+      "color": "#2496ED"
+    },
+    {
+      "name": "Pulumi",
+      "icon": "SiPulumi",
+      "color": "#8A3391"
+    },
+    {
+      "name": "Terraform",
+      "icon": "SiTerraform",
+      "color": "#7B42BC"
+    }
+  ],
+  "tools": [
+    {
+      "name": "Git",
+      "icon": "SiGit",
+      "color": "#F05032"
+    },
+    {
+      "name": "Jira",
+      "icon": "SiJira",
+      "color": "#0052CC"
+    },
+    {
+      "name": "Figma",
+      "icon": "SiFigma",
+      "color": "#F24E1E"
+    },
+    {
+      "name": "CI/CD Pipelines",
+      "icon": "Workflow",
+      "color": "#63B3ED"
+    }
+  ]
+}

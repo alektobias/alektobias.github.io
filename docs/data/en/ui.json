@@ -1,0 +1,91 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "experience": "Experience",
+    "blog": "Blog",
+    "contact": "Contact",
+    "openMenu": "Open main menu"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "scrollIndicator": "Scroll to explore",
+    "stats": [
+      {
+        "metric": "+8",
+        "label": "Years",
+        "title": "Battle-Tested Engineer",
+        "subtitle": "From startups to enterprise"
+      },
+      {
+        "icon": "globe",
+        "title": "International Collaborator",
+        "subtitle": "Delivering worldwide"
+      },
+      {
+        "icon": "sparkles",
+        "title": "High-End Delivery",
+        "subtitle": "Building to last at global scale"
+      }
+    ]
+  },
+  "cv": {
+    "download": "Download CV",
+    "filename": "alek-tobias-resume.pdf"
+  },
+  "journey": {
+    "title": "The Story",
+    "subtitle": "Behind the Code"
+  },
+  "skills": {
+    "title": "My Skill Sets",
+    "subtitle": "Refined through experience.",
+    "softSkillsTitle": "Soft Skills",
+    "softSkillsHeading": "The Human Element",
+    "techSkillsTitle": "Technical Arsenal",
+    "techSkillsHeading": "The Technical Craft",
+    "categories": {
+      "runtime": "Runtime",
+      "frontend": "Frontend",
+      "frameworks&tools": "Frameworks & Tools",
+      "backend": "Backend",
+      "databases": "Databases",
+      "orm": "ORM",
+      "ai": "AI / ML",
+      "testing": "Testing",
+      "devops": "DevOps",
+      "tools": "Tools"
+    }
+  },
+  "timeline": {
+    "title": "Experience",
+    "subtitle": "My professional journey",
+    "education": "Education",
+    "work": "Professional Experience"
+  },
+  "projects": {
+    "title": "Selected Projects",
+    "subtitle": "A showcase of architectural excellence and problem-solving through code.",
+    "viewArchive": "View Project Archive"
+  },
+  "blog": {
+    "title": "Latest Writing",
+    "subtitle": "Thoughts on code, architecture, and technology.",
+    "readAll": "Read all articles"
+  },
+  "contact": {
+    "title": "Let's Build Something",
+    "highlight": "Amazing",
+    "subtitle": "Have a project in mind? Let's turn your ideas into reality.",
+    "email": "Send an Email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "whatsapp": "Chat on WhatsApp"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "builtWith": "Built with Astro & React"
+  }
+}

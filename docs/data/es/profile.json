@@ -1,0 +1,43 @@
+{
+  "name": "Alek Tobias",
+  "title": [
+    "Ingeniero Full Stack Senior",
+    "Arquitecto de Soluciones",
+    "Especialista en Limpieza de IA",
+    "Pensador Crítico"
+  ],
+  "location": "Natal, RN, Brasil",
+  "summary": "Ingeniero Full Stack Senior con más de 8 años de experiencia en la arquitectura de sistemas distribuidos de alto rendimiento para mercados globales. Historial comprobado de entrega de proyectos de primer nivel a escala global, enfocándose en modernizar infraestructuras heredadas y garantizar alta disponibilidad. Experto en el ecosistema JavaScript (Next.js, Node.js, Bun, React Native) e Infraestructura como Código (Terraform, AWS).",
+  "interests": [
+    {
+      "name": "Artes Marciales y Resiliencia Mental",
+      "icon": "Gi/Fist",
+      "description": "Mi pasión por las Artes Marciales Mixtas (MMA) y el Jiu-Jitsu Brasileño (BJJ) va más allá de la aptitud física. Es una práctica de fortaleza mental: aprender a mantener la calma, ser analítico y estratégico incluso bajo una presión inmensa. Enseña que la técnica y el apalancamiento a menudo triunfan sobre la fuerza bruta.",
+      "items": [
+        "Jiu-Jitsu Brasileño: El ajedrez de la mecánica corporal.",
+        "MMA: Adaptarse a escenarios dinámicos y caóticos.",
+        "Resiliencia: Sentirse cómodo con lo incómodo."
+      ]
+    },
+    {
+      "name": "Naturaleza, Artes Culinarias y Comunidad",
+      "icon": "Leaf/Bowl",
+      "description": "Creo en un estilo de vida arraigado que nos conecta con nuestro entorno y entre nosotros. Comienza con la sostenibilidad (observar animales, jardinería y cultivar plantas) y fluye hacia la cocina. Cocinar es mi forma de transformar los regalos de la naturaleza en momentos compartidos de alegría con amigos y familiares.",
+      "items": [
+        "Jardinería y Sostenibilidad: Entender los ecosistemas y la paciencia.",
+        "Cocina: El acto creativo de nutrir a los demás.",
+        "Comunidad: Fortalecimiento de los lazos a través de comidas compartidas."
+      ]
+    },
+    {
+      "name": "Rompecabezas Estratégicos y Desafíos Cognitivos",
+      "icon": "Cube/Chess",
+      "description": "Tengo una curiosidad innata por las 'cosas difíciles' y los sistemas complejos. Ya sea resolviendo un cubo de Rubik, sumergiéndome en un juego de mesa de estrategia pesada o desentrañando un misterio en un juego de investigación, prospero en el desafío. No se trata solo de ganar; se trata del proceso de investigación y la satisfacción de superar obstáculos.",
+      "items": [
+        "Rompecabezas Mecánicos: Cubos de Rubik y lógica espacial.",
+        "Estrategia de Mesa: Juegos de mesa que requieren una profunda previsión e investigación.",
+        "Curiosidad: El impulso de entender cómo funcionan las cosas y cómo arreglarlas."
+      ]
+    }
+  ]
+}

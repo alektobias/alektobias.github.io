@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Human Element",
+    "icon": "Heart",
+    "content": "I've always believed that technology is, at its core, about people. My journey didn't start with a fascination for algorithms, but with a desire to help. From teaching newcomers to building tools for public service, the goal was never just about the tech stack—it was about being useful. I write code to solve human problems. I realized early on that the best code isn't just about the software itself; it's about the barriers it removes and the lives it makes easier."
+  },
+  {
+    "title": "Staying Grounded",
+    "icon": "Snowflake",
+    "content": "Fast-paced environments get noisy. I’ve learned that the best way to handle pressure isn't to speed up, but to slow down. Borrowing from my martial arts training, I stay grounded when others panic. It’s not about fighting the fire with more fire; it’s about keeping a cool head to find the smartest way out."
+  },
+  {
+    "title": "Mechanics of Why",
+    "icon": "Puzzle",
+    "content": "I have a restless curiosity for how things work. Moving into the global arena gave me the chance to tackle puzzles at a massive scale—optimizing performance for millions of users or architecting systems that need to be bulletproof. But for me, the thrill isn't just in the technical win; it’s in the craftsmanship. It’s the satisfaction of taking a complex, messy problem and refining it until it hums."
+  },
+  {
+    "title": "Foundations First",
+    "icon": "Castle",
+    "content": "Lately, my focus has naturally gravitated toward the structural side of software—architecting systems that are not just functional, but enduring. It’s not just about shipping a feature; it’s ensuring the system can handle the next hundred. I want to build architecture that lasts, creating a space where the team moves fast without breaking things. It’s about leaving the codebase better than I found it, every time."
+  }
+]

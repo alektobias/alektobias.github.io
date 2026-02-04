@@ -1,0 +1,22 @@
+[
+  {
+    "title": "El Elemento Humano",
+    "icon": "Heart",
+    "content": "Siempre he creído que la tecnología es, en su esencia, sobre las personas. Mi viaje no comenzó con una fascinación por los algoritmos, sino con el deseo de ayudar. Desde enseñar a recién llegados hasta construir herramientas para el servicio público, el objetivo nunca fue solo la tecnología, sino ser útil. Escribo código para resolver problemas humanos. Me di cuenta temprano de que el mejor código no se trata solo del software en sí; se trata de las barreras que elimina y las vidas que facilita."
+  },
+  {
+    "title": "Mantenerse Firme",
+    "icon": "Snowflake",
+    "content": "Los entornos acelerados se vuelven ruidosos. He aprendido que la mejor manera de manejar la presión no es acelerar, sino reducir la velocidad. Tomando prestado de mi entrenamiento en artes marciales, me mantengo firme cuando otros entran en pánico. No se trata de combatir el fuego con más fuego; se trata de mantener la cabeza fría para encontrar la salida más inteligente."
+  },
+  {
+    "title": "La Mecánica del Porqué",
+    "icon": "Puzzle",
+    "content": "Tengo una curiosidad inquieta por cómo funcionan las cosas. Moverme al ámbito global me dio la oportunidad de enfrentar rompecabezas a gran escala: optimizar el rendimiento para millones de usuarios o arquitecturar sistemas que deben ser a prueba de balas. Pero para mí, la emoción no está solo en la victoria técnica; está en la artesanía. Es la satisfacción de tomar un problema complejo y desordenado y refinarlo hasta que funcione a la perfección."
+  },
+  {
+    "title": "Cimientos Primero",
+    "icon": "Castle",
+    "content": "Últimamente, mi enfoque ha gravitado naturalmente hacia el lado estructural del software: arquitecturar sistemas que no solo sean funcionales, sino duraderos. No se trata solo de lanzar una función; es asegurar que el sistema pueda manejar las próximas cien. Quiero construir una arquitectura que perdure, creando un espacio donde el equipo se mueva rápido sin romper cosas. Se trata de dejar el código mejor de lo que lo encontré, cada vez."
+  }
+]
