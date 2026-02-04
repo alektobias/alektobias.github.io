@@ -1,0 +1,93 @@
+---
+import { Globe, Sparkles } from "lucide-react";
+
+interface Props {
+  stats: any[];
+}
+
+const { stats = [] } = Astro.props;
+---
+
+<div
+  class="flex items-center gap-2 divide-y sm:divide-y-0 sm:divide-x divide-white/10"
+>
+  {/* Define gradient for icons */}
+  <svg width="0" height="0" class="absolute pointer-events-none">
+    <defs>
+      <linearGradient id="icon-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#c084fc"></stop>
+        <stop offset="100%" stop-color="#818cf8"></stop>
+      </linearGradient>
+    </defs>
+  </svg>
+
+  {
+    stats.map((highlight, index) => (
+      <div
+        class="group pt-6 sm:pt-0 pr-4 first:pl-0 last:pr-0 first:pt-0 animate-on-scroll opacity-0 translate-y-8 transition-all duration-700 ease-out"
+        style={`transition-delay: ${index * 200 + 400}ms`}
+      >
+        <div class="flex items-center gap-3">
+          {/* Metric or Icon */}
+          <div class="shrink-0">
+            {highlight.metric ? (
+              <div class="flex flex-col items-center">
+                <span class="text-4xl md:text-5xl font-bold bg-linear-to-br from-purple-400 to-indigo-400 bg-clip-text text-transparent">
+                  {highlight.metric}
+                </span>
+                {highlight.label && (
+                  <span class="text-xs text-gray-500 mt-1 uppercase tracking-wide">
+                    {highlight.label}
+                  </span>
+                )}
+              </div>
+            ) : (
+              <div class="w-16 h-16 rounded-lg flex items-center justify-center ">
+                {highlight.icon === "globe" && (
+                  <Globe className="w-12 h-12" stroke="url(#icon-gradient)" />
+                )}
+                {highlight.icon === "sparkles" && (
+                  <Sparkles
+                    className="w-12 h-12"
+                    stroke="url(#icon-gradient)"
+                  />
+                )}
+              </div>
+            )}
+          </div>
+
+          {/* Content */}
+          <div class="flex-1 min-w-0">
+            <h3 class="text-base md:text-lg font-semibold text-whitetransition-colors">
+              {highlight.title}
+            </h3>
+            <p class="text-xs md:text-sm text-gray-400 leading-relaxed">
+              {highlight.subtitle}
+            </p>
+          </div>
+        </div>
+      </div>
+    ))
+  }
+</div>
+
+<script>
+  const observerOptions = {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.1,
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.remove("opacity-0", "translate-y-8");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  document.querySelectorAll(".animate-on-scroll").forEach((item) => {
+    observer.observe(item);
+  });
+</script>

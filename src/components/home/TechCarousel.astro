@@ -1,0 +1,171 @@
+---
+import { TechLabel } from "@/components/ui/TechLabel";
+import fs from "node:fs/promises";
+import path from "node:path";
+import {
+  SiTypescript,
+  SiJavascript,
+  SiPython,
+  SiReact,
+  SiNextdotjs,
+  SiExpo,
+  SiSvelte,
+  SiVuedotjs,
+  SiAngular,
+  SiTailwindcss,
+  SiShadcnui,
+  SiBun,
+  SiNestjs,
+  SiFastify,
+  SiPrisma,
+  SiDrizzle,
+  SiPostgresql,
+  SiMongodb,
+  SiSupabase,
+  SiRedis,
+  SiElasticsearch,
+  SiAmazonwebservices,
+  SiGooglecloud,
+  SiFirebase,
+  SiDocker,
+  SiPulumi,
+  SiTerraform,
+  SiGit,
+  SiJira,
+  SiFigma,
+  SiGooglegemini,
+  SiAnthropic,
+} from "react-icons/si";
+import {
+  Box,
+  TestTube2,
+  Workflow,
+  Database,
+  Server,
+  Layout,
+  Wrench,
+} from "lucide-react";
+
+const iconMap: Record<string, any> = {
+  SiTypescript,
+  SiJavascript,
+  SiPython,
+  SiReact,
+  SiNextdotjs,
+  SiExpo,
+  SiSvelte,
+  SiVuedotjs,
+  SiAngular,
+  SiTailwindcss,
+  SiShadcnui,
+  SiBun,
+  SiNestjs,
+  SiFastify,
+  SiPrisma,
+  SiDrizzle,
+  SiPostgresql,
+  SiMongodb,
+  SiSupabase,
+  SiRedis,
+  SiElasticsearch,
+  SiAmazonwebservices,
+  SiGooglecloud,
+  SiFirebase,
+  SiDocker,
+  SiPulumi,
+  SiTerraform,
+  SiGit,
+  SiJira,
+  SiFigma,
+  SiGooglegemini,
+  SiAnthropic,
+  // Generic fallbacks
+  Box,
+  TestTube2,
+  Workflow,
+  Database,
+  Server,
+  Layout,
+  Wrench,
+};
+
+// Load Tech Skills
+const techSkillsPath = path.join(process.cwd(), "docs/data/techskills.json");
+const techSkillsContent = await fs.readFile(techSkillsPath, "utf-8");
+const techSkillsData = JSON.parse(techSkillsContent);
+
+// Flatten skills (ignoring category keys, just getting all items)
+const allSkills = Object.values(techSkillsData).flat() as {
+  name: string;
+  icon: string;
+  color: string;
+}[];
+
+// Double the list for seamless loop
+const carouselSkills = [...allSkills, ...allSkills];
+---
+
+<div
+  class="max-w-4xl mx-auto inline-flex flex-nowrap overflow-hidden mask-[linear-gradient(to_right,transparent_0,black_128px,black_calc(100%-128px),transparent_100%)] "
+>
+  <ul
+    class="flex items-center justify-center md:justify-start [&_li]:mx-1 [&_img]:max-w-none animate-infinite-scroll"
+  >
+    {
+      carouselSkills.map((item, index) => {
+        const IconComponent = iconMap[item.icon] || Box;
+        return (
+          <li key={index}>
+            <TechLabel
+              client:visible
+              name={item.name}
+              color={item.color}
+              className="bg-gray-900/80 backdrop-blur-md border-white/10"
+            >
+              <IconComponent className="w-4 h-4" />
+            </TechLabel>
+          </li>
+        );
+      })
+    }
+  </ul>
+  <ul
+    class="flex items-center justify-center md:justify-start [&_li]:mx-4 [&_img]:max-w-none animate-infinite-scroll"
+    aria-hidden="true"
+  >
+    {
+      carouselSkills.map((item, index) => {
+        const IconComponent = iconMap[item.icon] || Box;
+        return (
+          <li key={index}>
+            <TechLabel
+              client:visible
+              name={item.name}
+              color={item.color}
+              className="bg-gray-900/80 backdrop-blur-md border-white/10"
+            >
+              <IconComponent className="w-4 h-4" />
+            </TechLabel>
+          </li>
+        );
+      })
+    }
+  </ul>
+</div>
+
+<style>
+  @keyframes infinite-scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  .animate-infinite-scroll {
+    animation: infinite-scroll 60s linear infinite;
+  }
+  .animate-infinite-scroll:hover {
+    animation-play-state: paused;
+  }
+</style>

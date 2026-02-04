@@ -1,0 +1,131 @@
+---
+import { Github, Linkedin, Mail } from "lucide-react";
+import fs from "node:fs/promises";
+import path from "node:path";
+import { SocialIcon } from "../ui/SocialIcon";
+import { CVDownloader } from "../cv/CVDownloader";
+import { LetterGlitch } from "../ui/LetterGlitch";
+import skills from "@data/techskills.json";
+import contact from "@data/contact.json";
+import { loadUiData } from "../../utils/loadData";
+
+interface Props {
+  lang?: string;
+}
+
+const { lang = "en" } = Astro.props;
+const ui = await loadUiData(lang);
+
+// Load Profile Data Dynamically
+const profilePath = path.join(process.cwd(), `docs/data/${lang}/profile.json`);
+const profile = JSON.parse(await fs.readFile(profilePath, "utf-8"));
+
+// Load Experiences Data Dynamically
+const experiencesPath = path.join(
+  process.cwd(),
+  `docs/data/${lang}/experiences.json`,
+);
+const experiences = JSON.parse(await fs.readFile(experiencesPath, "utf-8"));
+---
+
+<section
+  id="contact"
+  class="relative py-32 overflow-hidden flex flex-col items-center justify-center min-h-[50vh] bg-[#050508]"
+>
+  <!-- Background Effects -->
+  <LetterGlitch
+    client:only="react"
+    colors={["#4ade80", "#22c55e", "#16a34a"]}
+    speed={100}
+    showOuterVignette={true}
+  />
+
+  <!-- Content Readability Overlay -->
+  <div
+    class="absolute inset-0 bg-[radial-gradient(circle_at_center,#050508_20%,transparent_100%)] z-0 pointer-events-none"
+  >
+  </div>
+  <div class="relative z-10 max-w-4xl mx-auto px-4 text-center">
+    <h2 class="text-4xl md:text-6xl font-bold mb-6 tracking-tight text-white">
+      {ui?.contact?.title}
+      <span
+        class="text-transparent bg-clip-text bg-linear-to-r from-purple-400 to-pink-500"
+      >
+        {ui?.contact?.highlight}
+      </span>
+    </h2>
+    <p
+      class="text-xl text-gray-300 mb-12 max-w-2xl mx-auto"
+      style={{
+        backgroundImage: "linear-gradient(to bottom right, #ccc 70%, #333)", // purple-500, pink-500, blue-500
+        backgroundClip: "text",
+        WebkitBackgroundClip: "text",
+        color: "transparent",
+      }}
+    >
+      {ui?.contact?.subtitle}
+    </p>
+
+    <div class="flex flex-wrap justify-center gap-4 items-center">
+      <a
+        href={`https://wa.me/${contact.phone.replace(/\D/g, "")}`}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="group relative flex items-center justify-center w-20 h-20 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-green-500/40 rounded-2xl transition-all duration-300 hover:shadow-lg hover:shadow-green-500/20"
+        aria-label={ui?.contact?.whatsapp}
+      >
+        <SocialIcon
+          name="whatsapp"
+          className="text-gray-400 group-hover:text-green-400 w-8 h-8"
+        />
+      </a>
+
+      <a
+        href={`mailto:${contact.email}`}
+        class="group relative flex items-center justify-center w-20 h-20 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-purple-500/30 rounded-2xl transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/10"
+        aria-label={ui?.contact?.email}
+      >
+        <SocialIcon
+          name="email"
+          className="w-8 h-8 text-gray-400 group-hover:text-purple-400"
+        />
+      </a>
+
+      <a
+        href={`https://${contact.linkedin}`}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="group relative flex items-center justify-center w-20 h-20 bg-white/5 hover:bg-[#0077b5]/10 border border-white/10 hover:border-[#0077b5]/30 rounded-2xl transition-all duration-300 hover:shadow-lg hover:shadow-[#0077b5]/10"
+        aria-label={ui?.contact?.linkedin}
+      >
+        <SocialIcon
+          name="linkedin"
+          className="w-8 h-8 text-gray-400 group-hover:text-[#0077b5]"
+        />
+      </a>
+
+      <a
+        href={`https://${contact.github}`}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="group relative flex items-center justify-center w-20 h-20 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/30 rounded-2xl transition-all duration-300 hover:shadow-lg hover:shadow-white/5"
+        aria-label={ui?.contact?.github}
+      >
+        <SocialIcon
+          name="github"
+          className="w-8 h-8 text-gray-400 group-hover:text-white"
+        />
+      </a>
+
+      <CVDownloader
+        client:only="react"
+        profile={profile}
+        experiences={experiences}
+        skills={skills}
+        contact={contact}
+        variant="large"
+        ui={ui}
+      />
+    </div>
+  </div>
+</section>

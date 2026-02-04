@@ -1,0 +1,147 @@
+---
+import fs from "node:fs/promises";
+import path from "node:path";
+import { format, parse } from "date-fns";
+import { enUS, ptBR, es, fr } from "date-fns/locale";
+import { SectionTitle } from "../ui/SectionTitle";
+import TimelineItem from "../ui/TimelineItem.astro";
+import { loadUiData } from "../../utils/loadData";
+
+interface Props {
+  lang?: string;
+}
+
+const { lang = "en" } = Astro.props;
+const ui = await loadUiData(lang);
+
+// Load Experiences Data
+const experiencesPath = path.join(
+  process.cwd(),
+  `docs/data/${lang}/experiences.json`,
+);
+let experiencesData = { work: [], education: [] };
+
+try {
+  const content = await fs.readFile(experiencesPath, "utf-8");
+  experiencesData = JSON.parse(content);
+} catch (error) {
+  console.error(`Error loading experiences for lang: ${lang}`, error);
+}
+
+const { work, education } = experiencesData;
+
+// Date Formatting Helper
+const locales: Record<string, any> = { en: enUS, pt: ptBR, es, fr };
+const currentLocale = locales[lang] || enUS;
+
+const formatDate = (dateStr: string) => {
+  if (!dateStr) return "";
+  try {
+    if (
+      dateStr.toLowerCase().includes("present") ||
+      dateStr.toLowerCase().includes("atual") ||
+      dateStr.length > 7
+    )
+      return dateStr;
+
+    // Attempt parsing "MM/yyyy"
+    const date = parse(dateStr, "MM/yyyy", new Date());
+    // Format to "MMM yyyy" (e.g., Oct 2025) - localized
+    // We capitalize the first letter because some locales (like pt/es) might lowercase months
+    const formatted = format(date, "MMM yyyy", { locale: currentLocale });
+    return formatted.charAt(0).toUpperCase() + formatted.slice(1);
+  } catch (e) {
+    return dateStr;
+  }
+};
+
+const formatRange = (start: string, end: string) => {
+  return `${formatDate(start)} - ${formatDate(end)}`;
+};
+---
+
+<section id="experiences" class="py-24 bg-gray-950 text-white">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    {/* Work Experience Section */}
+    <div class="mb-0">
+      <SectionTitle
+        title={ui?.timeline?.work || "Professional Experience"}
+        align="center"
+      />
+
+      <div class="relative border-l border-purple-900/50 ml-6 space-y-12 pb-12">
+        {
+          work.map((job: any, index: number) => (
+            <TimelineItem
+              title={job.role}
+              company={job.company}
+              location={job.location}
+              date={formatRange(job.startDate, job.endDate)}
+              description={job.description}
+              techStack={job.techStack}
+              color="purple"
+              class="timeline-item opacity-0 translate-y-8 transition-all duration-700 ease-out"
+              data-index={index}
+            />
+          ))
+        }
+      </div>
+    </div>
+
+    {/* Connector Line */}
+    <div
+      class="ml-6 h-32 w-px bg-gradient-to-b from-purple-900/50 to-blue-900/50 relative"
+    >
+      {/* Optional: Add a subtle glow or particle effect here if desired */}
+    </div>
+
+    {/* Education Section */}
+    <div>
+      <SectionTitle
+        title={ui?.timeline?.education || "Education"}
+        align="center"
+      />
+
+      <div class="relative border-l border-blue-900/50 ml-6 space-y-12 pt-12">
+        {
+          education.map((edu: any, index: number) => (
+            <TimelineItem
+              title={edu.degree}
+              company={edu.institution}
+              location={edu.location}
+              date={
+                edu.startDate && edu.startDate.length === 4
+                  ? `${edu.startDate} - ${edu.endDate}`
+                  : formatRange(edu.startDate, edu.endDate)
+              }
+              color="blue"
+              class="timeline-item opacity-0 translate-y-8 transition-all duration-700 ease-out"
+              data-index={index + work.length}
+            />
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  const observerOptions = {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.1,
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.remove("opacity-0", "translate-y-8");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  document.querySelectorAll(".timeline-item").forEach((item) => {
+    observer.observe(item);
+  });
+</script>

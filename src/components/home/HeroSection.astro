@@ -1,0 +1,176 @@
+---
+import fs from "node:fs/promises";
+import path from "node:path";
+import { FlipWords } from "../ui/FlipWords";
+import Contact from "./Contact.astro";
+import skills from "@data/techskills.json";
+import contact from "@data/contact.json";
+import TechCarousel from "./TechCarousel.astro";
+import HighlightStats from "./HighlightStats.astro";
+import { TechIconCloud } from "./TechIconCloud";
+import SmokeBackground from "./SmokeBackground";
+import { ArrowDown } from "lucide-react";
+import { loadUiData } from "../../utils/loadData";
+
+interface Props {
+  lang?: string;
+}
+
+const { lang = "en" } = Astro.props;
+
+// Load UI Data
+const ui = await loadUiData(lang);
+
+// Load Profile Data Dynamically
+const profilePath = path.join(process.cwd(), `docs/data/${lang}/profile.json`);
+const profileContent = await fs.readFile(profilePath, "utf-8");
+const profile = JSON.parse(profileContent);
+
+// Load Experiences Data Dynamically
+const experiencesPath = path.join(
+  process.cwd(),
+  `docs/data/${lang}/experiences.json`,
+);
+const experiencesContent = await fs.readFile(experiencesPath, "utf-8");
+const experiences = JSON.parse(experiencesContent);
+
+const { name, title } = profile;
+
+// Flatten all skills into a single array for the icon cloud
+const allSkills = [
+  ...skills.runtime,
+  ...skills.frontend,
+  ...skills.backend,
+  ...skills.databases,
+  ...skills.devops,
+  ...skills.tools,
+];
+---
+
+<section
+  class="h-screen relative overflow-x-clip overflow-y-hidden bg-gray-950 text-white"
+>
+  {/* Background Elements */}
+  {/* Smoke Background Effect */}
+  <SmokeBackground client:only="react" />
+
+  <div
+    class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-4 w-full z-20 relative h-screen"
+  >
+    <div
+      class="grid grid-cols-1 lg:grid-cols-5 h-full relative overflow-visible"
+    >
+      <div class="space-y-8 self-center lg:col-span-3">
+        <div
+          class="animate-on-scroll opacity-0 translate-y-8 transition-all duration-700 ease-out"
+        >
+          <h1 class="text-5xl md:text-7xl font-bold tracking-tight mb-4">
+            {ui?.hero?.greeting}
+            <br />
+            <span
+              class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-indigo-400"
+            >
+              {name}
+            </span>
+          </h1>
+          <div
+            class="h-12 flex items-center text-2xl md:text-3xl font-light text-gray-300"
+          >
+            <FlipWords
+              words={title}
+              client:load
+              className="text-white/90 font-semibold"
+            />
+          </div>
+        </div>
+
+        <div
+          class="animate-on-scroll opacity-0 translate-y-8 transition-all duration-700 ease-out"
+          style="transition-delay: 200ms"
+        >
+          <Contact
+            contact={contact}
+            profile={profile}
+            experiences={experiences}
+            skills={skills}
+            ui={ui}
+          />
+        </div>
+
+        <!-- <TechCarousel /> -->
+      </div>
+
+      <div
+        class="relative h-full flex items-end justify-end lg:justify-end pointer-events-none lg:col-span-2 overflow-visible"
+      >
+        {/* 3D Floating Tech Icon Cloud */}
+        <div
+          class="animate-on-scroll opacity-0 transition-opacity duration-1000 ease-out"
+          style="transition-delay: 400ms"
+        >
+          <TechIconCloud skills={allSkills} client:load />
+        </div>
+
+        <div class="absolute bottom-0 w-full h-[88vh] z-10 overflow-visible">
+          <div
+            class="w-full h-full animate-on-scroll opacity-0 translate-y-8 transition-all duration-1000 ease-out"
+            style="transition-delay: 300ms"
+          >
+            <img
+              src="/assets/profile-hero.png"
+              alt={name}
+              class="w-full h-full transform object-cover drop-shadow-2xl"
+              style="mask-image: linear-gradient(93deg, black 50%, transparent 95%);"
+            />
+          </div>
+        </div>
+
+        {/* Background Glow Effect */}
+        <!-- <div
+          class="absolute bottom-0 right-0 w-[1600px] h-[500px] bg-purple-700/30 blur-[120px] rounded-full z-0 translate-x-1/4 translate-y-1/4"
+        >
+        </div> -->
+      </div>
+      <div
+        class="absolute bottom-[20vh] left-0 w-full z-20 overflow-hidden py-4 pointer-events-auto"
+      >
+        <HighlightStats stats={ui.hero.stats} />
+      </div>
+    </div>
+  </div>
+
+  {/* Scroll Indicator */}
+  <div
+    class="absolute bottom-10 left-0 right-0 z-30 flex flex-col items-center gap-2 pointer-events-none animate-on-scroll opacity-0 translate-y-8 transition-all duration-700 ease-out"
+    style="transition-delay: 800ms"
+  >
+    <div class="opacity-70 transition-opacity">
+      <span
+        class="text-xs text-gray-400 uppercase tracking-widest font-mono cursor-pointer hover:opacity-100 pointer-events-auto"
+        >{ui.hero.scrollIndicator}</span
+      >
+      <!-- <ArrowDown className="w-5 h-5 text-purple-400 mx-auto mt-2" /> -->
+    </div>
+  </div>
+</section>
+
+<script>
+  const observerOptions = {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.1,
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.remove("opacity-0", "translate-y-8");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  document.querySelectorAll(".animate-on-scroll").forEach((item) => {
+    observer.observe(item);
+  });
+</script>

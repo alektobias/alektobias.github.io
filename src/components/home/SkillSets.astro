@@ -1,0 +1,50 @@
+---
+import fs from "node:fs/promises";
+import path from "node:path";
+import { SkillsInteractive } from "./SkillsInteractive";
+import { loadUiData } from "../../utils/loadData";
+
+interface Props {
+  lang?: string;
+}
+
+const { lang = "en" } = Astro.props;
+const ui = await loadUiData(lang);
+
+// Load Tech Skills (Shared)
+const techSkillsPath = path.join(process.cwd(), "docs/data/techskills.json");
+const techSkillsContent = await fs.readFile(techSkillsPath, "utf-8");
+const techSkillsData = JSON.parse(techSkillsContent);
+
+// Transform Tech Skills into array for rendering
+// We capitalize the keys for the category title
+const hardSkills = Object.entries(techSkillsData).map(([key, items]) => ({
+  category: key.charAt(0).toUpperCase() + key.slice(1),
+  id: key.toLowerCase(),
+  items: items as { name: string; icon: string; color: string }[],
+}));
+
+// Load Soft Skills (Localized)
+const softSkillsPath = path.join(
+  process.cwd(),
+  `docs/data/${lang}/softskills.json`,
+);
+let softSkillsData: string[] = [];
+
+try {
+  const softSkillsContent = await fs.readFile(softSkillsPath, "utf-8");
+  softSkillsData = JSON.parse(softSkillsContent);
+} catch (error) {
+  console.error(`Error loading soft skills for lang: ${lang}`, error);
+  // Fallback to empty or default if needed
+}
+---
+
+<section id="skills" class="relative">
+  <SkillsInteractive
+    client:visible
+    softSkills={softSkillsData}
+    hardSkills={hardSkills}
+    ui={ui}
+  />
+</section>
