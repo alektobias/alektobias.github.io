@@ -49,18 +49,18 @@ const allSkills = [
 ---
 
 <section
-  class="min-h-screen md:h-screen relative overflow-x-clip md:overflow-y-hidden bg-gray-950 text-white"
+  class="min-h-dvh md:h-screen relative overflow-x-clip md:overflow-y-hidden bg-gray-950 text-white"
 >
   {/* Background Elements */}
   {/* Smoke Background Effect */}
   <SmokeBackground client:only="react" />
 
-  <div class="container z-20 relative h-screen">
+  <div class="container z-20 relative h-dvh md:h-screen">
     <div
       class="grid grid-cols-1 md:grid-cols-2 h-full relative overflow-visible"
     >
       <div
-        class="md:space-y-8 self-center md:col-span-1 z-30 md:relative pt-12 pb-20 md:pt-0 h-min bottom-0 absolute w-full"
+        class="md:space-y-8 self-center md:col-span-1 z-30 md:relative pt-12 pb-24 md:pt-0 h-min bottom-0 absolute w-full"
       >
         {/* Mobile Contrast Backdrop */}
         <div
@@ -154,7 +154,7 @@ const allSkills = [
   </div>
   {/* Scroll Indicator */}
   <div
-    class="absolute bottom-10 left-0 right-0 z-30 flex flex-col items-center gap-2 pointer-events-none animate-on-scroll opacity-0 translate-y-8 transition-all duration-700 ease-out"
+    class="absolute bottom-12 md:bottom-10 left-0 right-0 z-30 flex flex-col items-center gap-2 pointer-events-none animate-on-scroll opacity-0 translate-y-8 transition-all duration-700 ease-out"
     style="transition-delay: 800ms"
   >
     <div class="opacity-70 transition-opacity">
@@ -162,7 +162,6 @@ const allSkills = [
         class="text-xs text-gray-400 uppercase tracking-widest font-mono cursor-pointer hover:opacity-100 pointer-events-auto"
         >{ui.hero.scrollIndicator}</span
       >
-      <!-- <ArrowDown className="w-5 h-5 text-purple-400 mx-auto mt-2" /> -->
     </div>
   </div>
   {/* Mobile Highlights Section (Vertical Stack) */}
