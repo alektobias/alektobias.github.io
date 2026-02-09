@@ -7,12 +7,12 @@
     "Pensador Crítico"
   ],
   "location": "Natal, RN, Brasil",
-  "summary": "Engenheiro Full Stack Sênior com mais de 8 anos de experiência arquitetando sistemas distribuídos de alto desempenho para mercados globais. Histórico comprovado de entrega de projetos de alto nível em escala global, focando na modernização de infraestruturas legadas e garantindo alta disponibilidade. Especialista no ecossistema JavaScript (Next.js, Node.js, Bun, React Native) e Infraestrutura como Código (Terraform, AWS).",
+  "summary": "Engenheiro Full Stack Sênior com mais de 8 anos de experiência arquitetando sistemas distribuídos de alto desempenho para mercados globais. Histórico sólido de entregas de projetos complexos em escala global, com foco na modernização de infraestruturas legadas e garantia de alta disponibilidade. Especialista no ecossistema JavaScript (Next.js, Node.js, Bun, React Native) e Infraestrutura como Código (Terraform, AWS).",
   "interests": [
     {
       "name": "Artes Marciais e Resiliência Mental",
       "icon": "Gi/Fist",
-      "description": "Minha paixão por Artes Marciais Mistas (MMA) e Jiu-Jitsu Brasileiro (BJJ) vai além do condicionamento físico. É uma prática de fortaleza mental — aprender a manter a calma, ser analítico e estratégico mesmo sob imensa pressão. Ensina que técnica e alavancagem muitas vezes triunfam sobre a força bruta.",
+      "description": "Minha paixão por MMA e Jiu-Jitsu Brasileiro (BJJ) vai além do condicionamento físico. É um exercício de fortaleza mental: aprender a manter a calma, ser analítico e estratégico mesmo sob imensa pressão. Ensina que técnica e alavancagem muitas vezes triunfam sobre a força bruta.",
       "items": [
         "Jiu-Jitsu Brasileiro: O xadrez da mecânica corporal.",
         "MMA: Adaptando-se a cenários dinâmicos e caóticos.",
@@ -22,7 +22,7 @@
     {
       "name": "Natureza, Culinária e Comunidade",
       "icon": "Leaf/Bowl",
-      "description": "Acredito em um estilo de vida fundamentado que nos conecta ao nosso ambiente e uns aos outros. Começa com sustentabilidade — observar animais, jardinagem e cultivar plantas — e flui para a cozinha. Cozinhar é minha maneira de transformar os dons da natureza em momentos compartilhados de alegria com amigos e família.",
+      "description": "Acredito em um estilo de vida fundamentado que nos conecta ao nosso ambiente e uns aos outros. Começa com sustentabilidade: observar animais, jardinagem e cultivar plantas; e flui para a cozinha. Cozinhar é minha maneira de transformar os dons da natureza em momentos compartilhados de alegria com amigos e família.",
       "items": [
         "Jardinagem & Sustentabilidade: Entendendo ecossistemas e paciência.",
         "Culinária: O ato criativo de nutrir os outros.",
@@ -32,7 +32,7 @@
     {
       "name": "Quebra-cabeças Estratégicos & Desafios Cognitivos",
       "icon": "Cube/Chess",
-      "description": "Tenho uma curiosidade inata por 'coisas difíceis' e sistemas complexos. Seja resolvendo um cubo mágico, mergulhando em um jogo de tabuleiro de estratégia pesada ou desvendando um mistério em um jogo de investigação, eu prospero no desafio. Não é apenas sobre vencer; é sobre o processo investigativo e a satisfação de superar obstáculos.",
+      "description": "Tenho uma curiosidade inata por 'coisas difíceis' e sistemas complexos. Seja resolvendo um cubo mágico, mergulhando em um jogo de tabuleiro estratégico ou desvendando um mistério em um jogo de investigação, eu gosto do desafio. Não é apenas sobre vencer; é sobre o processo investigativo e a satisfação de superar obstáculos.",
       "items": [
         "Quebra-cabeças Mecânicos: Cubos mágicos e lógica espacial.",
         "Estratégia de Tabuleiro: Jogos de tabuleiro que exigem profunda previsão e investigação.",

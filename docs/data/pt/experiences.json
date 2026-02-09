@@ -6,7 +6,7 @@
       "startDate": "10/2025",
       "endDate": "12/2025",
       "location": "São Francisco, CA, EUA",
-      "description": "Arquitetando plataformas impulsionadas por IA de alta disponibilidade projetadas para eliminar o trabalho operacional para equipes de DevOps/SRE, garantindo escalabilidade contínua. Modernizando estratégias de UI/UX em estreita colaboração com o design de produto, implementando sistemas de componentes robustos que impulsionam a retenção de usuários. Engenharia de fluxos de trabalho resilientes para identificar e resolver anomalias críticas em processos de IA.",
+      "description": "Arquitetando plataformas de IA de alta disponibilidade, projetadas para eliminar carga operacional de equipes DevOps/SRE e garantir escalabilidade contínua. Modernizo estratégias de UI/UX em colaboração direta com design de produto, implementando design systems robustos que aumentam a retenção de usuários. Engenharia de fluxos resilientes para identificar e resolver anomalias críticas em processos de IA.",
       "techStack": [
         "React",
         "TypeScript",
@@ -24,7 +24,7 @@
       "startDate": "11/2023",
       "endDate": "06/2025",
       "location": "São Paulo, SP, Brasil",
-      "description": "Liderou o desenvolvimento de ciclo completo de ferramentas internas estratégicas, traduzindo diretamente requisitos de negócios complexos em soluções de software de alta eficiência. Criou ferramentas personalizadas para otimizar fluxos de trabalho internos, reduzindo a latência de processos e aumentando a produtividade entre equipes. Atuou como um consultor técnico chave, definindo padrões arquitetônicos para escalabilidade e manutenibilidade a longo prazo.",
+      "description": "Liderei o ciclo completo de desenvolvimento de ferramentas internas estratégicas, convertendo requisitos de negócios complexos em software de alta eficiência. Criei soluções personalizadas para otimizar fluxos de trabalho, reduzindo latência e aumentando a produtividade entre equipes. Atuei como consultor técnico chave, definindo padrões arquitetônicos para escalabilidade e manutenibilidade a longo prazo.",
       "techStack": [
         "Next.js",
         "Angular",
@@ -45,7 +45,7 @@
       "startDate": "01/2022",
       "endDate": "05/2023",
       "location": "Montreal, QC, Canadá",
-      "description": "Projetou experiências digitais imersivas e de alto desempenho para clientes globais de Nível 1, incluindo Spotify, Sonos, Sony e Samsung. Liderou a refatoração de bases de código legadas usando React e Svelte, alcançando ganhos significativos em desempenho de UI e classificações de SEO. Desenvolveu plataformas de vendas interativas de alta fidelidade, integrando animações complexas e gerenciamento de estado contínuo.",
+      "description": "Projetei experiências digitais imersivas de alta performance para clientes globais Tier 1, como Spotify, Sonos, Sony e Samsung. Liderei a refatoração de bases de código legadas utilizando React e Svelte, conquistando ganhos significativos em performance de UI e SEO. Desenvolvi plataformas de vendas interativas de alta fidelidade, integrando animações complexas e gerenciamento de estado fluido.",
       "techStack": [
         "React",
         "Svelte",
@@ -62,7 +62,7 @@
       "startDate": "04/2021",
       "endDate": "12/2021",
       "location": "Rio de Janeiro, RJ, Brasil",
-      "description": "Otimizou módulos de SEO de alto tráfego para a maior plataforma de conteúdo e vendas do Brasil. Implementou arquitetura serverless usando AWS Lambda, reduzindo drasticamente a sobrecarga de infraestrutura e os tempos de resposta. Orquestrou pipelines de CI/CD abrangentes para agilizar a implantação em vários ambientes de teste e produção.",
+      "description": "Otimizei módulos de SEO de alto tráfego para a maior plataforma de conteúdo e vendas do Brasil. Implementei arquitetura serverless com AWS Lambda, reduzindo drasticamente custos de infraestrutura e tempos de resposta. Orquestrei pipelines de CI/CD abrangentes para agilizar o deploy em múltiplos ambientes.",
       "techStack": [
         "React",
         "Tailwind CSS",
@@ -80,7 +80,7 @@
       "startDate": "01/2021",
       "endDate": "05/2021",
       "location": "São Paulo, SP, Brasil",
-      "description": "Entregou soluções de e-commerce complexas e multilíngues (VTEX/Shopify) para mercados internacionais. Construiu integrações serverless personalizadas usando TypeScript e AWS para estender as capacidades da plataforma além dos limites nativos.",
+      "description": "Entreguei soluções de e-commerce complexas e multilíngues (VTEX/Shopify) para mercados internacionais. Construí integrações serverless personalizadas com TypeScript e AWS para estender as capacidades das plataformas além de seus limites nativos.",
       "techStack": [
         "VTEX IO",
         "Shopify",
@@ -96,7 +96,7 @@
       "startDate": "12/2020",
       "endDate": "02/2021",
       "location": "São Paulo, SP, Brasil",
-      "description": "Liderou as fases de descoberta técnica e benchmarking para uma nova ferramenta interna estratégica, conduzindo estudos de viabilidade e avaliações arquitetônicas para definir a fundação tecnológica do projeto.",
+      "description": "Liderei as fases de descoberta técnica e benchmarking para uma nova ferramenta interna estratégica, conduzindo estudos de viabilidade e avaliações arquitetônicas para definir as fundações tecnológicas do projeto.",
       "techStack": [
         "Technical Discovery",
         "Benchmarking",
@@ -110,7 +110,7 @@
       "startDate": "06/2019",
       "endDate": "05/2021",
       "location": "Recife, PE, Brasil",
-      "description": "Progressão Rápida: Promovido de Desenvolvedor Frontend a Líder Técnico em 12 meses devido à excelência técnica. Dirigiu uma equipe de desenvolvimento na construção de um SaaS baseado em microsserviços para análise de dados sociais usando Elasticsearch para consultas complexas. Gerenciou infraestrutura em nuvem na AWS, garantindo 99,9% de disponibilidade para uma base de usuários crescente.",
+      "description": "Evolução Rápida: Promovido de Desenvolvedor Frontend a Líder Técnico em 12 meses pela excelência técnica. Dirigi uma equipe de desenvolvimento na construção de um SaaS baseado em microsserviços para análise de dados sociais, utilizando Elasticsearch para consultas complexas. Gerenciei a infraestrutura em nuvem na AWS, garantindo 99,9% de disponibilidade para uma base de usuários em crescimento.",
       "techStack": [
         "Next.js",
         "React",
@@ -128,7 +128,7 @@
       "startDate": "08/2017",
       "endDate": "12/2018",
       "location": "Natal, RN, Brasil",
-      "description": "Desenvolveu e manteve ferramentas internas para o sistema judicial, melhorando a eficiência e acessibilidade para juízes e funcionários.",
+      "description": "Desenvolvi e mantive ferramentas internas para o sistema judiciário, melhorando a eficiência e acessibilidade para juízes e servidores.",
       "techStack": [
         "Java",
         "React Native",
@@ -143,7 +143,7 @@
       "startDate": "02/2016",
       "endDate": "12/2018",
       "location": "Natal, RN, Brasil",
-      "description": "Auxiliou na criação de projetos inovadores para alunos de mestrado profissional. Ensinou fundamentos de desenvolvimento web para ajudar alunos a construir e implantar suas aplicações baseadas em pesquisa.",
+      "description": "Auxiliei na criação de projetos inovadores para alunos de mestrado profissional. Ensinei fundamentos de desenvolvimento web para capacitar alunos a construir e implantar suas aplicações de pesquisa.",
       "techStack": [
         "Web Development",
         "HTML/CSS",

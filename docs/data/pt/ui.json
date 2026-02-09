@@ -11,7 +11,7 @@
   },
   "hero": {
     "greeting": "Olá, sou",
-    "scrollIndicator": "Role para explorar",
+    "scrollIndicator": "Role para saber mais",
     "stats": [
       {
         "metric": "+8",
