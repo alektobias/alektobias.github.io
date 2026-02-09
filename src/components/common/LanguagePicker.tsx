@@ -45,47 +45,49 @@ export const LanguagePicker: React.FC<Props> = ({ currentLang }) => {
   };
 
   return (
-    <div className="absolute z-50 md:top-16 left-4 top-8 md:left-1/2 md:-translate-x-1/2 container" ref={containerRef}>
-      <button
-        onClick={toggleOpen}
-        className="flex items-center gap-2 px-3 py-2 transition-all duration-300 group cursor-pointer"
-        aria-label="Select Language"
-      >
-        <activeLang.Flag className="w-5 h-5 rounded-sm object-cover" />
-        <span className="text-sm font-medium text-gray-300 group-hover:text-white uppercase hidden sm:block">
-          {activeLang.code}
-        </span>
-      </button>
+    <div className="absolute z-50 top-8 left-4 md:top-16 md:left-1/2 md:-translate-x-1/2 md:w-full md:max-w-7xl pointer-events-none" ref={containerRef}>
+      <div className="relative pointer-events-auto md:ml-6 lg:ml-12 inline-block">
+        <button
+          onClick={toggleOpen}
+          className="flex items-center gap-2 px-3 py-2 transition-all duration-300 group cursor-pointer"
+          aria-label="Select Language"
+        >
+          <activeLang.Flag className="w-5 h-5 rounded-sm object-cover" />
+          <span className="text-sm font-medium text-gray-300 group-hover:text-white uppercase hidden sm:block">
+            {activeLang.code}
+          </span>
+        </button>
 
-      <AnimatePresence>
-        {isOpen && (
-          <motion.div
-            initial={{ opacity: 0, y: 10, scale: 0.95 }}
-            animate={{ opacity: 1, y: 0, scale: 1 }}
-            exit={{ opacity: 0, y: 10, scale: 0.95 }}
-            transition={{ duration: 0.2 }}
-            className="absolute top-full left-0 mt-2 w-48 bg-[#0a0a0c] border border-white/10 rounded-xl shadow-xl backdrop-blur-xl overflow-hidden z-50"
-          >
-            <div className="p-1">
-              {languages.map((lang) => {
-                return (
-                  <button
-                    key={lang.code}
-                    onClick={() => handleSelect(lang.code)}
-                    className={`w-full flex items-center justify-between px-3 py-2.5 rounded-lg text-sm transition-colors cursor-pointer text-gray-400 hover:bg-white/5 hover:text-white  ${activeLang.code === lang.code ? 'bg-white/5 text-white' : ''}`}
-                  >
-                    <div className="flex items-center gap-3">
-                      <lang.Flag className="w-5 h-5 rounded-sm" />
-                      <span>{lang.label}</span>
-                    </div>
+        <AnimatePresence>
+          {isOpen && (
+            <motion.div
+              initial={{ opacity: 0, y: 10, scale: 0.95 }}
+              animate={{ opacity: 1, y: 0, scale: 1 }}
+              exit={{ opacity: 0, y: 10, scale: 0.95 }}
+              transition={{ duration: 0.2 }}
+              className="absolute top-full left-0 mt-2 w-48 bg-[#0a0a0c] border border-white/10 rounded-xl shadow-xl backdrop-blur-xl overflow-hidden z-50"
+            >
+              <div className="p-1">
+                {languages.map((lang) => {
+                  return (
+                    <button
+                      key={lang.code}
+                      onClick={() => handleSelect(lang.code)}
+                      className={`w-full flex items-center justify-between px-3 py-2.5 rounded-lg text-sm transition-colors cursor-pointer text-gray-400 hover:bg-white/5 hover:text-white  ${activeLang.code === lang.code ? 'bg-white/5 text-white' : ''}`}
+                    >
+                      <div className="flex items-center gap-3">
+                        <lang.Flag className="w-5 h-5 rounded-sm" />
+                        <span>{lang.label}</span>
+                      </div>
 
-                  </button>
-                )
-              })}
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+                    </button>
+                  )
+                })}
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </div>
     </div>
   );
 };
