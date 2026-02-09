@@ -1,0 +1,49 @@
+---
+interface Props {
+  href: string;
+  ariaLabel: string;
+  index: number; // For staggered animation delay
+  isExternal?: boolean;
+}
+
+const { href, ariaLabel, index, isExternal = true } = Astro.props;
+---
+
+<a
+  href={href}
+  target={isExternal ? "_blank" : undefined}
+  rel={isExternal ? "noopener noreferrer" : undefined}
+  class="group relative p-3 rounded-xl hover:bg-white/10 border border-transparent overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-white/5 opacity-0 animate-fade-in-up"
+  aria-label={ariaLabel}
+  style={{ animationDelay: `${index * 100}ms`, animationFillMode: "forwards" }}
+>
+  <div
+    class="absolute inset-0 bg-linear-to-tr from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+  >
+  </div>
+  <div
+    class="relative z-10 text-gray-400 group-hover:text-white transition-colors duration-300"
+  >
+    <slot />
+  </div>
+</a>
+
+<style>
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-in-up {
+    animation-name: fade-in-up;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+  }
+</style>
+

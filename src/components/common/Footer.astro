@@ -1,9 +1,11 @@
 ---
 import fs from "node:fs/promises";
 import path from "node:path";
-import { SocialIcon } from "../ui/SocialIcon";
+import Contact from "../home/Contact.astro";
 import contact from "../../../docs/data/contact.json";
+import skills from "../../../docs/data/techskills.json"; // Direct import like HeroSection
 import { loadUiData } from "../../utils/loadData";
+import { AuroraText } from "../ui/aurora-text";
 
 interface Props {
   lang?: string;
@@ -15,6 +17,13 @@ const ui = await loadUiData(lang);
 // Load Profile Data
 const profilePath = path.join(process.cwd(), `docs/data/${lang}/profile.json`);
 const profile = JSON.parse(await fs.readFile(profilePath, "utf-8"));
+
+// Load Experiences Data (Required for Contact -> CVDownloader)
+const experiencesPath = path.join(
+  process.cwd(),
+  `docs/data/${lang}/experiences.json`,
+);
+const experiences = JSON.parse(await fs.readFile(experiencesPath, "utf-8"));
 
 const currentYear = new Date().getFullYear();
 const mainTitle = profile.title[0];
@@ -33,27 +42,29 @@ const navLinks = [
 >
   {/* Background glow similar to other sections but subtle */}
   <div
-    class="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[200px] bg-purple-900/10 blur-[80px] rounded-full pointer-events-none"
+    class="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[200px] bg-emerald-900/10 blur-[80px] rounded-full pointer-events-none"
   >
   </div>
 
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+  <div class="container relative z-10">
     <div
       class="flex flex-col md:flex-row justify-between items-start md:items-center gap-8"
     >
       {/* Brand Section */}
       <div class="space-y-2">
         <h2 class="text-3xl font-bold tracking-tight">
-          <span
-            class="text-transparent bg-clip-text bg-linear-to-r from-purple-400 to-indigo-400"
+          <AuroraText
+            className="text-3xl font-bold tracking-tight inline-block"
+            colors={["#34d399", "#10b981", "#064e3b"]}
+            client:only="react"
           >
             {profile.name}
-          </span>
+          </AuroraText>
         </h2>
         <p
           class="text-gray-400 font-medium text-sm tracking-wide"
           style={{
-            backgroundImage: "linear-gradient(to bottom right, #ccc 70%, #333)", // purple-500, pink-500, blue-500
+            backgroundImage: "linear-gradient(to bottom right, #ccc 70%, #333)", // emerald-300 to emerald-900
             backgroundClip: "text",
             WebkitBackgroundClip: "text",
             color: "transparent",
@@ -70,7 +81,7 @@ const navLinks = [
             navLinks.map((link) => (
               <a
                 href={link.href}
-                class="text-gray-400 hover:text-purple-400 transition-colors"
+                class="text-gray-400 hover:text-emerald-400 transition-colors"
               >
                 {link.name}
               </a>
@@ -79,47 +90,13 @@ const navLinks = [
         </nav>
 
         <div class="flex gap-4">
-          {/* WhatsApp */}
-          <a
-            href={`https://wa.me/${contact.phone.replace(/\D/g, "")}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            class="text-gray-400 hover:text-green-400 transition-colors p-2 hover:bg-white/5 rounded-lg"
-            aria-label={ui?.contact?.whatsapp}
-          >
-            <SocialIcon name="whatsapp" className="w-5 h-5" />
-          </a>
-
-          {/* Email */}
-          <a
-            href={`mailto:${contact.email}`}
-            class="text-gray-400 hover:text-purple-400 transition-colors p-2 hover:bg-white/5 rounded-lg"
-            aria-label={ui?.contact?.email}
-          >
-            <SocialIcon name="email" className="w-5 h-5" />
-          </a>
-
-          {/* LinkedIn */}
-          <a
-            href={`https://${contact.linkedin}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            class="text-gray-400 hover:text-[#0077b5] transition-colors p-2 hover:bg-white/5 rounded-lg"
-            aria-label={ui?.contact?.linkedin}
-          >
-            <SocialIcon name="linkedin" className="w-5 h-5" />
-          </a>
-
-          {/* GitHub */}
-          <a
-            href={`https://${contact.github}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            class="text-gray-400 hover:text-white transition-colors p-2 hover:bg-white/5 rounded-lg"
-            aria-label={ui?.contact?.github}
-          >
-            <SocialIcon name="github" className="w-5 h-5" />
-          </a>
+          <Contact
+            contact={contact}
+            profile={profile}
+            experiences={experiences}
+            skills={skills}
+            ui={ui}
+          />
         </div>
       </div>
     </div>

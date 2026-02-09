@@ -43,45 +43,13 @@ const iconMap: Record<string, any> = {
     <!-- Grid pattern -->
     <div
       class="absolute inset-0"
-      style="background-image: linear-gradient(rgba(107, 70, 193, 0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(107, 70, 193, 0.03) 1px, transparent 1px); background-size: 60px 60px; mask-image: radial-gradient(ellipse at center, rgba(0,0,0,0.5) 0%, transparent 70%);"
+      style="background-image: linear-gradient(rgba(16, 185, 129, 0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(16, 185, 129, 0.03) 1px, transparent 1px); background-size: 60px 60px; mask-image: radial-gradient(ellipse at center, rgba(0,0,0,0.5) 0%, transparent 70%);"
     >
     </div>
 
-    <!-- Corner glows -->
-    <div
-      class="absolute top-[10%] left-[5%] w-[200px] h-[200px] rounded-full opacity-30 blur-[80px]"
-      style="background: radial-gradient(circle, #8b5cf6 0%, transparent 70%);"
-    >
-    </div>
-    <div
-      class="absolute top-[15%] right-[10%] w-[150px] h-[150px] rounded-full opacity-30 blur-[80px]"
-      style="background: radial-gradient(circle, #a855f7 0%, transparent 70%);"
-    >
-    </div>
-    <div
-      class="absolute bottom-[20%] left-[10%] w-[180px] h-[180px] rounded-full opacity-30 blur-[80px]"
-      style="background: radial-gradient(circle, #7c3aed 0%, transparent 70%);"
-    >
-    </div>
-    <div
-      class="absolute bottom-[10%] right-[5%] w-[250px] h-[250px] rounded-full opacity-30 blur-[80px]"
-      style="background: radial-gradient(circle, #6366f1 0%, transparent 70%);"
-    >
-    </div>
-
-    <div
-      class="absolute top-0 bottom-0 left-[20%] w-px"
-      style="background: linear-gradient(180deg, transparent 0%, rgba(139, 92, 246, 0.1) 20%, rgba(139, 92, 246, 0.2) 50%, rgba(139, 92, 246, 0.1) 80%, transparent 100%);"
-    >
-    </div>
-    <div
-      class="absolute top-0 bottom-0 right-[20%] w-px"
-      style="background: linear-gradient(180deg, transparent 0%, rgba(139, 92, 246, 0.1) 20%, rgba(139, 92, 246, 0.2) 50%, rgba(139, 92, 246, 0.1) 80%, transparent 100%);"
-    >
-    </div>
   </div>
 
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+  <div class="container relative z-10">
     <!-- Elegant Header -->
     <SectionTitle
       title={ui?.journey?.title || "The Story"}
@@ -108,26 +76,26 @@ const iconMap: Record<string, any> = {
 
           return (
             <article
-              class={`group bg-purple-950/20 border border-purple-500/10 rounded-2xl p-8 transition-all duration-700 ease-out relative overflow-hidden hover:border-purple-500/30 hover:-translate-y-1 ${colSpanClass} ${
+              class={`group bg-emerald-950/20 border border-emerald-500/10 rounded-2xl p-8 transition-all duration-700 ease-out relative overflow-hidden hover:border-emerald-500/30 hover:-translate-y-1 ${colSpanClass} ${
                 index < 2 ? "md:min-h-[320px]" : "md:min-h-[280px]"
               } opacity-0 translate-y-8 animate-on-scroll`}
               style={`transition-delay: ${index * 150}ms`}
             >
               {/* Hover glow effect */}
-              <div class="absolute inset-0 bg-linear-to-br from-purple-500/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+              <div class="absolute inset-0 bg-linear-to-br from-emerald-500/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
 
               {/* Background Blended Icon */}
               <div class="absolute right-[-20px] bottom-[-20px] opacity-[0.03] group-hover:opacity-[0.08] transition-all duration-500 transform group-hover:scale-110  pointer-events-none">
                 <IconComponent
                   size={240}
-                  className="text-purple-300"
+                  className="text-emerald-300"
                   strokeWidth={0.8}
                 />
               </div>
 
               <div class="relative z-10 h-full flex flex-col">
                 <div class="mb-6">
-                  <h3 class="text-2xl font-medium text-white/90 tracking-tight group-hover:text-purple-200 transition-colors duration-300">
+                  <h3 class="text-2xl font-medium text-white/90 tracking-tight group-hover:text-emerald-100 transition-colors duration-300">
                     {item.title}
                   </h3>
                 </div>

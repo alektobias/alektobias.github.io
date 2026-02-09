@@ -1,40 +1,66 @@
 ---
 import { Globe, Sparkles } from "lucide-react";
+import { AuroraText } from "../ui/aurora-text";
 
 interface Props {
   stats: any[];
+  id?: string;
 }
 
-const { stats = [] } = Astro.props;
+const { stats = [], id = "highlight-stats" } = Astro.props;
+const gradientId = `${id}-icon-gradient`;
 ---
 
-<div
-  class="flex items-center gap-2 divide-y sm:divide-y-0 sm:divide-x divide-white/10"
->
-  {/* Define gradient for icons */}
-  <svg width="0" height="0" class="absolute pointer-events-none">
-    <defs>
-      <linearGradient id="icon-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-        <stop offset="0%" stop-color="#c084fc"></stop>
-        <stop offset="100%" stop-color="#818cf8"></stop>
-      </linearGradient>
-    </defs>
-  </svg>
+{/* Define gradient for icons matching AuroraText effect */}
+<svg width="0" height="0" class="absolute pointer-events-none">
+  <defs>
+    <linearGradient id={gradientId} x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399">
+        <animate
+          attributeName="stop-color"
+          values="#34d399; #10b981; #064e3b; #34d399"
+          dur="10s"
+          repeatCount="indefinite"></animate>
+      </stop>
+      <stop offset="50%" stop-color="#10b981">
+        <animate
+          attributeName="stop-color"
+          values="#10b981; #064e3b; #34d399; #10b981"
+          dur="10s"
+          repeatCount="indefinite"></animate>
+      </stop>
+      <stop offset="100%" stop-color="#064e3b">
+        <animate
+          attributeName="stop-color"
+          values="#064e3b; #34d399; #10b981; #064e3b"
+          dur="10s"
+          repeatCount="indefinite"></animate>
+      </stop>
+    </linearGradient>
+  </defs>
+</svg>
 
+<div
+  class="grid md:grid-cols-2 gap-6 md:gap-4 divide-y md:divide-y-0 divide-white/10 w-[70%] md:w-[60%]"
+>
   {
     stats.map((highlight, index) => (
       <div
-        class="group pt-6 sm:pt-0 pr-4 first:pl-0 last:pr-0 first:pt-0 animate-on-scroll opacity-0 translate-y-8 transition-all duration-700 ease-out"
+        class="group py-6 md:py-0  md:first:pl-0 md:last:pr-0 md:first:col-span-2 animate-on-scroll opacity-0 translate-y-8 transition-all duration-700 ease-out"
         style={`transition-delay: ${index * 200 + 400}ms`}
       >
-        <div class="flex items-center gap-3">
+        <div class="flex items-center gap-5 md:gap-3">
           {/* Metric or Icon */}
-          <div class="shrink-0">
+          <div class="shrink-0 w-16">
             {highlight.metric ? (
-              <div class="flex flex-col items-center">
-                <span class="text-4xl md:text-5xl font-bold bg-linear-to-br from-purple-400 to-indigo-400 bg-clip-text text-transparent">
+              <div class="flex flex-col items-center w-16">
+                <AuroraText
+                  className="text-4xl md:text-5xl font-bold"
+                  colors={["#34d399", "#10b981", "#064e3b"]}
+                  client:only="react"
+                >
                   {highlight.metric}
-                </span>
+                </AuroraText>
                 {highlight.label && (
                   <span class="text-xs text-gray-500 mt-1 uppercase tracking-wide">
                     {highlight.label}
@@ -44,12 +70,12 @@ const { stats = [] } = Astro.props;
             ) : (
               <div class="w-16 h-16 rounded-lg flex items-center justify-center ">
                 {highlight.icon === "globe" && (
-                  <Globe className="w-12 h-12" stroke="url(#icon-gradient)" />
+                  <Globe className="w-12 h-12" stroke={`url(#${gradientId})`} />
                 )}
                 {highlight.icon === "sparkles" && (
                   <Sparkles
                     className="w-12 h-12"
-                    stroke="url(#icon-gradient)"
+                    stroke={`url(#${gradientId})`}
                   />
                 )}
               </div>
@@ -58,10 +84,10 @@ const { stats = [] } = Astro.props;
 
           {/* Content */}
           <div class="flex-1 min-w-0">
-            <h3 class="text-base md:text-lg font-semibold text-whitetransition-colors">
+            <h3 class="text-base text-xl md:text-lg font-semibold text-white transition-colors">
               {highlight.title}
             </h3>
-            <p class="text-xs md:text-sm text-gray-400 leading-relaxed">
+            <p class=" text-sm md:text-sm text-gray-400 leading-relaxed">
               {highlight.subtitle}
             </p>
           </div>

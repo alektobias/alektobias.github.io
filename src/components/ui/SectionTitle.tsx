@@ -37,7 +37,7 @@ export const SectionTitle: React.FC<SectionTitleProps> = ({
         {/* Subtitle */}
         {subtitle && (
           <span
-            className="relative z-10 text-4xl md:text-5xl lg:text-4xl font-light"
+            className="relative z-10 text-2xl md:text-4xl lg:text-4xl font-light"
             style={{
               fontFamily: "Georgia, 'Times New Roman', serif",
               backgroundImage: "linear-gradient(to bottom right, #ccc 70%, #333)", // purple-500, pink-500, blue-500

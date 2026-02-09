@@ -5,6 +5,7 @@ import path from "node:path";
 import { SocialIcon } from "../ui/SocialIcon";
 import { CVDownloader } from "../cv/CVDownloader";
 import { LetterGlitch } from "../ui/LetterGlitch";
+import { AuroraText } from "../ui/aurora-text";
 import skills from "@data/techskills.json";
 import contact from "@data/contact.json";
 import { loadUiData } from "../../utils/loadData";
@@ -48,11 +49,13 @@ const experiences = JSON.parse(await fs.readFile(experiencesPath, "utf-8"));
   <div class="relative z-10 max-w-4xl mx-auto px-4 text-center">
     <h2 class="text-4xl md:text-6xl font-bold mb-6 tracking-tight text-white">
       {ui?.contact?.title}
-      <span
-        class="text-transparent bg-clip-text bg-linear-to-r from-purple-400 to-pink-500"
+      <AuroraText
+        className="text-4xl md:text-6xl font-bold tracking-tight"
+        colors={["#34d399", "#10b981", "#064e3b"]}
+        client:only="react"
       >
         {ui?.contact?.highlight}
-      </span>
+      </AuroraText>
     </h2>
     <p
       class="text-xl text-gray-300 mb-12 max-w-2xl mx-auto"
@@ -82,12 +85,12 @@ const experiences = JSON.parse(await fs.readFile(experiencesPath, "utf-8"));
 
       <a
         href={`mailto:${contact.email}`}
-        class="group relative flex items-center justify-center w-20 h-20 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-purple-500/30 rounded-2xl transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/10"
+        class="group relative flex items-center justify-center w-20 h-20 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-teal-500/30 rounded-2xl transition-all duration-300 hover:shadow-lg hover:shadow-teal-500/10"
         aria-label={ui?.contact?.email}
       >
         <SocialIcon
           name="email"
-          className="w-8 h-8 text-gray-400 group-hover:text-purple-400"
+          className="w-8 h-8 text-gray-400 group-hover:text-teal-400"
         />
       </a>
 
@@ -125,6 +128,7 @@ const experiences = JSON.parse(await fs.readFile(experiencesPath, "utf-8"));
         contact={contact}
         variant="large"
         ui={ui}
+        lang={lang}
       />
     </div>
   </div>

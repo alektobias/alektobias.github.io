@@ -18,7 +18,7 @@ const BlogCard: React.FC<Props> = ({ title, description, pubDate, tags, slug }) 
       <div className="absolute inset-0 bg-secondary/30 backdrop-blur-md border border-white/5 rounded-xl transition-colors duration-300 group-hover:border-primary/50 group-hover:bg-secondary/40"></div>
 
       {/* Glow effect */}
-      <div className="absolute -inset-0.5 bg-gradient-to-r from-primary to-purple-600 rounded-xl opacity-0 group-hover:opacity-20 blur transition duration-500"></div>
+      <div className="absolute -inset-0.5 bg-gradient-to-r from-primary to-emerald-600 rounded-xl opacity-0 group-hover:opacity-20 blur transition duration-500"></div>
 
       <div className="relative z-10 flex flex-col h-full">
         <div className="flex items-center gap-2 mb-3 text-xs font-medium text-muted-foreground">

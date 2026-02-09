@@ -9,7 +9,7 @@ interface Props {
   date: string;
   description?: string;
   techStack?: string[];
-  color?: "purple" | "blue";
+  color?: "emerald" | "blue";
   class?: string;
 }
 
@@ -20,15 +20,15 @@ const {
   date,
   description,
   techStack,
-  color = "purple",
+  color = "emerald",
   class: className,
 } = Astro.props;
 
 const colorStyles = {
-  purple: {
-    dotBg: "bg-purple-500",
-    dotText: "text-purple-500",
-    dateText: "text-purple-400",
+  emerald: {
+    dotBg: "bg-emerald-500",
+    dotText: "text-emerald-500",
+    dateText: "text-emerald-400",
   },
   blue: {
     dotBg: "bg-blue-500",
@@ -40,19 +40,20 @@ const colorStyles = {
 const styles = colorStyles[color];
 ---
 
-<div class={cn("relative pl-12 group", className)}>
-  {/* Dot on Line */}
+<div class={cn("relative pl-6 py-2 md:pl-12 group", className)}>
   <span
     class={cn(
-      "absolute -translate-x-full -left-6 top-2.5 text-sm font-mono font-bold whitespace-nowrap capitalize",
+      "relative block mb-1 text-sm font-mono font-bold whitespace-nowrap capitalize sm:absolute top-2 md:top-4 sm:mb-0",
+      "sm:right-0 sm:left-auto sm:translate-x-0 lg:right-auto lg:-left-6 lg:-translate-x-full",
       styles.dateText,
     )}
   >
     {date}
   </span>
+  {/* Dot on Line */}
   <div
     class={cn(
-      "absolute -left-[9px] top-2 w-5 h-5 rounded-full border-4 border-gray-900 group-hover:scale-125 transition-transform duration-300 shadow-[0_0_10px_currentColor]",
+      "absolute -left-3 top-4 w-5 h-5 rounded-full border-4 border-gray-900 group-hover:scale-125 transition-transform duration-300 shadow-[0_0_10px_currentColor]",
       styles.dotBg,
       styles.dotText,
     )}
@@ -62,19 +63,70 @@ const styles = colorStyles[color];
   <div
     class="flex flex-col justify-between sm:flex-row sm:items-baseline gap-2 mb-1"
   >
-    <h3 class="text-xl font-bold text-white">{title}</h3>
+    <h3 class="text-base sm:text-lg md:text-xl font-bold text-white">
+      {title}
+    </h3>
   </div>
-  <div class="text-lg text-gray-300 font-medium mb-2">
+  <div class="text-sm sm:text-base lg:text-lg text-gray-300 font-medium mb-2">
     {company}
-    <span class="text-gray-500 text-sm">• {location}</span>
+    <span class="text-gray-500 text-xs md:text-sm">• {location}</span>
   </div>
   {
     description && (
-      <p class="text-gray-400 text-sm max-w-2xl leading-relaxed">
-        {description}
-      </p>
+      <div class="description-container relative">
+        <p class="text-gray-400 text-xs sm:text-sm md:max-w-2xl leading-relaxed line-clamp-2 md:line-clamp-none transition-all duration-300">
+          {description}
+        </p>
+        <button class="read-more-btn text-emerald-400 text-xs font-medium mt-1 hover:text-emerald-300 md:hidden hidden">
+          Read more
+        </button>
+      </div>
     )
   }
+
+  <script>
+    document.addEventListener("astro:page-load", () => {
+      initReadMore();
+    });
+
+    // Initial load in case view transitions aren't used or for first load
+    initReadMore();
+
+    function initReadMore() {
+      const containers = document.querySelectorAll(".description-container");
+
+      containers.forEach((container) => {
+        const p = container.querySelector("p");
+        const btn = container.querySelector(".read-more-btn");
+
+        if (!p || !btn) return;
+
+        // Check if text is actually clamped
+        // We compare scrollHeight with clientHeight
+        // Note: this check might need a slight delay if fonts are loading,
+        // but typically safe enough here or strictly relying on valid overflow logic
+
+        const isOverflowing = p.scrollHeight > p.clientHeight;
+
+        if (isOverflowing) {
+          btn.classList.remove("hidden");
+        }
+
+        if (btn.hasAttribute("data-has-listener")) return;
+        btn.setAttribute("data-has-listener", "true");
+
+        btn.addEventListener("click", () => {
+          if (p.classList.contains("line-clamp-2")) {
+            p.classList.remove("line-clamp-2");
+            btn.textContent = "Show less";
+          } else {
+            p.classList.add("line-clamp-2");
+            btn.textContent = "Read more";
+          }
+        });
+      });
+    }
+  </script>
 
   {/* Tech Stack Badge */}
   {

@@ -4,13 +4,13 @@ const projects = [
     title: "Project Alpha",
     description: "High-performance AI platform.",
     tech: ["Next.js", "Python", "AWS"],
-    image: "bg-purple-900/40"
+    image: "bg-emerald-900/40"
   },
   {
     title: "Project Beta",
     description: "Seamless e-commerce integration.",
     tech: ["TypeScript", "Shopify", "Tailwind"],
-    image: "bg-pink-900/40"
+    image: "bg-teal-900/40"
   },
   {
     title: "Project Gamma",
@@ -24,7 +24,7 @@ import { SectionTitle } from "../ui/SectionTitle";
 ---
 
 <section class="py-24 bg-gray-900 text-white">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <div class="container">
     <div class="flex justify-between items-end mb-12">
       <div>
         <SectionTitle
@@ -32,14 +32,14 @@ import { SectionTitle } from "../ui/SectionTitle";
           subtitle="A showcase of architectural excellence and problem-solving through code."
         />
       </div>
-      <a href="/projects" class="text-purple-400 hover:text-purple-300 font-medium hidden md:block">
+      <a href="/projects" class="text-emerald-400 hover:text-emerald-300 font-medium hidden md:block">
         View Project Archive →
       </a>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       {projects.map((project) => (
-        <div class="group relative rounded-2xl overflow-hidden border border-white/5 bg-gray-900 transition-all hover:border-purple-500/50">
+        <div class="group relative rounded-2xl overflow-hidden border border-white/5 bg-gray-900 transition-all hover:border-emerald-500/50">
            <!-- Project Image Placeholder -->
            <div class={`absolute inset-0 ${project.image} opacity-50 group-hover:scale-105 transition-transform duration-700`}></div>
            

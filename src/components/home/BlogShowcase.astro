@@ -22,7 +22,7 @@ const recentPosts = [
 ---
 
 <section class="py-24 bg-gray-900 border-t border-white/5">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <div class="container">
     <div class="flex flex-col md:flex-row justify-between items-end mb-12">
       <div>
         <h2 class="text-3xl font-bold text-white">Latest Writing</h2>
@@ -32,7 +32,7 @@ const recentPosts = [
       </div>
       <a
         href="/blog"
-        class="mt-4 md:mt-0 text-purple-400 hover:text-purple-300 font-medium flex items-center gap-2 group"
+        class="mt-4 md:mt-0 text-emerald-400 hover:text-emerald-300 font-medium flex items-center gap-2 group"
       >
         Read all articles
         <span class="group-hover:translate-x-1 transition-transform">-&gt;</span
@@ -43,18 +43,18 @@ const recentPosts = [
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
       {
         recentPosts.map((post) => (
-          <article class="bg-gray-800/50 border border-white/10 rounded-xl p-6 hover:border-purple-500/30 transition duration-300 group">
+          <article class="bg-gray-800/50 border border-white/10 rounded-xl p-6 hover:border-emerald-500/30 transition duration-300 group">
             <div class="flex justify-between items-start mb-4">
-              <span class="px-3 py-1 text-xs font-medium rounded-full bg-purple-900/30 text-purple-300 border border-purple-500/20">
+              <span class="px-3 py-1 text-xs font-medium rounded-full bg-emerald-900/30 text-emerald-300 border border-emerald-500/20">
                 {post.tag}
               </span>
               <span class="text-sm text-gray-500">{post.date}</span>
             </div>
-            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-purple-400 transition-colors">
+            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-emerald-400 transition-colors">
               {post.title}
             </h3>
             <p class="text-gray-400 text-sm mb-4">{post.preview}</p>
-            <div class="h-1 w-0 group-hover:w-full bg-linear-to-r from-purple-500 to-pink-500 transition-all duration-500 rounded-full" />
+            <div class="h-1 w-0 group-hover:w-full bg-linear-to-r from-emerald-500 to-teal-500 transition-all duration-500 rounded-full" />
           </article>
         ))
       }

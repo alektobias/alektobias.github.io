@@ -20,7 +20,7 @@ function MovingClouds() {
           seed={1}
           scale={2}
           volume={5}
-          color="#581c87" // purple-900
+          color="#064e3b" // emerald-900
           fade={100}
           speed={0.1}
           position={[-4, -2, -5]}
@@ -30,7 +30,7 @@ function MovingClouds() {
           seed={2}
           scale={3}
           volume={5}
-          color="#312e81" // indigo-900
+          color="#134e4a" // teal-900
           fade={100}
           speed={0.1}
           position={[4, 2, -10]}
@@ -40,7 +40,7 @@ function MovingClouds() {
           seed={3}
           scale={2}
           volume={4}
-          color="#6b21a8" // purple-800
+          color="#065f46" // emerald-800
           fade={100}
           speed={0.15}
           position={[0, 0, -8]}

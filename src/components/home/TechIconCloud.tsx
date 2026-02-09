@@ -1,78 +1,6 @@
 "use client";
-import React, { useEffect, useState, useMemo } from "react";
-import {
-  SiTypescript,
-  SiJavascript,
-  SiPython,
-  SiReact,
-  SiNextdotjs,
-  SiExpo,
-  SiSvelte,
-  SiVuedotjs,
-  SiAngular,
-  SiTailwindcss,
-  SiShadcnui,
-  SiBun,
-  SiNestjs,
-  SiFastify,
-  SiPrisma,
-  SiDrizzle,
-  SiPostgresql,
-  SiMongodb,
-  SiSupabase,
-  SiRedis,
-  SiElasticsearch,
-  SiAmazonwebservices,
-  SiGooglecloud,
-  SiFirebase,
-  SiDocker,
-  SiPulumi,
-  SiTerraform,
-  SiGit,
-  SiJira,
-  SiFigma,
-  SiGooglegemini,
-  SiAnthropic,
-} from "react-icons/si";
-import { Box, Workflow } from "lucide-react";
-
-// Icon component mapping
-const iconMap: Record<string, React.ComponentType<any>> = {
-  SiTypescript,
-  SiJavascript,
-  SiPython,
-  SiReact,
-  SiNextdotjs,
-  SiExpo,
-  SiSvelte,
-  SiVuedotjs,
-  SiAngular,
-  SiTailwindcss,
-  SiShadcnui,
-  SiBun,
-  SiNestjs,
-  SiFastify,
-  SiPrisma,
-  SiDrizzle,
-  SiPostgresql,
-  SiMongodb,
-  SiSupabase,
-  SiRedis,
-  SiElasticsearch,
-  SiAmazonwebservices,
-  SiGooglecloud,
-  SiFirebase,
-  SiDocker,
-  SiPulumi,
-  SiTerraform,
-  SiGit,
-  SiJira,
-  SiFigma,
-  SiGooglegemini,
-  SiAnthropic,
-  Box,
-  Workflow,
-};
+import React, { useMemo } from "react";
+import { getTechIcon } from "../../lib/techIcons";
 
 interface TechSkill {
   name: string;
@@ -82,6 +10,7 @@ interface TechSkill {
 
 interface TechIconCloudProps {
   skills: TechSkill[];
+  displayLayer?: "all" | "behind-only" | "front-only";
 }
 
 interface FloatingIcon {
@@ -150,7 +79,7 @@ const techPriority: Record<string, "high" | "medium" | "low" | "hidden"> = {
 };
 
 // Get priority with fallback to medium
-const getPriority = (name: string): "high" | "medium" | "low" => {
+const getPriority = (name: string): "high" | "medium" | "low" | "hidden" => {
   return techPriority[name] || "medium";
 };
 
@@ -160,11 +89,16 @@ const seededRandom = (seed: number) => {
   return x - Math.floor(x);
 };
 
-export const TechIconCloud: React.FC<TechIconCloudProps> = ({ skills }) => {
+export const TechIconCloud: React.FC<TechIconCloudProps> = ({ skills, displayLayer = "all" }) => {
+  const containerRef = React.useRef<HTMLDivElement>(null);
+  const iconRefs = React.useRef<(HTMLDivElement | null)[]>([]);
+  const mousePos = React.useRef({ x: -9999, y: -9999 });
+  const rafRef = React.useRef<number>();
+
   const icons = useMemo(() => {
     // Sort skills by priority: high first, then medium, then low
     const sortedSkills = [...skills].sort((a, b) => {
-      const priorityOrder = { high: 0, medium: 1, low: 2 };
+      const priorityOrder = { high: 0, medium: 1, low: 2, hidden: 3 };
       return priorityOrder[getPriority(a.name)] - priorityOrder[getPriority(b.name)];
     });
 
@@ -182,17 +116,15 @@ export const TechIconCloud: React.FC<TechIconCloudProps> = ({ skills }) => {
       const seed = globalIndex * 13 + 19;
       const count = highPrioritySkills.length;
       const angle = (i / count) * 2 * Math.PI + seededRandom(seed) * 0.4;
-      // Orbital radius: 25-55% from center
-      const radius = 25 + seededRandom(seed + 1) * 30;
 
-      let x = 50 + Math.cos(angle) * radius;
-      let y = 50 + Math.sin(angle) * radius * 0.65;
+      // REAL 3D Logic: High Priority (Front)
+      // STRICT exclusion from center to avoid covering face
+      const minRadius = 35;
+      const radiusStats = 25;
+      const rawRadius = minRadius + seededRandom(seed + 1) * radiusStats;
 
-      // Ensure icons don't overlap with center image too much
-      if (Math.abs(x - 50) < 30 && Math.abs(y - 50) < 25) {
-        x += x < 50 ? -15 : 15;
-        y += y < 50 ? -10 : 10;
-      }
+      let x = 50 + Math.cos(angle) * rawRadius;
+      let y = 50 + Math.sin(angle) * rawRadius * 0.75; // Elliptical orbit
 
       positions.push({
         id: globalIndex,
@@ -201,7 +133,7 @@ export const TechIconCloud: React.FC<TechIconCloudProps> = ({ skills }) => {
         y,
         layer: "front",
         priority: "high",
-        size: 34 + seededRandom(seed + 2) * 14, // Large icons for front
+        size: 34 + seededRandom(seed + 2) * 14,
         delay: seededRandom(seed + 3) * 3,
         duration: 4 + seededRandom(seed + 4) * 2,
         floatAmplitudeX: 5 + seededRandom(seed + 5) * 6,
@@ -215,16 +147,15 @@ export const TechIconCloud: React.FC<TechIconCloudProps> = ({ skills }) => {
       const seed = globalIndex * 11 + 17;
       const count = mediumPrioritySkills.length;
       const angle = (i / count) * 2 * Math.PI + seededRandom(seed) * 0.5;
-      // Orbital radius: 30-55% from center
-      const radius = 30 + seededRandom(seed + 1) * 25;
 
-      let x = 50 + Math.cos(angle) * radius;
-      let y = 50 + Math.sin(angle) * radius * 0.7;
+      // REAL 3D Logic: Medium Priority (Middle)
+      // STRICT exclusion from center
+      const minRadius = 40;
+      const radiusStats = 25;
+      const rawRadius = minRadius + seededRandom(seed + 1) * radiusStats;
 
-      // Ensure icons don't overlap with center
-      if (Math.abs(x - 50) < 25 && Math.abs(y - 50) < 20) {
-        x += x < 50 ? -12 : 12;
-      }
+      let x = 50 + Math.cos(angle) * rawRadius;
+      let y = 50 + Math.sin(angle) * rawRadius * 0.8;
 
       positions.push({
         id: globalIndex,
@@ -247,14 +178,21 @@ export const TechIconCloud: React.FC<TechIconCloudProps> = ({ skills }) => {
       const seed = globalIndex * 7 + 13;
       const count = lowPrioritySkills.length;
       const angle = (i / count) * 2 * Math.PI + seededRandom(seed) * 0.6;
-      // Orbital radius: 35-55% from center (outermost orbit)
-      const radius = 35 + seededRandom(seed + 1) * 20;
+
+      // REAL 3D Logic: Low Priority (Back)
+      // RELAXED exclusion - allow them to go behind the image for depth
+      const minRadius = 15; // Can get much closer to center
+      const radiusStats = 50; // Wide spread
+      const rawRadius = minRadius + seededRandom(seed + 1) * radiusStats;
+
+      let x = 50 + Math.cos(angle) * rawRadius;
+      let y = 50 + Math.sin(angle) * rawRadius * 0.7;
 
       positions.push({
         id: globalIndex,
         skill,
-        x: 50 + Math.cos(angle) * radius,
-        y: 50 + Math.sin(angle) * radius * 0.65,
+        x,
+        y,
         layer: "back",
         priority: "low",
         size: 18 + seededRandom(seed + 2) * 8, // Smaller icons for back
@@ -275,86 +213,213 @@ export const TechIconCloud: React.FC<TechIconCloudProps> = ({ skills }) => {
     return [...icons].sort((a, b) => layerOrder[a.layer] - layerOrder[b.layer]);
   }, [icons]);
 
-  return (
-    <div className="absolute inset-0 overflow-visible pointer-events-none">
-      {sortedIcons.map((icon) => {
-        const IconComponent = iconMap[icon.skill.icon] || Box;
-        const isBehind = icon.layer === "back";
-        const isMiddle = icon.layer === "middle";
-        const isFront = icon.layer === "front";
 
-        return (
-          <div
-            key={icon.id}
-            className="absolute tech-icon-float"
-            style={{
-              left: `${icon.x}%`,
-              top: `${icon.y}%`,
-              zIndex: isBehind ? 1 : isFront ? 30 : 5,
-              transform: `translate(-50%, -50%)`,
-              animationDelay: `${icon.delay}s`,
-              animationDuration: `${icon.duration}s`,
-              "--float-x": `${icon.floatAmplitudeX}px`,
-              "--float-y": `${icon.floatAmplitudeY}px`,
-            } as React.CSSProperties}
-          >
-            <div
-              className="relative flex items-center justify-center rounded-2xl backdrop-blur-sm transition-all duration-500"
-              style={{
-                width: icon.size + 16,
-                height: icon.size + 16,
-                background: isBehind
-                  ? `radial-gradient(circle, ${icon.skill.color}12, transparent 70%)`
-                  : isFront
-                    ? `radial-gradient(circle, ${icon.skill.color}25, ${icon.skill.color}08 60%, transparent 80%)`
-                    : `radial-gradient(circle, ${icon.skill.color}15, transparent 70%)`,
-                boxShadow: isBehind
-                  ? `0 0 25px ${icon.skill.color}08`
-                  : isFront
-                    ? `0 0 40px ${icon.skill.color}35, 0 10px 40px rgba(0,0,0,0.4), inset 0 0 20px ${icon.skill.color}10`
-                    : `0 0 30px ${icon.skill.color}20`,
-                border: `1px solid ${icon.skill.color}${isBehind ? "08" : isFront ? "40" : "20"}`,
-                opacity: isBehind ? 0.35 : isMiddle ? 0.6 : 0.85,
-                filter: isBehind ? "blur(1.5px)" : "none",
-              }}
+        // Physics Loop
+        React.useEffect(() => {
+          // Current animated positions (offsets from original)
+          const currentOffsets = new Array(sortedIcons.length).fill({ x: 0, y: 0 });
+
+          const handleMouseMove = (e: MouseEvent) => {
+            if (!containerRef.current) return;
+            const rect = containerRef.current.getBoundingClientRect();
+            mousePos.current = {
+              x: e.clientX - rect.left,
+              y: e.clientY - rect.top,
+            };
+          };
+
+          const handleMouseLeave = () => {
+            mousePos.current = { x: -9999, y: -9999 };
+          };
+
+          window.addEventListener("mousemove", handleMouseMove);
+          containerRef.current?.addEventListener("mouseleave", handleMouseLeave);
+
+          const animate = () => {
+            if (!containerRef.current) return;
+
+            const width = containerRef.current.offsetWidth;
+            const height = containerRef.current.offsetHeight;
+
+            sortedIcons.forEach((icon, index) => {
+              const ref = iconRefs.current[index];
+              if (!ref) return;
+
+              // Calculate original position in pixels
+              const originalX = (icon.x / 100) * width;
+              const originalY = (icon.y / 100) * height;
+
+              // Vector from mouse to icon
+              const dx = originalX - mousePos.current.x;
+              const dy = originalY - mousePos.current.y;
+              const dist = Math.sqrt(dx * dx + dy * dy);
+
+              // Repulsion physics
+              let targetOffsetX = 0;
+              let targetOffsetY = 0;
+
+              const repulsionRadius = 250; // Radius of influence
+              const maxRepulsion = 80; // Max pixels to push away
+
+              if (dist < repulsionRadius) {
+                const force = (repulsionRadius - dist) / repulsionRadius; // 0 to 1
+                const power = Math.pow(force, 2); // Non-linear falloff for smoother feel
+
+                // Direction away from mouse
+                // If perfectly on top, push randomly
+                const angle = dist === 0 ? Math.random() * Math.PI * 2 : Math.atan2(dy, dx);
+
+                targetOffsetX += Math.cos(angle) * maxRepulsion * power;
+                targetOffsetY += Math.sin(angle) * maxRepulsion * power;
+              }
+
+              // CENTER Repulsion for Front/Middle layers only
+              // This keeps the "hole" clean even if mouse pushes things around
+              if (icon.layer !== "back") {
+                  const cx = width / 2;
+                  const cy = height / 2;
+                  const dcx = originalX - cx;
+                  const dcy = originalY - cy;
+                  const distCenter = Math.sqrt(dcx * dcx + dcy * dcy);
+                  const safeZone = width * 0.32; // ~32% radius safe zone
+
+                  if (distCenter < safeZone) {
+                    const pushFactor = (safeZone - distCenter) / safeZone;
+                    const angleC = Math.atan2(dcy, dcx);
+                    // Permanent outward push from center
+                    targetOffsetX += Math.cos(angleC) * 60 * pushFactor;
+                    targetOffsetY += Math.sin(angleC) * 60 * pushFactor;
+                  }
+              }
+
+              // Smoothly interpolate current offset to target offset (Spring-like lerp)
+              const lerpFactor = 0.08;
+              currentOffsets[index] = {
+                x: currentOffsets[index].x + (targetOffsetX - currentOffsets[index].x) * lerpFactor,
+                y: currentOffsets[index].y + (targetOffsetY - currentOffsets[index].y) * lerpFactor,
+              };
+
+              // Apply transform
+              // We combine the base % position with the pixel offset
+              ref.style.transform = `translate(calc(-50% + ${currentOffsets[index].x}px), calc(-50% + ${currentOffsets[index].y}px))`;
+            });
+
+            rafRef.current = requestAnimationFrame(animate);
+          };
+
+          animate();
+
+          return () => {
+            window.removeEventListener("mousemove", handleMouseMove);
+            containerRef.current?.removeEventListener("mouseleave", handleMouseLeave);
+            if (rafRef.current) cancelAnimationFrame(rafRef.current);
+          };
+        }, [sortedIcons]);
+
+        return(
+  <div
+    ref = { containerRef }
+    className = "absolute inset-0 overflow-visible pointer-events-none"
             >
-              <IconComponent
-                size={icon.size}
-                style={{
-                  color: icon.skill.color,
-                  filter: isBehind
-                    ? `drop-shadow(0 0 3px ${icon.skill.color}30)`
-                    : `drop-shadow(0 0 ${isFront ? 15 : 8}px ${icon.skill.color}60)`,
-                }}
-              />
-            </div>
-          </div>
-        );
-      })}
+          {
+            sortedIcons.map((icon, index) => {
+              const isBehind = icon.layer === "back";
+              const isMiddle = icon.layer === "middle";
+              const isFront = icon.layer === "front";
+              const iconSrc = getTechIcon(icon.skill.name);
 
-      <style>{`
+              const shouldRender =
+                displayLayer === "all" ||
+                (displayLayer === "behind-only" && isBehind) ||
+                (displayLayer === "front-only" && !isBehind);
+
+              if (!shouldRender) return null;
+
+              return (
+                <div
+                  key={icon.id}
+                  ref={el => { iconRefs.current[index] = el }}
+                  className="absolute will-change-transform"
+                  style={{
+                    left: `${icon.x}%`,
+                    top: `${icon.y}%`,
+                    zIndex: isBehind ? 0 : isFront ? 30 : 5,
+                    transform: `translate(-50%, -50%)`, // Initial state
+                  }}
+                >
+                  <div
+                    className="tech-icon-float"
+                    style={{
+                      animationDelay: `${icon.delay}s`,
+                      animationDuration: `${icon.duration}s`,
+                      "--float-x": `${icon.floatAmplitudeX}px`,
+                      "--float-y": `${icon.floatAmplitudeY}px`,
+                    } as React.CSSProperties}
+                  >
+                    <div
+                      className="relative flex items-center justify-center rounded-2xl backdrop-blur-sm transition-all duration-500"
+                      style={{
+                        width: icon.size + 16,
+                        height: icon.size + 16,
+                        background: isBehind
+                          ? `radial-gradient(circle, ${icon.skill.color}12, transparent 70%)`
+                          : isFront
+                            ? `radial-gradient(circle, ${icon.skill.color}25, ${icon.skill.color}08 60%, transparent 80%)`
+                            : `radial-gradient(circle, ${icon.skill.color}15, transparent 70%)`,
+                        boxShadow: isBehind
+                          ? `0 0 25px ${icon.skill.color}08`
+                          : isFront
+                            ? `0 0 40px ${icon.skill.color}35, 0 10px 40px rgba(0,0,0,0.4), inset 0 0 20px ${icon.skill.color}10`
+                            : `0 0 30px ${icon.skill.color}20`,
+                        border: `1px solid ${icon.skill.color}${isBehind ? "08" : isFront ? "40" : "20"}`,
+                        opacity: isBehind ? 0.35 : isMiddle ? 0.6 : 0.85,
+                        filter: isBehind ? "blur(1.5px)" : "none",
+                      }}
+                    >
+                      <img
+                        src={iconSrc}
+                        alt={icon.skill.name}
+                        width={icon.size}
+                        height={icon.size}
+                        className="select-none pointer-events-none"
+                        style={{
+                          width: icon.size,
+                          height: icon.size,
+                          filter: isBehind
+                            ? `drop-shadow(0 0 3px ${icon.skill.color}30)`
+                            : `drop-shadow(0 0 ${isFront ? 15 : 8}px ${icon.skill.color}60)`,
+                        }}
+                      />
+                    </div>
+                  </div>
+                </div>
+              );
+            })
+          }
+
+            < style > {`
         @keyframes techIconFloat {
           0%, 100% {
-            transform: translate(-50%, -50%) translateY(0) translateX(0) rotate(0deg);
+            transform: translateY(0) translateX(0);
           }
           25% {
-            transform: translate(-50%, -50%) translateY(calc(-1 * var(--float-y))) translateX(calc(0.5 * var(--float-x))) rotate(2deg);
+            transform: translateY(calc(-1 * var(--float-y))) translateX(calc(0.5 * var(--float-x)));
           }
           50% {
-            transform: translate(-50%, -50%) translateY(0) translateX(var(--float-x)) rotate(0deg);
+            transform: translateY(0) translateX(var(--float-x));
           }
           75% {
-            transform: translate(-50%, -50%) translateY(var(--float-y)) translateX(calc(0.5 * var(--float-x))) rotate(-2deg);
+            transform: translateY(var(--float-y)) translateX(calc(0.5 * var(--float-x)));
           }
         }
         
         .tech-icon-float {
-          animation: techIconFloat var(--duration, 5s) ease-in-out infinite;
+          animation: techIconFloat var(--duration, 10s) ease-in-out infinite;
           will-change: transform;
         }
-      `}</style>
-    </div>
-  );
+      `}</style >
+  </div >
+);
 };
 
 export default TechIconCloud;
