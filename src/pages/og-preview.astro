@@ -1,0 +1,84 @@
+---
+import fs from "node:fs/promises";
+import path from "node:path";
+import { WordRotate } from "../components/ui/word-rotate";
+import { AuroraText } from "../components/ui/aurora-text";
+import Contact from "../components/home/Contact.astro";
+import HighlightStats from "../components/home/HighlightStats.astro";
+import skills from "@data/techskills.json";
+import contact from "@data/contact.json";
+import { loadUiData } from "../utils/loadData";
+import "../styles/global.css";
+
+// Force English for the preview
+const lang = "en";
+
+// Load UI Data
+const ui = await loadUiData(lang);
+
+// Load Profile Data Dynamically
+const profilePath = path.join(process.cwd(), `docs/data/${lang}/profile.json`);
+const profileContent = await fs.readFile(profilePath, "utf-8");
+const profile = JSON.parse(profileContent);
+
+// Load Experiences Data Dynamically
+const experiencesPath = path.join(
+  process.cwd(),
+  `docs/data/${lang}/experiences.json`,
+);
+const experiencesContent = await fs.readFile(experiencesPath, "utf-8");
+const experiences = JSON.parse(experiencesContent);
+
+const { name, title } = profile;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>OG Preview</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-950 text-white font-sans antialiased overflow-hidden">
+    <!-- Container sized exactly for OG Image (1200x630) -->
+    <div
+      class="w-[1200px] h-[630px] relative flex items-center justify-start p-20 overflow-hidden"
+    >
+      <!-- Background Elements (Simulated) -->
+      <div class="absolute inset-0 bg-gray-950 z-0"></div>
+      <!-- Optional: Add some subtle nebula/aurora background if available as global css or component -->
+
+      <div class="z-10 relative w-full transform scale-125 origin-left">
+        <h1 class="text-7xl font-bold tracking-tight mb-6 leading-tight">
+          {ui?.hero?.greeting}
+          <br />
+          <AuroraText
+            className="text-7xl font-bold tracking-tight"
+            colors={["#34d399", "#10b981", "#064e3b"]}
+            client:load
+          >
+            {name}
+          </AuroraText>
+        </h1>
+        <div
+          class="h-16 flex items-center text-4xl font-light text-gray-300 mb-8"
+        >
+          <WordRotate words={title} client:load className="font-semibold" />
+        </div>
+
+        <div class="opacity-100">
+          <HighlightStats
+            stats={ui?.hero?.stats}
+            className={"!flex flex-row gap-6 !w-full"}
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

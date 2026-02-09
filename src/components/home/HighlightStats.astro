@@ -5,9 +5,10 @@ import { AuroraText } from "../ui/aurora-text";
 interface Props {
   stats: any[];
   id?: string;
+  className?: string;
 }
 
-const { stats = [], id = "highlight-stats" } = Astro.props;
+const { stats = [], id = "highlight-stats", className = "" } = Astro.props;
 const gradientId = `${id}-icon-gradient`;
 ---
 
@@ -41,7 +42,8 @@ const gradientId = `${id}-icon-gradient`;
 </svg>
 
 <div
-  class="grid md:grid-cols-2 gap-6 md:gap-4 divide-y md:divide-y-0 divide-white/10 w-[70%] md:w-[60%]"
+  class={"grid md:grid-cols-2 gap-6 md:gap-4 divide-y md:divide-y-0 divide-white/10 w-[70%] md:w-[60%] " +
+    className}
 >
   {
     stats.map((highlight, index) => (
