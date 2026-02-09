@@ -47,7 +47,9 @@ const experiences = JSON.parse(await fs.readFile(experiencesPath, "utf-8"));
   >
   </div>
   <div class="relative z-10 max-w-4xl mx-auto px-4 text-center">
-    <h2 class="text-4xl md:text-6xl font-bold mb-6 tracking-tight text-white">
+    <h2
+      class="text-4xl md:text-6xl w-[70%] mx-auto font-bold mb-6 tracking-tight text-white"
+    >
       {ui?.contact?.title}
       <AuroraText
         className="text-4xl md:text-6xl font-bold tracking-tight"
@@ -60,7 +62,7 @@ const experiences = JSON.parse(await fs.readFile(experiencesPath, "utf-8"));
     <p
       class="text-xl text-gray-300 mb-12 max-w-2xl mx-auto"
       style={{
-        backgroundImage: "linear-gradient(to bottom right, #ccc 70%, #333)", // purple-500, pink-500, blue-500
+        backgroundImage: "linear-gradient(to bottom right, #fff 30%, #9ca3af)",
         backgroundClip: "text",
         WebkitBackgroundClip: "text",
         color: "transparent",
