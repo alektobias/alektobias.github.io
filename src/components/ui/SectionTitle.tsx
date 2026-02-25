@@ -20,7 +20,7 @@ export const SectionTitle: React.FC<SectionTitleProps> = ({
   };
 
   return (
-    <div className={`mb-16 flex flex-col ${alignmentClasses[align]} ${className}`}>
+    <div className={` pt-18 mb-16 flex flex-col ${alignmentClasses[align]} ${className}`}>
       <h2 className="flex flex-col leading-tight w-fit relative group">
 
         {/* Main Title with Gradient Shadow Effect */}

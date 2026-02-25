@@ -106,7 +106,7 @@ const carouselSkills = [...allSkills, ...allSkills];
 ---
 
 <div
-  class="max-w-4xl mx-auto inline-flex flex-nowrap overflow-hidden mask-[linear-gradient(to_right,transparent_0,black_128px,black_calc(100%-128px),transparent_100%)] "
+  class="max-w-4xl mx-auto inline-flex flex-nowrap overflow-hidden mask-[linear-gradient(to_right,transparent_0,black_128px,black_calc(100%-128px),transparent_100%)]"
 >
   <ul
     class="flex items-center justify-center md:justify-start [&_li]:mx-1 [&_img]:max-w-none animate-infinite-scroll"
@@ -115,12 +115,12 @@ const carouselSkills = [...allSkills, ...allSkills];
       carouselSkills.map((item, index) => {
         const IconComponent = iconMap[item.icon] || Box;
         return (
-          <li key={index}>
+          <li>
             <TechLabel
               client:visible
               name={item.name}
               color={item.color}
-              className="bg-gray-900/80 backdrop-blur-md border-white/10"
+              className="bg-gray-900/80 md:backdrop-blur-md border-white/10"
             >
               <IconComponent className="w-4 h-4" />
             </TechLabel>
@@ -137,12 +137,12 @@ const carouselSkills = [...allSkills, ...allSkills];
       carouselSkills.map((item, index) => {
         const IconComponent = iconMap[item.icon] || Box;
         return (
-          <li key={index}>
+          <li>
             <TechLabel
               client:visible
               name={item.name}
               color={item.color}
-              className="bg-gray-900/80 backdrop-blur-md border-white/10"
+              className="bg-gray-900/80 md:backdrop-blur-md border-white/10"
             >
               <IconComponent className="w-4 h-4" />
             </TechLabel>
@@ -164,6 +164,8 @@ const carouselSkills = [...allSkills, ...allSkills];
   }
   .animate-infinite-scroll {
     animation: infinite-scroll 60s linear infinite;
+    will-change: transform;
+    transform: translateZ(0);
   }
   .animate-infinite-scroll:hover {
     animation-play-state: paused;

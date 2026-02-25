@@ -49,11 +49,11 @@ export const LanguagePicker: React.FC<Props> = ({ currentLang }) => {
       <div className="relative pointer-events-auto md:ml-6 lg:ml-12 inline-block">
         <button
           onClick={toggleOpen}
-          className="flex items-center gap-2 px-3 py-2 transition-all duration-300 group cursor-pointer"
+          className="flex items-center gap-2 px-3 py-2 transition-all duration-300 group cursor-pointer border rounded-sm"
           aria-label="Select Language"
         >
           <activeLang.Flag className="w-5 h-5 rounded-sm object-cover" />
-          <span className="text-sm font-medium text-gray-300 group-hover:text-white uppercase hidden sm:block">
+          <span className="text-sm font-medium text-gray-300 group-hover:text-white uppercase block">
             {activeLang.code}
           </span>
         </button>

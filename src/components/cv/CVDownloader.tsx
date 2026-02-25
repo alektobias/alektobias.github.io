@@ -58,7 +58,7 @@ export const CVDownloader: React.FC<Props> = ({ variant = 'small', className = '
 
   const variants = {
     small: "p-3 rounded-xl hover:bg-white/10 border border-transparent hover:shadow-white/5",
-    large: "w-20 h-20 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 rounded-2xl hover:shadow-white/5"
+    large: "w-14 h-14 md:w-20 md:h-20 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 rounded-2xl hover:shadow-white/5"
   };
 
   if (!isClient) return null;
@@ -67,7 +67,7 @@ export const CVDownloader: React.FC<Props> = ({ variant = 'small', className = '
     console.error('PDF Generation Error:', pdfState.error);
     return (
       <div className={`${baseClasses} ${variants[variant]} ${className} cursor-not-allowed opacity-50`}>
-        <FileText className={`${variant === 'small' ? "w-6 h-6" : "w-8 h-8"} text-red-400`} />
+        <FileText className={`${variant === 'small' ? "w-6 h-6" : "w-6 h-6 md:w-8 md:h-8"} text-red-400`} />
       </div>
     );
   }
@@ -99,9 +99,9 @@ export const CVDownloader: React.FC<Props> = ({ variant = 'small', className = '
       >
         <div className="absolute inset-0 bg-linear-to-tr from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
         {isLoading ? (
-          <Download className={variant === 'small' ? "w-6 h-6 animate-pulse text-gray-400" : "w-8 h-8 animate-pulse text-gray-400"} />
+          <Download className={variant === 'small' ? "w-6 h-6 animate-pulse text-gray-400" : "w-6 h-6 md:w-8 md:h-8 animate-pulse text-gray-400"} />
         ) : (
-          <FileDown className={`${variant === 'small' ? "w-6 h-6" : "w-8 h-8"} text-gray-400 group-hover:text-white transition-colors`} />
+          <FileDown className={`${variant === 'small' ? "w-6 h-6" : "w-6 h-6 md:w-8 md:h-8"} text-gray-400 group-hover:text-white transition-colors`} />
         )}
         <span className="sr-only">{ui?.cv?.download || "Download CV"}</span>
       </a>

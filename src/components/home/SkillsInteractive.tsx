@@ -35,10 +35,10 @@ const containerVariants = {
 };
 
 const skillVariants = {
-  hidden: { opacity: 0, scale: 0.8 },
+  hidden: { opacity: 0, y: 15 },
   visible: {
     opacity: 1,
-    scale: 1,
+    y: 0,
     transition: {
       duration: 0.3,
       ease: "easeOut",
@@ -81,11 +81,11 @@ export function SkillsInteractive({ softSkills, hardSkills, ui }: SkillsInteract
                               radial-gradient(circle at 40% 20%, rgba(5, 150, 105, 0.2) 0%, transparent 50%)`
             }} />
             {/* Soft curved shapes */}
-            <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-emerald-500/10 rounded-full blur-[100px] animate-pulse" style={{ animationDuration: '4s' }} />
-            <div className="absolute bottom-1/3 left-1/3 w-64 h-64 bg-teal-500/10 rounded-full blur-[80px] animate-pulse" style={{ animationDuration: '5s', animationDelay: '1s' }} />
+            <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-emerald-500/10 rounded-full blur-[60px] md:blur-[100px] animate-pulse" style={{ animationDuration: '4s' }} />
+            <div className="absolute bottom-1/3 left-1/3 w-64 h-64 bg-teal-500/10 rounded-full blur-[40px] md:blur-[80px] animate-pulse" style={{ animationDuration: '5s', animationDelay: '1s' }} />
 
             {/* Massive Glowing Orb */}
-            <div className="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-emerald-600/15 rounded-full blur-[140px]" />
+            <div className="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-emerald-600/15 rounded-full blur-[80px] md:blur-[140px]" />
 
             {/* Firefly Particles */}
             {[...Array(20)].map((_, i) => (
@@ -163,11 +163,11 @@ export function SkillsInteractive({ softSkills, hardSkills, ui }: SkillsInteract
               backgroundSize: '60px 60px'
             }} />
             {/* Sharp angular shapes */}
-            <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-blue-500/10 blur-[100px]" style={{ clipPath: 'polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)' }} />
-            <div className="absolute bottom-1/3 right-1/3 w-80 h-80 bg-sky-500/10 blur-[90px] animate-pulse" style={{ animationDuration: '3s', clipPath: 'polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%)' }} />
+            <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-blue-500/10 blur-[60px] md:blur-[100px]" style={{ clipPath: 'polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)' }} />
+            <div className="absolute bottom-1/3 right-1/3 w-80 h-80 bg-sky-500/10 blur-[40px] md:blur-[90px] animate-pulse" style={{ animationDuration: '3s', clipPath: 'polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%)' }} />
 
             {/* Massive Glowing Orb */}
-            <div className="absolute bottom-1/4 right-1/4 w-[600px] h-[600px] bg-blue-600/15 rounded-full blur-[140px]" />
+            <div className="absolute bottom-1/4 right-1/4 w-[600px] h-[600px] bg-blue-600/15 rounded-full blur-[80px] md:blur-[140px]" />
 
             {/* Firefly Particles */}
             {[...Array(20)].map((_, i) => (

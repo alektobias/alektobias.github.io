@@ -93,7 +93,7 @@ export const TechIconCloud: React.FC<TechIconCloudProps> = ({ skills, displayLay
   const containerRef = React.useRef<HTMLDivElement>(null);
   const iconRefs = React.useRef<(HTMLDivElement | null)[]>([]);
   const mousePos = React.useRef({ x: -9999, y: -9999 });
-  const rafRef = React.useRef<number>();
+  const rafRef = React.useRef<number | undefined>(undefined);
   const [isMobile, setIsMobile] = React.useState(false);
 
   React.useEffect(() => {
@@ -231,6 +231,16 @@ export const TechIconCloud: React.FC<TechIconCloudProps> = ({ skills, displayLay
 
   // Physics Loop
   React.useEffect(() => {
+    if (isMobile) {
+      sortedIcons.forEach((_, index) => {
+        const ref = iconRefs.current[index];
+        if (ref) {
+          ref.style.transform = `translate(-50%, -50%)`;
+        }
+      });
+      return;
+    }
+
     // Current animated positions (offsets from original)
     const currentOffsets = new Array(sortedIcons.length).fill({ x: 0, y: 0 });
 
@@ -329,7 +339,7 @@ export const TechIconCloud: React.FC<TechIconCloudProps> = ({ skills, displayLay
       containerRef.current?.removeEventListener("mouseleave", handleMouseLeave);
       if (rafRef.current) cancelAnimationFrame(rafRef.current);
     };
-  }, [sortedIcons]);
+  }, [sortedIcons, isMobile]);
 
   return (
     <div
@@ -363,7 +373,7 @@ export const TechIconCloud: React.FC<TechIconCloudProps> = ({ skills, displayLay
               }}
             >
               <div
-                className="tech-icon-float"
+                className={isMobile ? "" : "tech-icon-float"}
                 style={{
                   animationDelay: `${icon.delay}s`,
                   animationDuration: `${icon.duration}s`,
