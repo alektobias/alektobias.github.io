@@ -1,13 +1,13 @@
 {
   "name": "Alek Tobias",
   "title": [
-    "Senior Full Stack Engineer",
+    "Full Stack Engineer",
     "Solution Architect",
     "AI Cleanup Specialist",
     "Critical Thinker"
   ],
   "location": "Natal, RN, Brazil",
-  "summary": "Senior Full Stack Engineer with 8+ years of experience architecting high-performance, distributed systems for global markets. Proven track record of delivering top-tier projects at global scale, focusing on modernizing legacy infrastructures and ensuring high availability. Expert in the JavaScript ecosystem (Next.js, Node.js, Bun, React Native) and Infrastructure as Code (Terraform, AWS).",
+  "summary": "Full Stack Engineer with 8+ years of experience architecting high-performance, distributed systems for global markets. Proven track record of delivering top-tier projects at global scale, focusing on modernizing legacy infrastructures and ensuring high availability. Expert in the JavaScript ecosystem (Next.js, Node.js, Bun, React Native) and Infrastructure as Code (Terraform, AWS).",
   "interests": [
     {
       "name": "Martial Arts & Mental Resilience",
