@@ -2,11 +2,11 @@
   "work": [
     {
       "company": "AlertD",
-      "role": "Desenvolvedor Full Stack",
-      "startDate": "10/2025",
+      "role": "Desenvolvedor Full Stack (Contrato)",
+      "startDate": "09/2025",
       "endDate": "12/2025",
       "location": "São Francisco, CA, EUA",
-      "description": "Arquitetando plataformas de IA de alta disponibilidade, projetadas para eliminar carga operacional de equipes DevOps/SRE e garantir escalabilidade contínua. Modernizo estratégias de UI/UX em colaboração direta com design de produto, implementando design systems robustos que aumentam a retenção de usuários. Engenharia de fluxos resilientes para identificar e resolver anomalias críticas em processos de IA.",
+      "description": "Arquitetou a modernização de UI/UX para uma startup de IA, implementando um sistema de componentes robusto do zero com base em um design system complexo. Reformulou toda a interface da plataforma para garantir uma experiência de usuário altamente profissional e visualmente impactante, impulsionando a retenção de usuários e a prontidão do produto.",
       "techStack": [
         "React",
         "TypeScript",
@@ -24,7 +24,7 @@
       "startDate": "11/2023",
       "endDate": "06/2025",
       "location": "São Paulo, SP, Brasil",
-      "description": "Liderei o ciclo completo de desenvolvimento de ferramentas internas estratégicas, convertendo requisitos de negócios complexos em software de alta eficiência. Criei soluções personalizadas para otimizar fluxos de trabalho, reduzindo latência e aumentando a produtividade entre equipes. Atuei como consultor técnico chave, definindo padrões arquitetônicos para escalabilidade e manutenibilidade a longo prazo.",
+      "description": "Liderou a engenharia de ferramentas estratégicas de recuperação de receita, identificando centenas de milhões de reais em receita não explorada ao detectar vazamentos de uso em um ecossistema enterprise massivo. Arquitetou uma plataforma de vendas de alta performance otimizada para cenários de up-selling e produtividade entre equipes.",
       "techStack": [
         "Next.js",
         "Angular",
@@ -43,9 +43,9 @@
       "company": "WHIMworks Inc.",
       "role": "Desenvolvedor Full Stack",
       "startDate": "01/2022",
-      "endDate": "05/2023",
+      "endDate": "07/2023",
       "location": "Montreal, QC, Canadá",
-      "description": "Projetei experiências digitais imersivas de alta performance para clientes globais Tier 1, como Spotify, Sonos, Sony e Samsung. Liderei a refatoração de bases de código legadas utilizando React e Svelte, conquistando ganhos significativos em performance de UI e SEO. Desenvolvi plataformas de vendas interativas de alta fidelidade, integrando animações complexas e gerenciamento de estado fluido.",
+      "description": "Orquestrou experiências digitais premium e protótipos de hardware-software IoT para marcas globais como Spotify, Sonos e Samsung. Desenvolveu sincronização de estado em tempo real para dispositivos IoT físicos e liderou migrações de legado para React e Svelte para melhorar o Core Web Vitals.",
       "techStack": [
         "React",
         "Svelte",
@@ -57,12 +57,12 @@
       ]
     },
     {
-      "company": "Impulso (Mosaico)",
-      "role": "Desenvolvedor Full Stack",
-      "startDate": "04/2021",
+      "company": "Impulso @ Mosaico",
+      "role": "Desenvolvedor Full Stack (Contrato)",
+      "startDate": "06/2021",
       "endDate": "12/2021",
       "location": "Rio de Janeiro, RJ, Brasil",
-      "description": "Otimizei módulos de SEO de alto tráfego para a maior plataforma de conteúdo e vendas do Brasil. Implementei arquitetura serverless com AWS Lambda, reduzindo drasticamente custos de infraestrutura e tempos de resposta. Orquestrei pipelines de CI/CD abrangentes para agilizar o deploy em múltiplos ambientes.",
+      "description": "Arquitetou um design system e biblioteca de UI escalável baseado em tokens, permitindo a criação rápida e branding consistente de múltiplos frontends. Implementou uma arquitetura de micro-frontends para otimizar o fluxo de novas funcionalidades na maior plataforma de comparação de preços do Brasil, reduzindo drasticamente custos de infraestrutura e acelerando o tempo de lançamento.",
       "techStack": [
         "React",
         "Tailwind CSS",
@@ -80,7 +80,7 @@
       "startDate": "01/2021",
       "endDate": "05/2021",
       "location": "São Paulo, SP, Brasil",
-      "description": "Entreguei soluções de e-commerce complexas e multilíngues (VTEX/Shopify) para mercados internacionais. Construí integrações serverless personalizadas com TypeScript e AWS para estender as capacidades das plataformas além de seus limites nativos.",
+      "description": "Entregou soluções complexas de e-commerce multilíngue (VTEX/Shopify) para mercados internacionais. Construiu integrações customizadas serverless utilizando TypeScript e AWS para desenvolver lojas únicas, estendendo as capacidades das plataformas para refletir perfeitamente a identidade de cada marca e requisitos de negócio específicos.",
       "techStack": [
         "VTEX IO",
         "Shopify",
@@ -92,25 +92,25 @@
     },
     {
       "company": "Bossabox",
-      "role": "Tech Lead",
+      "role": "Tech Lead (Contrato)",
       "startDate": "12/2020",
       "endDate": "02/2021",
       "location": "São Paulo, SP, Brasil",
-      "description": "Liderei as fases de descoberta técnica e benchmarking para uma nova ferramenta interna estratégica, conduzindo estudos de viabilidade e avaliações arquitetônicas para definir as fundações tecnológicas do projeto.",
+      "description": "Liderou a descoberta técnica e benchmarking para iniciativas internas estratégicas, definindo roadmaps tecnológicos de longo prazo. Arquitetou estudos de viabilidade abrangentes e avaliações de risco para garantir a escalabilidade da infraestrutura.",
       "techStack": [
-        "Technical Discovery",
+        "Descoberta Técnica",
         "Benchmarking",
-        "Architecture",
-        "Strategy"
+        "Arquitetura",
+        "Estratégia"
       ]
     },
     {
       "company": "Buzzmonitor",
       "role": "Tech Lead & Desenvolvedor Full Stack",
       "startDate": "06/2019",
-      "endDate": "05/2021",
+      "endDate": "12/2020",
       "location": "Recife, PE, Brasil",
-      "description": "Evolução Rápida: Promovido de Desenvolvedor Frontend a Líder Técnico em 12 meses pela excelência técnica. Dirigi uma equipe de desenvolvimento na construção de um SaaS baseado em microsserviços para análise de dados sociais, utilizando Elasticsearch para consultas complexas. Gerenciei a infraestrutura em nuvem na AWS, garantindo 99,9% de disponibilidade para uma base de usuários em crescimento.",
+      "description": "Progressão Rápida: Promovido de Desenvolvedor Frontend a Tech Lead em 12 meses. Liderou uma equipe de 6 desenvolvedores na construção de um SaaS baseado em microsserviços para análise de dados sociais, processando mais de 2 Terabytes de dados por semana. Gerenciou a infraestrutura em nuvem na AWS e utilizou Elasticsearch para consultas complexas, garantindo escalabilidade de 99.9% para uma base de usuários em crescimento.",
       "techStack": [
         "Next.js",
         "React",
@@ -124,16 +124,16 @@
     },
     {
       "company": "TJRN - Tribunal de Justiça do Rio Grande do Norte",
-      "role": "Estagiário de Desenvolvimento de Software",
+      "role": "Desenvolvedor de Software Estagiário",
       "startDate": "08/2017",
       "endDate": "12/2018",
       "location": "Natal, RN, Brasil",
-      "description": "Desenvolvi e mantive ferramentas internas para o sistema judiciário, melhorando a eficiência e acessibilidade para juízes e servidores.",
+      "description": "Desenvolveu e manteve ferramentas internas para o sistema judiciário, melhorando a eficiência e a acessibilidade para juízes e funcionários.",
       "techStack": [
         "Java",
         "React Native",
         "Angular",
-        "Internal Tools",
+        "Ferramentas Internas",
         "SQL"
       ]
     },
@@ -143,9 +143,9 @@
       "startDate": "02/2016",
       "endDate": "12/2018",
       "location": "Natal, RN, Brasil",
-      "description": "Auxiliei na criação de projetos inovadores para alunos de mestrado profissional. Ensinei fundamentos de desenvolvimento web para capacitar alunos a construir e implantar suas aplicações de pesquisa.",
+      "description": "Liderou a prototipagem rápida e entrega de aplicações de pesquisa inovadoras para estudantes de mestrado profissional. Mentoria de estudantes de pós-graduação em desenvolvimento web (React, Node.js), permitindo a implantação bem-sucedida de projetos de missão crítica.",
       "techStack": [
-        "Web Development",
+        "Desenvolvimento Web",
         "HTML/CSS",
         "JavaScript",
         "React",
@@ -155,17 +155,10 @@
   ],
   "education": [
     {
-      "institution": "Rocketseat",
-      "degree": "Pós-graduação - Tech Developer 360",
-      "startDate": "2025",
-      "endDate": "2026 (Em Andamento)",
-      "location": "Brasil"
-    },
-    {
       "institution": "Universidade Federal do Rio Grande do Norte (UFRN)",
-      "degree": "Bacharelado em Engenharia da Computação",
-      "startDate": "2015",
-      "endDate": "2019",
+      "degree": "Bacharelado em Engenharia de Computação",
+      "startDate": "02/2015",
+      "endDate": "02/2019",
       "location": "Brasil"
     }
   ]

@@ -2,11 +2,11 @@
   "work": [
     {
       "company": "AlertD",
-      "role": "Desarrollador Full Stack",
-      "startDate": "10/2025",
+      "role": "Desarrollador Full Stack (Contrato)",
+      "startDate": "09/2025",
       "endDate": "12/2025",
       "location": "San Francisco, CA, EE. UU.",
-      "description": "Arquitectando plataformas impulsadas por IA de alta disponibilidad diseñadas para eliminar el trabajo operativo para los equipos de DevOps/SRE, asegurando una escalabilidad perfecta. Modernizando estrategias de UI/UX en estrecha colaboración con el diseño de productos, implementando sistemas de componentes robustos que impulsan la retención de usuarios. Ingeniería de flujos de trabajo resilientes para identificar y resolver anomalías críticas en procesos de IA.",
+      "description": "Arquitecté la modernización de UI/UX para una startup de IA stealth, implementando un sistema de componentes robusto desde cero basado en un sistema de diseño complejo. Renové toda la interfaz de la plataforma para asegurar una experiencia de usuario altamente profesional y visualmente impactante, impulsando la retención de usuarios y la preparación del producto.",
       "techStack": [
         "React",
         "TypeScript",
@@ -24,7 +24,7 @@
       "startDate": "11/2023",
       "endDate": "06/2025",
       "location": "São Paulo, SP, Brasil",
-      "description": "Lideró el desarrollo de ciclo completo de herramientas internas estratégicas, traduciendo directamente requisitos comerciales complejos en soluciones de software de alta eficiencia. Diseñó herramientas personalizadas para optimizar los flujos de trabajo internos, reduciendo la latencia de los procesos y aumentando la productividad entre equipos. Actuó como asesor técnico clave, definiendo estándares arquitectónicos para la escalabilidad y mantenibilidad a largo plazo.",
+      "description": "Lideré la ingeniería de herramientas estratégicas de recuperación de ingresos, identificando cientos de millones de reales en ingresos no explotados al detectar fugas de uso en un ecosistema empresarial masivo. Arquitecté una plataforma de ventas de alto rendimiento optimizada para escenarios de up-selling y productividad entre equipos.",
       "techStack": [
         "Next.js",
         "Angular",
@@ -43,9 +43,9 @@
       "company": "WHIMworks Inc.",
       "role": "Desarrollador Full Stack",
       "startDate": "01/2022",
-      "endDate": "05/2023",
+      "endDate": "07/2023",
       "location": "Montreal, QC, Canadá",
-      "description": "Diseñó experiencias digitales inmersivas de alto rendimiento para clientes globales de Nivel 1, incluidos Spotify, Sonos, Sony y Samsung. Lideró la refactorización de bases de código heredadas utilizando React y Svelte, logrando ganancias significativas en el rendimiento de la interfaz de usuario y las clasificaciones de SEO. Desarrolló plataformas de ventas interactivas de alta fidelidad, integrando animaciones complejas y gestión de estado fluida.",
+      "description": "Orquesté experiencias digitales premium y prototipos de hardware-software IoT para marcas globales como Spotify, Sonos y Samsung. Desarrollé sincronización de estado en tiempo real para dispositivos IoT físicos y lideré migraciones de legado a React y Svelte para mejorar el Core Web Vitals.",
       "techStack": [
         "React",
         "Svelte",
@@ -57,12 +57,12 @@
       ]
     },
     {
-      "company": "Impulso (Mosaico)",
-      "role": "Desarrollador Full Stack",
-      "startDate": "04/2021",
+      "company": "Impulso @ Mosaico",
+      "role": "Desarrollador Full Stack (Contrato)",
+      "startDate": "06/2021",
       "endDate": "12/2021",
-      "location": "Rio de Janeiro, RJ, Brasil",
-      "description": "Optimizó módulos de SEO de alto tráfico para la plataforma de contenido y ventas más grande de Brasil. Implementó una arquitectura sin servidor (serverless) utilizando AWS Lambda, reduciendo drásticamente la sobrecarga de infraestructura y los tiempos de respuesta. Orquestó tuberías (pipelines) de CI/CD integrales para agilizar la implementación en múltiples entornos de prueba y producción.",
+      "location": "Río de Janeiro, RJ, Brasil",
+      "description": "Arquitecté un sistema de diseño y biblioteca de UI escalable a base de tokens que permitió la creación rápida y marca consistente de múltiples frontends. Implementé una arquitectura de micro-frontends para optimizar el despliegue de nuevas funcionalidades en la mayor plataforma de comparación de precios de Brasil, reduciendo drásticamente los costos de infraestructura y acelerando el tiempo de comercialización.",
       "techStack": [
         "React",
         "Tailwind CSS",
@@ -80,7 +80,7 @@
       "startDate": "01/2021",
       "endDate": "05/2021",
       "location": "São Paulo, SP, Brasil",
-      "description": "Entregó soluciones de comercio electrónico complejas y multilingües (VTEX/Shopify) para mercados internacionales. Construyó integraciones sin servidor personalizadas utilizando TypeScript y AWS para extender las capacidades de la plataforma más allá de los límites nativos.",
+      "description": "Entregué soluciones complejas de comercio electrónico en varios idiomas (VTEX/Shopify) para mercados internacionales. Construí integraciones personalizadas serverless usando TypeScript y AWS para desarrollar tiendas únicas y personalizadas, ampliando las capacidades de la plataforma para reflejar perfectamente la identidad de cada marca y los requisitos comerciales específicos.",
       "techStack": [
         "VTEX IO",
         "Shopify",
@@ -92,25 +92,25 @@
     },
     {
       "company": "Bossabox",
-      "role": "Tech Lead",
+      "role": "Tech Lead (Contrato)",
       "startDate": "12/2020",
       "endDate": "02/2021",
       "location": "São Paulo, SP, Brasil",
-      "description": "Lideró las fases de descubrimiento técnico y evaluación comparativa para una nueva herramienta interna estratégica, realizando estudios de viabilidad y evaluaciones arquitectónicas para definir la base tecnológica del proyecto.",
+      "description": "Lideré el descubrimiento técnico y la evaluación comparativa para iniciativas internas estratégicas, definiendo hojas de ruta tecnológicas a largo plazo. Arquitecté estudios de viabilidad exhaustivos y evaluaciones de riesgo para garantizar la escalabilidad de la infraestructura.",
       "techStack": [
-        "Technical Discovery",
+        "Descubrimiento Técnico",
         "Benchmarking",
-        "Architecture",
-        "Strategy"
+        "Arquitectura",
+        "Estrategia"
       ]
     },
     {
       "company": "Buzzmonitor",
       "role": "Tech Lead & Desarrollador Full Stack",
       "startDate": "06/2019",
-      "endDate": "05/2021",
+      "endDate": "12/2020",
       "location": "Recife, PE, Brasil",
-      "description": "Progresión Rápida: Promovido de Desarrollador Frontend a Líder Técnico en 12 meses debido a la excelencia técnica. Dirigió un equipo de desarrollo en la construcción de un SaaS basado en microservicios para análisis de datos sociales utilizando Elasticsearch para consultas complejas. Gestionó la infraestructura en la nube en AWS, garantizando una disponibilidad del 99,9% para una base de usuarios en crecimiento.",
+      "description": "Progresión Rápida: Promovido de Desarrollador Frontend a Tech Lead en 12 meses. Dirigí a un equipo de desarrollo de 6 personas en la creación de un SaaS basado en microservicios para análisis de datos sociales, procesando más de 2 Terabytes de datos por semana. Administré la infraestructura en la nube en AWS y utilicé Elasticsearch para consultas complejas, garantizando una disponibilidad del 99.9% para una base de usuarios en crecimiento.",
       "techStack": [
         "Next.js",
         "React",
@@ -118,22 +118,22 @@
         "TypeScript",
         "Elasticsearch",
         "AWS",
-        "Microservices",
+        "Microservicios",
         "Node.js"
       ]
     },
     {
-      "company": "TJRN - Tribunal de Justiça do Rio Grande do Norte",
-      "role": "Pasante de Desarrollo de Software",
+      "company": "TJRN - Tribunal de Justiça del Rio Grande do Norte",
+      "role": "Desarrollador de Software Pasante",
       "startDate": "08/2017",
       "endDate": "12/2018",
       "location": "Natal, RN, Brasil",
-      "description": "Desarrolló y mantuvo herramientas internas para el sistema judicial, mejorando la eficiencia y accesibilidad para jueces y personal.",
+      "description": "Desarrollé y mantuve herramientas internas para el sistema judicial, mejorando la eficiencia y accesibilidad para jueces y personal.",
       "techStack": [
         "Java",
         "React Native",
         "Angular",
-        "Internal Tools",
+        "Herramientas Internas",
         "SQL"
       ]
     },
@@ -143,9 +143,9 @@
       "startDate": "02/2016",
       "endDate": "12/2018",
       "location": "Natal, RN, Brasil",
-      "description": "Asistió en la creación de proyectos innovadores para estudiantes de maestría profesional. Enseñó fundamentos de desarrollo web para ayudar a los estudiantes a construir e implementar sus aplicaciones basadas en investigación.",
+      "description": "Lideré la creación rápida de prototipos y la entrega de aplicaciones de investigación innovadoras para estudiantes de maestría profesional. Mentoría de estudiantes de posgrado en desarrollo web (React, Node.js), permitiendo el despliegue exitoso de proyectos de misión crítica.",
       "techStack": [
-        "Web Development",
+        "Desarrollo Web",
         "HTML/CSS",
         "JavaScript",
         "React",
@@ -155,17 +155,10 @@
   ],
   "education": [
     {
-      "institution": "Rocketseat",
-      "degree": "Posgrado - Tech Developer 360",
-      "startDate": "2025",
-      "endDate": "2026 (En Progreso)",
-      "location": "Brasil"
-    },
-    {
-      "institution": "Universidade Federal do Rio Grande do Norte (UFRN)",
+      "institution": "Universidad Federal de Rio Grande do Norte (UFRN)",
       "degree": "Licenciatura en Ingeniería Informática",
-      "startDate": "2015",
-      "endDate": "2019",
+      "startDate": "02/2015",
+      "endDate": "02/2019",
       "location": "Brasil"
     }
   ]

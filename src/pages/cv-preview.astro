@@ -1,0 +1,40 @@
+---
+import fs from "node:fs/promises";
+import path from "node:path";
+import Layout from "../layouts/Layout.astro";
+import CVPreviewComponent from "../components/cv/CVPreview";
+
+const lang = "en";
+
+// Load Profile Data Dynamically
+const profilePath = path.join(process.cwd(), `docs/data/${lang}/profile.json`);
+const profileContent = await fs.readFile(profilePath, "utf-8");
+const profile = JSON.parse(profileContent);
+
+// Load Experiences Data Dynamically
+const experiencesPath = path.join(process.cwd(), `docs/data/${lang}/experiences.json`);
+const experiencesContent = await fs.readFile(experiencesPath, "utf-8");
+const experiences = JSON.parse(experiencesContent);
+
+// Load Contact Data
+const contactPath = path.join(process.cwd(), `docs/data/contact.json`);
+const contactContent = await fs.readFile(contactPath, "utf-8");
+const contact = JSON.parse(contactContent);
+
+// Load UI Data
+const uiPath = path.join(process.cwd(), `docs/data/${lang}/ui.json`);
+const uiContent = await fs.readFile(uiPath, "utf-8");
+const ui = JSON.parse(uiContent);
+
+---
+
+<Layout title="CV Layout Preview">
+  <CVPreviewComponent 
+    client:only="react" 
+    profile={profile} 
+    experiences={experiences} 
+    contact={contact} 
+    lang={lang} 
+    ui={ui}
+  />
+</Layout>

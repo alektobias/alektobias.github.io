@@ -27,7 +27,6 @@ const CVLogic: React.FC<CVLogicProps> = ({
       <CVDocument
         profile={profile}
         experiences={experiences}
-        skills={skills}
         contact={contact}
         lang={lang}
         ui={ui}

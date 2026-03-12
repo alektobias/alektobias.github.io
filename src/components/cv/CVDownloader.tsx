@@ -19,6 +19,7 @@ interface Props {
 export const CVDownloader: React.FC<Props> = ({ variant = 'small', className = '', ui, lang, ...props }) => {
   const [isClient, setIsClient] = React.useState(false);
   const [initGeneration, setInitGeneration] = useState(false);
+  const [shouldAutoDownload, setShouldAutoDownload] = useState(false);
   const [pdfState, setPdfState] = useState<{ url: string | null; loading: boolean; error: any }>({
     url: null,
     loading: true,
@@ -33,25 +34,35 @@ export const CVDownloader: React.FC<Props> = ({ variant = 'small', className = '
     setPdfState(newState);
   }, []);
 
+  React.useEffect(() => {
+    if (shouldAutoDownload && pdfState.url && !pdfState.loading) {
+      const link = document.createElement('a');
+      link.href = pdfState.url;
+      link.download = ui?.cv?.filename || "alek-tobias-resume.pdf";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      setShouldAutoDownload(false);
+    }
+  }, [shouldAutoDownload, pdfState.url, pdfState.loading, ui?.cv?.filename]);
+
   const handleDownload = (e: React.MouseEvent) => {
-    // 1. If not initialized, start generation
+    // 1. If not initialized, start generation and queue auto-download
     if (!initGeneration) {
       e.preventDefault();
       setInitGeneration(true);
+      setShouldAutoDownload(true);
       return;
     }
 
-    // 2. If generating, block download
+    // 2. If generating, block download but queue auto-download
     if (pdfState.loading || !pdfState.url) {
       e.preventDefault();
+      setShouldAutoDownload(true);
       return;
     }
 
-    // 3. If ready (url exists), let usage proceed (default accent)
-    // The user might need to click again if the first click just triggered init.
-    // To be nice, we could try to auto-click, but for now strict "click to generate" is fine for performance.
-    // Actually, if we return early on init, the user sees "Loading..." and then has to click again or we auto-trigger.
-    // Let's stick to the secure simple flow: Click -> Load -> Click to Save.
+    // 3. If ready (url exists), standard download occurs
   };
 
   const baseClasses = "group relative cursor-pointer flex items-center justify-center transition-all duration-300 hover:shadow-lg overflow-hidden";

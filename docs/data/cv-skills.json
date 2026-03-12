@@ -1,0 +1,50 @@
+{
+  "mainStack": [
+    "TypeScript",
+    "Bun",
+    "React",
+    "Next.js",
+    "Tailwind CSS",
+    "Fastify",
+    "NestJS",
+    "Drizzle ORM",
+    "PostgreSQL",
+    "Docker",
+    "AWS"
+  ],
+  "workedWith": [
+    "JavaScript",
+    "Node.js",
+    "React Native",
+    "Angular",
+    "Svelte",
+    "Express",
+    "Redis",
+    "MongoDB",
+    "Elasticsearch",
+    "Prisma",
+    "Shopify",
+    "VTEX IO"
+  ],
+  "toolsAndPractices": [
+    "Claude Code",
+    "Git",
+    "CI/CD Pipelines",
+    "Vitest",
+    "Playwright",
+    "Cypress",
+    "Terraform",
+    "Pulumi"
+  ],
+  "hobbyist": [
+    "Deno",
+    "Astro",
+    "Vue",
+    "ElysiaJS",
+    "tRPC",
+    "Supabase",
+    "LangChain",
+    "OpenAI",
+    "Gemini"
+  ]
+}

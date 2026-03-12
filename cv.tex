@@ -1,0 +1,148 @@
+\documentclass[a4paper,10pt]{article}
+
+% --- PACOTES DE DESIGN ---
+\usepackage[left=1.27cm,right=1.27cm,top=1.5cm,bottom=1.5cm]{geometry}
+\usepackage{fontspec} 
+\usepackage{fontawesome5} % Ícones
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+
+% --- CORES & FONTES ---
+% Azul "Tech" Sóbrio e Profissional
+\definecolor{techblue}{RGB}{0, 60, 110}
+\definecolor{darkgray}{RGB}{70, 70, 70}
+
+% Configuração da Fonte (Lato - Requer XeLaTeX)
+\setmainfont[
+    Path=,
+    Extension=.ttf,
+    UprightFont=*-Regular,
+    BoldFont=*-Bold,
+    ItalicFont=*-Italic,
+    BoldItalicFont=*-BoldItalic
+]{Lato}
+
+% --- FORMATAÇÃO DOS TÍTULOS ---
+\titleformat{\section}
+  {\Large\bfseries\color{techblue}\uppercase} 
+  {} 
+  {0em} 
+  {}[\titlerule]
+
+\titlespacing*{\section}{0pt}{12pt}{8pt}
+
+% --- MACRO PARA EXPERIÊNCIA ---
+\newcommand{\experience}[4]{
+    \noindent
+    \textbf{\large #1} \hfill \textbf{#2} \\
+    \textit{\color{darkgray} #3} \hfill \textit{#4}
+    \vspace{2pt}
+}
+
+% --- LINKS ---
+\hypersetup{
+    colorlinks=true,
+    linkcolor=techblue,
+    urlcolor=techblue,
+}
+
+% --- REMOVER NUMERAÇÃO ---
+\pagestyle{empty}
+
+% =========================================================
+% INÍCIO DO CONTEÚDO
+% =========================================================
+\begin{document}
+
+% --- CABEÇALHO ---
+\begin{center}
+    {\Huge \textbf{Alek Tobias Barreira Lima}} \\[0.2cm]
+    {\Large \color{darkgray} Senior Full Stack Engineer | Remarkable Projects with Performance \& Scalability} \\[0.3cm]
+    
+    \small
+    \faMapMarker* \ Natal, RN, Brazil \quad \textbullet \quad
+    \faPhone \ +55 84 99151 8086 \quad \textbullet \quad
+    \faEnvelope \ \href{mailto:alektobias@gmail.com}{alektobias@gmail.com}\quad \textbullet \quad
+    \faLinkedin \ \href{https://www.linkedin.com/in/alek-tobias-fullstack}{linkedin.com/in/alek-tobias-fullstack}
+\end{center}
+
+\vspace{0.2cm}
+
+% --- SUMMARY ---
+\section{Professional Summary}
+Senior Full Stack Engineer with \textbf{8+ years of experience} architecting high-performance, distributed systems for global markets. Proven track record of delivering \textbf{top-tier projects at global scale}, focusing on modernizing legacy infrastructures and ensuring high availability. Expert in the \textbf{JavaScript ecosystem (Next.js, Node.js, Bun, React Native)} and \textbf{Infrastructure as Code (Terraform, AWS)}. Passionate about \textbf{continuous learning}, constantly leveraging \textbf{cutting-edge technologies} to solve complex challenges and drive business innovation in fully remote environments.
+
+% --- SKILLS ---
+\section{Technical Skills}
+\begin{description}[style=multiline, leftmargin=4.2cm, font=\bfseries\color{techblue}]
+    \item[Languages \& Runtimes] JavaScript (ES6+), TypeScript, Bun, Python.
+    \item[Mobile \& Frontend] React, Next.js, React Native, Expo, SvelteKit, Tailwind CSS, Shadcn/UI.
+    \item[Backend \& Data] NestJS, PostgreSQL, MongoDB, Elasticsearch, Redis, Clean Architecture, TDD.
+    \item[DevOps \& IaC] AWS / GCP, Docker, CI/CD Pipelines, Terraform, Pulumi.
+\end{description}
+
+% --- EXPERIENCE ---
+\section{Professional Experience}
+
+\experience{AlertD}{Remote (US Company)}{Full Stack Developer}{Oct 2025 -- Dec 2025}
+\begin{itemize}[leftmargin=*, noitemsep, topsep=2pt]
+    \item \textbf{Architecting high-availability AI-driven platforms} designed to eliminate operational toil for DevOps/SRE teams, ensuring seamless scalability.
+    \item \textbf{Modernizing UI/UX strategies} in close collaboration with product design, implementing robust component systems that drive user retention.
+    \item Engineering resilient workflows to identify and resolve critical anomalies in AI processes, maximizing system reliability.
+\end{itemize}
+
+\vspace{0.3cm}
+
+\experience{TOTVS}{Remote (Brazilian Company)}{Senior Full Stack Developer}{Nov 2023 -- Jun 2025}
+\begin{itemize}[leftmargin=*, noitemsep, topsep=2pt]
+    \item \textbf{Spearheaded full-cycle development} of strategic internal tools, directly translating complex business requirements into high-efficiency software solutions.
+    \item Engineered custom tooling to optimize internal workflows, reducing process latency and boosting cross-team productivity.
+    \item Acted as a key technical advisor, defining architectural standards for long-term scalability and maintainability.
+\end{itemize}
+
+\vspace{0.3cm}
+
+\experience{WHIMworks Inc.}{Remote (Canadian Company)}{Full Stack Developer}{Jan 2022 -- May 2023}
+\begin{itemize}[leftmargin=*, noitemsep, topsep=2pt]
+    \item Engineered immersive, high-performance digital experiences for Tier-1 global clients including \textbf{Spotify, Sonos, Sony, and Samsung}.
+    \item Led the refactoring of legacy codebases using React and Svelte, achieving significant gains in UI performance and SEO rankings.
+    \item Developed high-fidelity interactive sales platforms, integrating complex animations and seamless state management.
+\end{itemize}
+
+\vspace{0.3cm}
+
+\experience{Impulso @ Mosaico}{Remote (Brazilian Company)}{Full Stack Developer}{Apr 2021 -- Dec 2021}
+\begin{itemize}[leftmargin=*, noitemsep, topsep=2pt]
+    \item Optimized high-traffic SEO modules for Brazil's largest content and sales platform.
+    \item Implemented serverless architecture using \textbf{AWS Lambda}, drastically reducing infrastructure overhead and response times.
+    \item Orchestrated comprehensive CI/CD pipelines to streamline deployment across multiple testing and production environments.
+\end{itemize}
+
+\vspace{0.3cm}
+
+\experience{Codeby}{Remote (Brazilian Company)}{Full Stack Developer}{Jan 2021 -- May 2021}
+\begin{itemize}[leftmargin=*, noitemsep, topsep=2pt]
+    \item Delivered complex, multi-language e-commerce solutions (VTEX/Shopify) for international markets.
+    \item Built custom serverless integrations using TypeScript and AWS to extend platform capabilities beyond native limits.
+\end{itemize}
+
+\vspace{0.3cm}
+
+\experience{Buzzmonitor}{Remote (Brazilian Company)}{Tech Lead \& Full Stack Developer}{Jun 2019 -- May 2021}
+\begin{itemize}[leftmargin=*, noitemsep, topsep=2pt]
+    \item \textbf{Rapid Progression:} Promoted from Frontend Developer to \textbf{Tech Lead} within 12 months due to technical excellence.
+    \item Directed a development team in building a microservices-based SaaS for social data analytics using Elasticsearch for complex querying.
+    \item Managed cloud infrastructure on AWS, ensuring 99.9\% availability for a growing user base.
+\end{itemize}
+
+% --- EDUCATION ---
+\section{Education}
+
+\experience{Rocketseat}{Brazil}{Postgraduate Degree in Full Stack Development (Tech Developer 360)}{2025 -- 2026 (In Progress)}
+\vspace{0.1cm}
+
+\experience{Universidade Federal do Rio Grande do Norte (UFRN)}{Brazil}{Bachelor of Science in Computer Engineering}{2015 -- 2019}
+
+\end{document}

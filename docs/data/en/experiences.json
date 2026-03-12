@@ -2,11 +2,11 @@
   "work": [
     {
       "company": "AlertD",
-      "role": "Full Stack Developer",
-      "startDate": "10/2025",
+      "role": "Full Stack Developer (Contract)",
+      "startDate": "09/2025",
       "endDate": "12/2025",
       "location": "San Francisco, CA, USA",
-      "description": "Architecting high-availability AI-driven platforms designed to eliminate operational toil for DevOps/SRE teams, ensuring seamless scalability. Modernizing UI/UX strategies in close collaboration with product design, implementing robust component systems that drive user retention. Engineering resilient workflows to identify and resolve critical anomalies in AI processes.",
+      "description": "Architected the UI/UX modernization for a stealth-mode AI startup, implementing a robust component system from scratch based on a complex design system. Revamped the entire platform's interface to ensure a highly professional and visually striking user experience, driving user retention and product readiness.",
       "techStack": [
         "React",
         "TypeScript",
@@ -24,7 +24,7 @@
       "startDate": "11/2023",
       "endDate": "06/2025",
       "location": "São Paulo, SP, Brazil",
-      "description": "Spearheaded full-cycle development of strategic internal tools, directly translating complex business requirements into high-efficiency software solutions. Engineered custom tooling to optimize internal workflows, reducing process latency and boosting cross-team productivity. Acted as a key technical advisor, defining architectural standards for long-term scalability and maintainability.",
+      "description": "Spearheaded the engineering of mission-critical revenue recovery tools, successfully identifying hundreds of millions of BRL in untapped revenue by detecting complex usage leaks across a massive enterprise ecosystem. Architected a high-performance sales platform optimized for up-selling and cross-team productivity.",
       "techStack": [
         "Next.js",
         "Angular",
@@ -43,9 +43,9 @@
       "company": "WHIMworks Inc.",
       "role": "Full Stack Developer",
       "startDate": "01/2022",
-      "endDate": "05/2023",
+      "endDate": "07/2023",
       "location": "Montreal, QC, Canada",
-      "description": "Engineered immersive, high-performance digital experiences for Tier-1 global clients including Spotify, Sonos, Sony, and Samsung. Led the refactoring of legacy codebases using React and Svelte, achieving significant gains in UI performance and SEO rankings. Developed high-fidelity interactive sales platforms, integrating complex animations and seamless state management.",
+      "description": "Orchestrated premium digital experiences and IoT hardware-software prototypes for global brands like Spotify, Sonos, and Samsung. Engineered real-time state synchronization for physical IoT devices and led legacy migrations to React and Svelte to improve Core Web Vitals.",
       "techStack": [
         "React",
         "Svelte",
@@ -57,12 +57,12 @@
       ]
     },
     {
-      "company": "Impulso (Mosaico)",
-      "role": "Full Stack Developer",
-      "startDate": "04/2021",
+      "company": "Impulso @ Mosaico",
+      "role": "Full Stack Developer (Contract)",
+      "startDate": "06/2021",
       "endDate": "12/2021",
       "location": "Rio de Janeiro, RJ, Brazil",
-      "description": "Optimized high-traffic SEO modules for Brazil’s largest content and sales platform. Implemented serverless architecture using AWS Lambda, drastically reducing infrastructure overhead and response times. Orchestrated comprehensive CI/CD pipelines to streamline deployment across multiple testing and production environments.",
+      "description": "Architected a scalable, token-based design system and UI library that enabled the rapid creation and consistent branding of multiple frontends. Implemented a micro-frontends architecture to streamline the deployment of new features across Brazil’s sales price comparison platform, drastically reducing infrastructure overhead and accelerating time-to-market.",
       "techStack": [
         "React",
         "Tailwind CSS",
@@ -80,7 +80,7 @@
       "startDate": "01/2021",
       "endDate": "05/2021",
       "location": "São Paulo, SP, Brazil",
-      "description": "Delivered complex, multi-language e-commerce solutions (VTEX/Shopify) for international markets. Built custom serverless integrations using TypeScript and AWS to extend platform capabilities beyond native limits.",
+      "description": "Delivered complex, multi-language e-commerce solutions (VTEX/Shopify) for international markets. Built custom serverless integrations using TypeScript and AWS to develop unique and customized storefronts, extending platform capabilities to perfectly reflect each brand's unique identity and specific business requirements.",
       "techStack": [
         "VTEX IO",
         "Shopify",
@@ -92,11 +92,11 @@
     },
     {
       "company": "Bossabox",
-      "role": "Tech Lead",
+      "role": "Tech Lead (Contract)",
       "startDate": "12/2020",
       "endDate": "02/2021",
       "location": "São Paulo, SP, Brazil",
-      "description": "Led technical discovery and benchmarking phases for a strategic new internal tool, conducting feasibility studies and architectural assessments to define the project's technological foundation.",
+      "description": "Spearheaded technical discovery and benchmarking for strategic internal initiatives, defining long-term technological roadmaps. Architected comprehensive feasibility studies and risk assessments to ensure infrastructure scalability.",
       "techStack": [
         "Technical Discovery",
         "Benchmarking",
@@ -108,9 +108,9 @@
       "company": "Buzzmonitor",
       "role": "Tech Lead & Full Stack Developer",
       "startDate": "06/2019",
-      "endDate": "05/2021",
+      "endDate": "12/2020",
       "location": "Recife, PE, Brazil",
-      "description": "Rapid Progression: Promoted from Frontend Developer to Tech Lead within 12 months due to technical excellence. Directed a development team in building a microservices-based SaaS for social data analytics using Elasticsearch for complex querying. Managed cloud infrastructure on AWS, ensuring 99.9% availability for a growing user base.",
+      "description": "Rapid Progression: Promoted from Frontend Developer to Tech Lead within 12 months. Directed a 6-person development team in building a microservices-based SaaS for social data analytics, processing over 2 Terabytes of data per week. Managed cloud infrastructure on AWS and utilized Elasticsearch for complex querying, ensuring 99.9% availability for a growing user base.",
       "techStack": [
         "Next.js",
         "React",
@@ -143,7 +143,7 @@
       "startDate": "02/2016",
       "endDate": "12/2018",
       "location": "Natal, RN, Brazil",
-      "description": "Assisted in the creation of innovative projects for professional master's students. Taught web development fundamentals to help students build and deploy their research-driven applications.",
+      "description": "Spearheaded rapid prototyping and delivery of innovative research applications for master’s students. Mentored graduate students in web development (React, Node.js), enabling the successful deployment of mission-critical projects.",
       "techStack": [
         "Web Development",
         "HTML/CSS",
@@ -154,13 +154,6 @@
     }
   ],
   "education": [
-    {
-      "institution": "Rocketseat",
-      "degree": "Postgraduate Degree - Tech Developer 360",
-      "startDate": "11/2025",
-      "endDate": "Present",
-      "location": "Brazil"
-    },
     {
       "institution": "Universidade Federal do Rio Grande do Norte (UFRN)",
       "degree": "Bachelor of Science in Computer Engineering",

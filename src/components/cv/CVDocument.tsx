@@ -2,6 +2,8 @@ import React from 'react';
 import { Page, Text, View, Document, StyleSheet, Font } from '@react-pdf/renderer';
 import type { Profile, ExperienceData, TechSkills, ContactInfo } from '../../types';
 
+import cvSkills from '../../../docs/data/cv-skills.json';
+
 // Standard fonts (Helvetica) are used by default
 // Font.register({ ... }) removed to prevent network/CORS issues causing download failures
 
@@ -40,6 +42,7 @@ const styles = StyleSheet.create({
   },
   section: {
     marginBottom: 12,
+
   },
   sectionTitle: {
     fontSize: 14,
@@ -52,7 +55,7 @@ const styles = StyleSheet.create({
     paddingBottom: 2,
   },
   experienceItem: {
-    marginBottom: 8,
+    marginBottom: 16,
   },
   row: {
     flexDirection: 'row',
@@ -125,7 +128,6 @@ const styles = StyleSheet.create({
 interface Props {
   profile: Profile;
   experiences: ExperienceData;
-  skills: TechSkills;
   contact: ContactInfo;
   lang?: string;
   ui?: any;
@@ -149,7 +151,7 @@ const formatDate = (dateStr: string, lang: string = 'en') => {
   }
 };
 
-export const CVDocument: React.FC<Props> = ({ profile, experiences, skills, contact, lang = 'en' }) => (
+export const CVDocument: React.FC<Props> = ({ profile, experiences, contact, lang = 'en', ui }) => (
   <Document author="Alek Tobias Barreira Lima" title="Alek Tobias Barreira Lima - CV">
     <Page size="A4" style={styles.page}>
 
@@ -170,36 +172,36 @@ export const CVDocument: React.FC<Props> = ({ profile, experiences, skills, cont
 
       {/* Summary */}
       <View style={styles.section}>
-        <Text style={styles.sectionTitle}>Summary</Text>
+        <Text style={styles.sectionTitle}>{ui?.cv?.document?.summary || "Summary"}</Text>
         <Text style={styles.summary}>{profile.summary}</Text>
       </View>
 
       {/* Technical Skills (Moved UP) */}
       <View style={styles.section} wrap={false}>
-        <Text style={styles.sectionTitle}>Technical Skills</Text>
-        <View style={styles.skillsContainer}>
-          <View style={styles.skillGroup}>
-            <Text style={styles.skillCategory}>Runtime</Text>
-            <Text style={styles.skillList}>{skills.runtime.map(s => s.name).join(', ')}</Text>
+        <Text style={styles.sectionTitle}>{ui?.cv?.document?.technicalSkills || "Technical Skills"}</Text>
+        <View style={[styles.skillsContainer, { justifyContent: 'space-between' }]}>
+          <View style={{ width: '48%', marginBottom: 12 }}>
+            <Text style={styles.skillCategory}>{ui?.cv?.document?.coreStack || "Core Stack & Expertise"}</Text>
+            <Text style={styles.skillList}>{cvSkills.mainStack.join(', ')}</Text>
           </View>
-          <View style={styles.skillGroup}>
-            <Text style={styles.skillCategory}>Frontend</Text>
-            <Text style={styles.skillList}>{skills.frontend.map(s => s.name).join(', ')}</Text>
+          <View style={{ width: '48%', marginBottom: 12 }}>
+            <Text style={styles.skillCategory}>{ui?.cv?.document?.professionalExperience || "Professional Experience & Familiarity"}</Text>
+            <Text style={styles.skillList}>{cvSkills.workedWith.join(', ')}</Text>
           </View>
-          <View style={styles.skillGroup}>
-            <Text style={styles.skillCategory}>Backend</Text>
-            <Text style={styles.skillList}>{skills.backend.map(s => s.name).join(', ')}</Text>
+          <View style={{ width: '48%', marginBottom: 8 }}>
+            <Text style={styles.skillCategory}>{ui?.cv?.document?.toolsPractices || "Tools & Practices"}</Text>
+            <Text style={styles.skillList}>{cvSkills.toolsAndPractices.join(', ')}</Text>
           </View>
-          <View style={styles.skillGroup}>
-            <Text style={styles.skillCategory}>DevOps & Cloud</Text>
-            <Text style={styles.skillList}>{skills.devops.map(s => s.name).join(', ')}</Text>
+          <View style={{ width: '48%', marginBottom: 8 }}>
+            <Text style={styles.skillCategory}>{ui?.cv?.document?.personalProjects || "Exploratory & Personal Projects"}</Text>
+            <Text style={styles.skillList}>{cvSkills.hobbyist.join(', ')}</Text>
           </View>
         </View>
       </View>
 
       {/* Experience (Moved DOWN) */}
       <View style={styles.section}>
-        <Text style={styles.sectionTitle}>Experience</Text>
+        <Text style={styles.sectionTitle}>{ui?.cv?.document?.experience || "Experience"}</Text>
         {experiences.work.map((exp, index) => (
           <View key={index} style={styles.experienceItem} wrap={false}>
             <View style={styles.row}>
@@ -233,7 +235,7 @@ export const CVDocument: React.FC<Props> = ({ profile, experiences, skills, cont
 
       {/* Education */}
       <View style={styles.section} wrap={false}>
-        <Text style={styles.sectionTitle}>Education</Text>
+        <Text style={styles.sectionTitle}>{ui?.cv?.document?.education || "Education"}</Text>
         {experiences.education.map((edu, index) => (
           <View key={index} style={styles.experienceItem}>
             <View style={styles.row}>

@@ -15,11 +15,11 @@ interface Props {
 
 const {
 	title,
-	description = "Full Stack Engineer & Solution Architect",
+	description = "Senior Full Stack Engineer & Solution Architect",
 	lang = "en",
 	name = "Alek Tobias",
-	role = "Full Stack Engineer",
-	summary = "Full Stack Engineer with 8+ years of experience architecting high-performance, distributed systems for global markets.",
+	role = "Senior Full Stack Engineer",
+	summary = "Senior Full Stack Engineer with 8+ years of experience architecting high-performance, distributed systems for global markets.",
 	image = "/og-image.png",
 } = Astro.props;
 ---
@@ -79,7 +79,7 @@ const {
 		/>
 	</head>
 	<body
-		class="bg-gray-50 text-gray-900 antialiased dark:bg-gray-950 dark:text-gray-100 font-sans relative overflow-x-hidden"
+		class="bg-gray-50 text-gray-900 antialiased dark:bg-gray-950 dark:text-gray-100 font-sans relative overflow-x-hidden min-h-screen"
 	>
 		<LanguagePicker client:load currentLang={lang} />
 		<slot />

@@ -33,7 +33,17 @@
   },
   "cv": {
     "download": "Download CV",
-    "filename": "alek-tobias-resume.pdf"
+    "filename": "alek-tobias-resume.pdf",
+    "document": {
+      "summary": "Summary",
+      "technicalSkills": "Technical Skills",
+      "experience": "Experience",
+      "education": "Education",
+      "coreStack": "Core Stack & Expertise",
+      "professionalExperience": "Professional Experience & Familiarity",
+      "toolsPractices": "Tools & Practices",
+      "personalProjects": "Exploratory & Personal Projects"
+    }
   },
   "journey": {
     "title": "The Story",
