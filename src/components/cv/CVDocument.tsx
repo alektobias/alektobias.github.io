@@ -212,14 +212,14 @@ export const CVDocument: React.FC<Props> = ({ profile, experiences, contact, lan
             </View>
             <Text style={styles.role}>{exp.role}</Text>
 
-            {/* Description as bullet points */}
-            {exp.description.split('.').map((sentence, i) => {
-              const cleanSentence = sentence.trim();
-              if (!cleanSentence) return null;
+            {/* Highlights as bullet points */}
+            {(exp.highlights || (exp.description ? exp.description.split('.').filter((s: string) => s.trim()) : [])).map((item: string, i: number) => {
+              const text = typeof item === 'string' ? item.trim() : '';
+              if (!text) return null;
               return (
                 <View key={i} style={{ flexDirection: 'row', marginBottom: 2 }}>
                   <Text style={{ fontSize: 10, marginRight: 4, color: '#4b5563' }}>•</Text>
-                  <Text style={{ ...styles.description, flex: 1, marginBottom: 0 }}>{cleanSentence}.</Text>
+                  <Text style={{ ...styles.description, flex: 1, marginBottom: 0 }}>{text}</Text>
                 </View>
               );
             })}

@@ -1,0 +1,18 @@
+[
+  {
+    "category": "Lenguajes",
+    "skills": ["JavaScript", "TypeScript", "HTML/CSS", "SQL", "Java", "GraphQL"]
+  },
+  {
+    "category": "Frameworks y Bibliotecas",
+    "skills": ["React", "Next.js", "Node.js", "NestJS", "Tailwind CSS", "Angular", "Svelte", "React Native", "Shadcn/UI", "LangChain"]
+  },
+  {
+    "category": "Nube y Arquitectura",
+    "skills": ["AWS", "Serverless", "Lambda", "Microservices", "REST API", "Clean Architecture", "Docker", "CI/CD"]
+  },
+  {
+    "category": "Metodologías y Herramientas",
+    "skills": ["Agile", "TDD", "MVP Builder", "SEO", "System Design", "Elasticsearch", "PostgreSQL", "Shopify", "VTEX"]
+  }
+]

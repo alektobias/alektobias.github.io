@@ -8,6 +8,7 @@ interface Props {
   location: string;
   date: string;
   description?: string;
+  highlights?: string[];
   techStack?: string[];
   color?: "emerald" | "blue";
   class?: string;
@@ -19,6 +20,7 @@ const {
   location,
   date,
   description,
+  highlights,
   techStack,
   color = "emerald",
   class: className,
@@ -81,6 +83,18 @@ const styles = colorStyles[color];
           Read more
         </button>
       </div>
+    )
+  }
+  {
+    highlights && highlights.length > 0 && (
+      <ul class="mt-2 space-y-1 list-none">
+        {highlights.map((item) => (
+          <li class="text-gray-400 text-xs sm:text-sm md:max-w-2xl leading-relaxed flex items-start gap-2">
+            <span class={`mt-1.5 w-1.5 h-1.5 rounded-full shrink-0 ${color === 'emerald' ? 'bg-emerald-500/60' : 'bg-blue-500/60'}`} />
+            <span>{item}</span>
+          </li>
+        ))}
+      </ul>
     )
   }
 

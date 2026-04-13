@@ -79,7 +79,8 @@ const formatRange = (start: string, end: string) => {
               company={job.company}
               location={job.location}
               date={formatRange(job.startDate, job.endDate)}
-              description={job.description}
+              description={job.summary}
+              highlights={job.highlights}
               techStack={job.techStack}
               color="emerald"
               class="timeline-item opacity-0 translate-y-8 transition-all duration-700 ease-out"

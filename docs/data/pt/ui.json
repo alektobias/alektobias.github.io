@@ -1,6 +1,6 @@
 {
   "nav": {
-    "home": "Início",
+    "home": "Home",
     "about": "Sobre",
     "skills": "Habilidades",
     "projects": "Projetos",
@@ -10,58 +10,58 @@
     "openMenu": "Abrir menu principal"
   },
   "hero": {
-    "greeting": "Olá, sou",
-    "scrollIndicator": "Role para saber mais",
+    "greeting": "Olá, eu sou",
+    "scrollIndicator": "Role para explorar",
     "stats": [
       {
         "metric": "+8",
         "label": "Anos",
-        "title": "Engenheiro Experiente",
+        "title": "Engenheiro Testado em Combate",
         "subtitle": "De startups a grandes empresas"
       },
       {
         "icon": "globe",
         "title": "Colaborador Internacional",
-        "subtitle": "Entregando para o mundo"
+        "subtitle": "Entregando para o mundo todo"
       },
       {
         "icon": "sparkles",
         "title": "Entrega de Alto Nível",
-        "subtitle": "Construindo para escalar globalmente"
+        "subtitle": "Construindo para durar em escala global"
       }
     ]
   },
   "cv": {
     "download": "Baixar CV",
-    "filename": "alek-tobias-resume-pt.pdf",
+    "filename": "alek-tobias-curriculo.pdf",
     "document": {
       "summary": "Resumo",
       "technicalSkills": "Habilidades Técnicas",
       "experience": "Experiência",
       "education": "Educação",
-      "coreStack": "Stack Principal e Especialidade",
-      "professionalExperience": "Experiência Profissional e Familiaridade",
-      "toolsPractices": "Ferramentas e Práticas",
-      "personalProjects": "Projetos Pessoais e Exploratórios"
+      "coreStack": "Stack Principal & Especialidades",
+      "professionalExperience": "Experiência Profissional & Familiaridade",
+      "toolsPractices": "Ferramentas & Práticas",
+      "personalProjects": "Projetos Exploratórios & Pessoais"
     }
   },
   "journey": {
     "title": "A História",
-    "subtitle": "Por trás do código"
+    "subtitle": "Por trás do Código"
   },
   "skills": {
     "title": "Minhas Habilidades",
-    "subtitle": "Refinadas pela experiência.",
-    "softSkillsTitle": "Habilidades Interpessoais",
+    "subtitle": "Refinadas através da experiência.",
+    "softSkillsTitle": "Soft Skills",
     "softSkillsHeading": "O Elemento Humano",
     "techSkillsTitle": "Arsenal Técnico",
-    "techSkillsHeading": "A Arte Técnica",
+    "techSkillsHeading": "O Ofício Técnico",
     "categories": {
       "runtime": "Runtime",
       "frontend": "Frontend",
       "frameworks&tools": "Frameworks & Ferramentas",
       "backend": "Backend",
-      "databases": "Banco de Dados",
+      "databases": "Bancos de Dados",
       "orm": "ORM",
       "ai": "IA / ML",
       "testing": "Testes",
@@ -71,17 +71,17 @@
   },
   "timeline": {
     "title": "Experiência",
-    "subtitle": "Minha jornada profissional",
+    "subtitle": "Minha trajetória profissional",
     "education": "Educação",
     "work": "Experiência Profissional"
   },
   "projects": {
     "title": "Projetos Selecionados",
-    "subtitle": "Uma vitrine de excelência arquitetural e resolução de problemas através do código.",
+    "subtitle": "Uma vitrine de excelência arquitetônica e resolução de problemas através do código.",
     "viewArchive": "Ver Arquivo de Projetos"
   },
   "blog": {
-    "title": "Últimos Artigos",
+    "title": "Últimas Publicações",
     "subtitle": "Pensamentos sobre código, arquitetura e tecnologia.",
     "readAll": "Ler todos os artigos"
   },
@@ -89,7 +89,7 @@
     "title": "Vamos Construir Algo",
     "highlight": "Incrível",
     "subtitle": "Tem um projeto em mente? Vamos transformar suas ideias em realidade.",
-    "email": "Enviar um Email",
+    "email": "Enviar E-mail",
     "linkedin": "LinkedIn",
     "github": "GitHub",
     "whatsapp": "Conversar no WhatsApp"

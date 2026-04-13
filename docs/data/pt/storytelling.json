@@ -1,22 +1,22 @@
 [
   {
-    "title": "O Elemento Humano",
+    "title": "Elemento Humano",
     "icon": "Heart",
-    "content": "Sempre acreditei que tecnologia é, antes de tudo, sobre pessoas. Minha jornada não começou fascinada por algoritmos, mas pelo desejo de ajudar. Desde ensinar iniciantes até construir ferramentas para o serviço público, o objetivo nunca foi apenas a stack tecnológica: era sobre ser útil. Codifico para resolver problemas reais. Percebi cedo que o melhor código não é apenas sobre o software em si; é sobre as barreiras que ele remove e as vidas que facilita."
+    "content": "Sempre acreditei que a tecnologia é, em sua essência, um serviço humano. Minha jornada começou não com um fascínio pela sintaxe, mas com o impulso de ser útil. Da mentoria de novatos à engenharia de infraestrutura para serviços públicos, meu foco tem sido consistentemente remover o atrito. Arquiteto sistemas para dissolver barreiras, garantindo que o software que construímos realmente facilite a vida das pessoas que ele atende."
   },
   {
-    "title": "Mantendo o Equilíbrio",
+    "title": "Quietude Estratégica",
     "icon": "Snowflake",
-    "content": "Ambientes de alta performance podem ser caóticos. Aprendi que a melhor maneira de lidar com a pressão não é acelerar, mas focar. Usando meu treino em artes marciais, mantenho a calma quando outros entram em pânico. Não se trata de reagir impulsivamente, mas de manter a cabeça fria para encontrar a solução mais inteligente."
+    "content": "No ruído da engenharia de ritmo acelerado, aprendi que a resposta mais eficaz à pressão não é a velocidade, mas a clareza. Tomando emprestada a disciplina das artes marciais, mantenho uma quietude estratégica quando os cenários se tornam caóticos. Trata-se de desacelerar para enxergar os pontos de alavancagem, encontrando o caminho mais inteligente a seguir, em vez de apenas reagir ao fogo."
   },
   {
-    "title": "A Mecânica do Porquê",
+    "title": "Artesanato Inquieto",
     "icon": "Puzzle",
-    "content": "Sou movido por uma curiosidade incansável sobre como as coisas funcionam. Atuar no mercado global me deu a chance de enfrentar desafios em escala massiva — otimizar desempenho para milhões de usuários ou arquitetar sistemas blindados. Mas, para mim, a emoção não está apenas na vitória técnica; está na arte da construção. É a satisfação de pegar um problema complexo e refiná-lo até que funcione perfeitamente."
+    "content": "Tenho uma curiosidade inquieta pelo 'porquê' por trás de sistemas complexos. Operar em escala global me deu a tela para resolver quebra-cabeças em volumes massivos — otimizando a performance para milhões e arquitetando infraestruturas à prova de balas. Para mim, a verdadeira emoção reside no artesanato: pegar um problema bagunçado e de alto risco e refiná-lo até que ele funcione com eficiência impecável."
   },
   {
-    "title": "Fundações Primeiro",
+    "title": "Arquitetura para a Posteridade",
     "icon": "Castle",
-    "content": "Ultimamente, meu foco se voltou naturalmente para o lado estrutural do software: arquitetar sistemas que não são apenas funcionais, mas duradouros. Não é apenas sobre entregar uma feature; é garantir que o sistema suporte as próximas cem. Quero construir arquiteturas que durem, criando um ambiente onde a equipe possa se mover rápido com segurança. É sobre deixar a base de código melhor do que encontrei, sempre."
+    "content": "O software deve ser construído para durar. Meu foco gravitou naturalmente para a integridade estrutural do código: arquitetar sistemas que não apenas sejam entregues, mas que escalem. Construo para o futuro, criando ambientes onde as equipes podem se mover com velocidade sem sacrificar a estabilidade. Meu objetivo é deixar cada base de código mais robusta, mais legível e mais preparada para os próximos milhões de usuários."
   }
 ]

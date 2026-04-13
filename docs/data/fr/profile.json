@@ -7,6 +7,30 @@
     "Penseur Critique"
   ],
   "location": "Natal, RN, Brésil",
+  "contact": {
+    "email": "hello@alektobias.com",
+    "linkedin": "https://linkedin.com/in/alektobias",
+    "github": "https://github.com/alektobias",
+    "portfolio": "https://alektobias.github.io"
+  },
+  "languages": [
+    {
+      "language": "Portugais",
+      "level": "Langue maternelle"
+    },
+    {
+      "language": "Anglais",
+      "level": "Courant"
+    },
+    {
+      "language": "Espagnol",
+      "level": "Intermédiaire"
+    },
+    {
+      "language": "Français",
+      "level": "Basique"
+    }
+  ],
   "summary": "Ingénieur Full Stack Senior avec plus de 8 ans d'expérience et une forte mentalité d'appropriation du produit, ayant fait ses preuves dans la livraison de solutions à fort impact pour des clients mondiaux de niveau 1 et de grandes entreprises. Connu pour combler le fossé entre l'exécution technique et les objectifs commerciaux, je m'obstine à faire fonctionner les choses et me concentre sur l'écriture d'un code propre et maintenable tout en encadrant mes pairs et en améliorant la productivité de l'équipe. Expert de l'écosystème JavaScript (Next.js, Node.js, Bun, React Native) et de l'Infrastructure as Code (Terraform, AWS).",
   "interests": [
     {

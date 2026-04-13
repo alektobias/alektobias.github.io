@@ -1,22 +1,22 @@
 [
   {
-    "title": "El Elemento Humano",
+    "title": "Elemento Humano",
     "icon": "Heart",
-    "content": "Siempre he creído que la tecnología es, en su esencia, sobre las personas. Mi viaje no comenzó con una fascinación por los algoritmos, sino con el deseo de ayudar. Desde enseñar a recién llegados hasta construir herramientas para el servicio público, el objetivo nunca fue solo la tecnología, sino ser útil. Escribo código para resolver problemas humanos. Me di cuenta temprano de que el mejor código no se trata solo del software en sí; se trata de las barreras que elimina y las vidas que facilita."
+    "content": "Siempre he creído que la tecnología es, en su esencia, un servicio humano. Mi viaje comenzó no con una fascinación por la sintaxis, sino con el impulso de ser útil. Desde la mentoría de recién llegados hasta la ingeniería de infraestructura para servicios públicos, mi enfoque ha sido consistentemente eliminar la fricción. Diseño sistemas para disolver barreras, asegurando que el software que construimos realmente facilite la vida de las personas a las que sirve."
   },
   {
-    "title": "Mantenerse Firme",
+    "title": "Quietud Estratégica",
     "icon": "Snowflake",
-    "content": "Los entornos acelerados se vuelven ruidosos. He aprendido que la mejor manera de manejar la presión no es acelerar, sino reducir la velocidad. Tomando prestado de mi entrenamiento en artes marciales, me mantengo firme cuando otros entran en pánico. No se trata de combatir el fuego con más fuego; se trata de mantener la cabeza fría para encontrar la salida más inteligente."
+    "content": "En el ruido de la ingeniería de ritmo rápido, he aprendido que la respuesta más eficaz a la presión no es la velocidad, sino la claridad. Tomando prestada la disciplina de las artes marciales, mantengo una quietud estratégica cuando los escenarios se vuelven caóticos. Se trata de desacelerar para ver los puntos de apalancamiento, encontrando el camino más inteligente a seguir en lugar de simplemente reaccionar al fuego."
   },
   {
-    "title": "La Mecánica del Porqué",
+    "title": "Artesanía Inquieta",
     "icon": "Puzzle",
-    "content": "Tengo una curiosidad inquieta por cómo funcionan las cosas. Moverme al ámbito global me dio la oportunidad de enfrentar rompecabezas a gran escala: optimizar el rendimiento para millones de usuarios o arquitecturar sistemas que deben ser a prueba de balas. Pero para mí, la emoción no está solo en la victoria técnica; está en la artesanía. Es la satisfacción de tomar un problema complejo y desordenado y refinarlo hasta que funcione a la perfección."
+    "content": "Tengo una curiosidad inquieta por el 'porqué' detrás de los sistemas complejos. Operar a escala global me ha dado el lienzo para resolver rompecabezas a volúmenes masivos: optimizando el rendimiento para millones y diseñando infraestructuras a prueba de balas. Para mí, la verdadera emoción reside en la artesanía: tomar un problema desordenado y de alto riesgo y refinarlo hasta que funcione con una eficiencia impecable."
   },
   {
-    "title": "Cimientos Primero",
+    "title": "Arquitectura para la Posteridad",
     "icon": "Castle",
-    "content": "Últimamente, mi enfoque ha gravitado naturalmente hacia el lado estructural del software: arquitecturar sistemas que no solo sean funcionales, sino duraderos. No se trata solo de lanzar una función; es asegurar que el sistema pueda manejar las próximas cien. Quiero construir una arquitectura que perdure, creando un espacio donde el equipo se mueva rápido sin romper cosas. Se trata de dejar el código mejor de lo que lo encontré, cada vez."
+    "content": "El software debe construirse para durar. Mi enfoque ha gravitado naturalmente hacia la integridad estructural del código: diseñar sistemas que no solo se entreguen, sino que escalen. Construyo para el futuro, creando entornos donde los equipos puedan moverse con velocidad sin sacrificar la estabilidad. Mi objetivo es dejar cada base de código más robusta, más legible y más preparada para los próximos millones de usuarios."
   }
 ]

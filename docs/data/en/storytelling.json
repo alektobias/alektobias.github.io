@@ -2,21 +2,21 @@
   {
     "title": "Human Element",
     "icon": "Heart",
-    "content": "I've always believed that technology is, at its core, about people. My journey didn't start with a fascination for algorithms, but with a desire to help. From teaching newcomers to building tools for public service, the goal was never just about the tech stack: it was about being useful. I write code to solve human problems. I realized early on that the best code isn't just about the software itself; it's about the barriers it removes and the lives it makes easier."
+    "content": "I've always believed that technology is, at its core, a human service. My journey began not with a fascination for syntax, but with a drive to be useful. From mentoring newcomers to engineering public-service infrastructure, my focus has consistently been on removing friction. I architect systems to dissolve barriers, ensuring that the software we build actually makes life easier for the people it serves."
   },
   {
-    "title": "Staying Grounded",
+    "title": "Strategic Stillness",
     "icon": "Snowflake",
-    "content": "Fast-paced environments get noisy. I’ve learned that the best way to handle pressure isn't to speed up, but to slow down. Borrowing from my martial arts training, I stay grounded when others panic. It’s not about fighting the fire with more fire; it’s about keeping a cool head to find the smartest way out."
+    "content": "In the noise of fast-paced engineering, I’ve learned that the most effective response to pressure isn't speed, but clarity. Borrowing from my martial arts discipline, I maintain strategic stillness when scenarios become chaotic. It is about slowing down to see the leverage points, finding the smartest path forward rather than just reacting to the fire."
   },
   {
-    "title": "Mechanics of Why",
+    "title": "Restless Craftsmanship",
     "icon": "Puzzle",
-    "content": "I have a restless curiosity for how things work. Moving into the global arena gave me the chance to tackle puzzles at a massive scale: optimizing performance for millions of users or architecting systems that need to be bulletproof. But for me, the thrill isn't just in the technical win; it’s in the craftsmanship. It’s the satisfaction of taking a complex, messy problem and refining it until it hums."
+    "content": "I have a restless curiosity for the 'why' behind complex systems. Operating on a global scale has given me the canvas to solve puzzles at massive volumes—optimizing performance for millions and architecting bulletproof infrastructures. For me, the true thrill lies in the craftsmanship: taking a messy, high-stakes problem and refining it until it hums with efficiency."
   },
   {
-    "title": "Foundations First",
+    "title": "Architecture for Posterity",
     "icon": "Castle",
-    "content": "Lately, my focus has naturally gravitated toward the structural side of software: architecting systems that are not just functional, but enduring. It’s not just about shipping a feature; it’s ensuring the system can handle the next hundred. I want to build architecture that lasts, creating a space where the team moves fast without breaking things. It’s about leaving the codebase better than I found it, every time."
+    "content": "Software should be built to endure. My focus has naturally gravitated toward the structural integrity of code: architecting systems that don't just ship, but scale. I build for the future, creating environments where teams can move with velocity without sacrificing stability. My goal is to leave every codebase more robust, more readable, and more prepared for the next million users."
   }
 ]

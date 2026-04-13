@@ -1,7 +1,7 @@
 {
   "nav": {
     "home": "Inicio",
-    "about": "Sobre Mí",
+    "about": "Sobre mí",
     "skills": "Habilidades",
     "projects": "Proyectos",
     "experience": "Experiencia",
@@ -11,29 +11,29 @@
   },
   "hero": {
     "greeting": "Hola, soy",
-    "scrollIndicator": "Desplázate para explorar",
+    "scrollIndicator": "Desliza para explorar",
     "stats": [
       {
         "metric": "+8",
         "label": "Años",
-        "title": "Ingeniero Experimentado",
-        "subtitle": "De startups a grandes empresas"
+        "title": "Ingeniero Probado en Batalla",
+        "subtitle": "Desde startups hasta empresas"
       },
       {
         "icon": "globe",
         "title": "Colaborador Internacional",
-        "subtitle": "Entregando a nivel mundial"
+        "subtitle": "Entregando en todo el mundo"
       },
       {
         "icon": "sparkles",
-        "title": "Entrega de Alta Calidad",
-        "subtitle": "Construyendo para escalar globalmente"
+        "title": "Entrega de Alto Nivel",
+        "subtitle": "Construyendo para durar a escala global"
       }
     ]
   },
   "cv": {
     "download": "Descargar CV",
-    "filename": "alek-tobias-resume-es.pdf",
+    "filename": "alek-tobias-curriculum.pdf",
     "document": {
       "summary": "Resumen",
       "technicalSkills": "Habilidades Técnicas",
@@ -42,20 +42,20 @@
       "coreStack": "Stack Principal y Experiencia",
       "professionalExperience": "Experiencia Profesional y Familiaridad",
       "toolsPractices": "Herramientas y Prácticas",
-      "personalProjects": "Proyectos Personales y Exploratorios"
+      "personalProjects": "Proyectos Exploratorios y Personales"
     }
   },
   "journey": {
     "title": "La Historia",
-    "subtitle": "Detrás del código"
+    "subtitle": "Detrás del Código"
   },
   "skills": {
     "title": "Mis Habilidades",
-    "subtitle": "Refinadas con experiencia.",
+    "subtitle": "Refinadas a través de la experiencia.",
     "softSkillsTitle": "Habilidades Blandas",
     "softSkillsHeading": "El Elemento Humano",
     "techSkillsTitle": "Arsenal Técnico",
-    "techSkillsHeading": "El Arte Técnico",
+    "techSkillsHeading": "El Oficio Técnico",
     "categories": {
       "runtime": "Runtime",
       "frontend": "Frontend",
@@ -81,7 +81,7 @@
     "viewArchive": "Ver Archivo de Proyectos"
   },
   "blog": {
-    "title": "Últimos Artículos",
+    "title": "Últimas Publicaciones",
     "subtitle": "Pensamientos sobre código, arquitectura y tecnología.",
     "readAll": "Leer todos los artículos"
   },
@@ -89,10 +89,10 @@
     "title": "Construyamos Algo",
     "highlight": "Increíble",
     "subtitle": "¿Tienes un proyecto en mente? Hagamos realidad tus ideas.",
-    "email": "Enviar un Correo",
+    "email": "Enviar Correo",
     "linkedin": "LinkedIn",
     "github": "GitHub",
-    "whatsapp": "Chatear en WhatsApp"
+    "whatsapp": "Chatear por WhatsApp"
   },
   "footer": {
     "rights": "Todos los derechos reservados.",

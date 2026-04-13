@@ -2,11 +2,15 @@
   "work": [
     {
       "company": "AlertD",
-      "role": "Desenvolvedor Full Stack (Contrato)",
+      "role": "Engenheiro Full Stack (Contrato)",
       "startDate": "09/2025",
       "endDate": "12/2025",
-      "location": "São Francisco, CA, EUA",
-      "description": "Arquitetou a modernização de UI/UX para uma startup de IA, implementando um sistema de componentes robusto do zero com base em um design system complexo. Reformulou toda a interface da plataforma para garantir uma experiência de usuário altamente profissional e visualmente impactante, impulsionando a retenção de usuários e a prontidão do produto.",
+      "location": "San Francisco, CA, EUA",
+      "summary": "Arquitetei o ecossistema de UI e a camada de integração de IA para uma startup em modo stealth de alto risco, impulsionando agressivamente a validação inicial do produto no mercado e MVP.",
+      "highlights": [
+        "Projetei um sistema de design robusto e orientado a componentes do zero, reduzindo os ciclos de desenvolvimento de UI em 50% e garantindo a rápida prontidão do software para o mercado.",
+        "Integrei capacidades de inteligência artificial utilizando LangChain e LLMs para entregar uma experiência de usuário premium que assegurou a confiança crítica de investidores e aumentou a retenção precoce de usuários no app."
+      ],
       "techStack": [
         "React",
         "TypeScript",
@@ -15,16 +19,23 @@
         "LangChain",
         "Tailwind CSS",
         "Shadcn/UI",
-        "Claude Code"
+        "MVP Builder",
+        "LLM Integrations",
+        "Agile"
       ]
     },
     {
       "company": "TOTVS",
-      "role": "Desenvolvedor Full Stack Sênior",
+      "role": "Engenheiro Full Stack Sênior",
       "startDate": "11/2023",
       "endDate": "06/2025",
       "location": "São Paulo, SP, Brasil",
-      "description": "Liderou a engenharia de ferramentas estratégicas de recuperação de receita, identificando centenas de milhões de reais em receita não explorada ao detectar vazamentos de uso em um ecossistema enterprise massivo. Arquitetou uma plataforma de vendas de alta performance otimizada para cenários de up-selling e produtividade entre equipes.",
+      "summary": "Liderei as iniciativas de engenharia de software dentro da principal equipe de recuperação de receita em um vasto ecossistema empresarial focado em sistemas B2B.",
+      "highlights": [
+        "Comandei a engenharia por trás de ferramentas de missão crítica para recuperação de receita corporativa, descobrindo e neutralizando vazamentos em um complexo ecossistema legado, impactando diretamente milhões de reais.",
+        "Projetei e entreguei aplicações web internas e relatórios operacionais otimizados para produtividade através de diferentes departamentos, fechando o abismo entre o alinhamento de vendas estratégicas e a execução de engenharia.",
+        "Modernizei as aplicações e sistemas legados complexos introduzindo as restritas boas práticas de TDD e Clean Architecture baseadas com REST APIs garantindo uma estabilidade excepcional."
+      ],
       "techStack": [
         "Next.js",
         "Angular",
@@ -36,16 +47,24 @@
         "Agile",
         "CI/CD",
         "TDD",
-        "Clean Architecture"
+        "Clean Architecture",
+        "Legacy Modernization",
+        "REST API",
+        "Microservices"
       ]
     },
     {
       "company": "WHIMworks Inc.",
-      "role": "Desenvolvedor Full Stack",
+      "role": "Desenvolvedor Full Stack Sênior",
       "startDate": "01/2022",
       "endDate": "07/2023",
       "location": "Montreal, QC, Canadá",
-      "description": "Orquestrou experiências digitais premium e protótipos de hardware-software IoT para marcas globais como Spotify, Sonos e Samsung. Desenvolveu sincronização de estado em tempo real para dispositivos IoT físicos e liderou migrações de legado para React e Svelte para melhorar o Core Web Vitals.",
+      "summary": "Orquestrei experiências digitais altamente ricas e plataformas base com hardwares integrados com interfaces de IoT para contas gigantes globais incluindo Spotify, Sonos e Samsung.",
+      "highlights": [
+        "Desenvolvi a infraestrutura focada na sincronização contínua de estados e interfaces em tempo real para dispositivos de internet das coisas (IoT) via conexões bidirecionais de WebSockets, adquirindo uma incrível taxa de atraso sub-milissegundo para os visitantes da instalação.",
+        "Abracei grandes migrações de missão crítica abandonando antigas bases de código em favor de ecossistemas atuais baseados integralmente em React e Svelte, favorecendo drasticamente as pontuações e métricas de SEO dos projetos.",
+        "Estruturei UIs com dezenas de animações performáticas dinâmicas para robustas campanhas do marketing B2B diminuindo muito o TTM (Time-to-Market)."
+      ],
       "techStack": [
         "React",
         "Svelte",
@@ -53,16 +72,24 @@
         "TypeScript",
         "SEO",
         "Motion",
-        "Shopify"
+        "Shopify",
+        "WebSockets",
+        "Real-time Systems",
+        "Legacy Migration"
       ]
     },
     {
       "company": "Impulso @ Mosaico",
-      "role": "Desenvolvedor Full Stack (Contrato)",
+      "role": "Engenheiro Full Stack (Contrato)",
       "startDate": "06/2021",
       "endDate": "12/2021",
       "location": "Rio de Janeiro, RJ, Brasil",
-      "description": "Arquitetou um design system e biblioteca de UI escalável baseado em tokens, permitindo a criação rápida e branding consistente de múltiplos frontends. Implementou uma arquitetura de micro-frontends para otimizar o fluxo de novas funcionalidades na maior plataforma de comparação de preços do Brasil, reduzindo drasticamente custos de infraestrutura e acelerando o tempo de lançamento.",
+      "summary": "Desenhei a arquitetura transversal de UI e a ampla infraestrutura de front-ends para plataformas centrais do maior ecossistema de comparação nacional.",
+      "highlights": [
+        "Arquitetei a ampla criação e uso compartilhado de uma Design System com suporte total a Tokens de marca impulsionando o deploy em variadas marcas e visuais na mesma engine e agilizando as entregas por uma infraestrutura centralizadora.",
+        "Acelerei os times sob a forte gestão de estratégias de arquitetura baseadas em micro-frontends permitindo equipes autônomas alcançarem métricas absurdas com um aumento visível na de 40% em ciclos iterativos em metodologias Agile.",
+        "Construí com a equipe integrações de backend ultra leves consumindo Serverless no ambiente Amazon Web Services combinadas a Headless CMS's como Strapi a prova de renderização orgânica."
+      ],
       "techStack": [
         "React",
         "Tailwind CSS",
@@ -71,7 +98,10 @@
         "SEO",
         "Strapi",
         "TypeScript",
-        "CI/CD"
+        "CI/CD",
+        "Micro-frontends",
+        "System Architecture",
+        "Agile"
       ]
     },
     {
@@ -80,14 +110,20 @@
       "startDate": "01/2021",
       "endDate": "05/2021",
       "location": "São Paulo, SP, Brasil",
-      "description": "Entregou soluções complexas de e-commerce multilíngue (VTEX/Shopify) para mercados internacionais. Construiu integrações customizadas serverless utilizando TypeScript e AWS para desenvolver lojas únicas, estendendo as capacidades das plataformas para refletir perfeitamente a identidade de cada marca e requisitos de negócio específicos.",
+      "summary": "Estive à frente da robusta operação provendo os motores e-commerce complexos atuantes sobre pesados picos multiregionais focados nos nichos varejistas internacionais com grandes tráfegos digitais.",
+      "highlights": [
+        "Mapeei o alinhamento da identidade mercadológica das marcas em integrações muito técnicas de lojas Shopify e ambientes serverless VTEX IO de vitrines focadas para a conversão alta.",
+        "Integrei e construí ecossistemas conectando as operações comerciais das empresas usando recursos serveless nativos da Amazon para resolver complexas necessidades operacionais expandindo REST APIs de forma totalmente isoladas do SaaS monolítico."
+      ],
       "techStack": [
         "VTEX IO",
         "Shopify",
         "React",
         "Node.js",
         "AWS",
-        "TypeScript"
+        "TypeScript",
+        "REST API",
+        "Serverless"
       ]
     },
     {
@@ -96,12 +132,18 @@
       "startDate": "12/2020",
       "endDate": "02/2021",
       "location": "São Paulo, SP, Brasil",
-      "description": "Liderou a descoberta técnica e benchmarking para iniciativas internas estratégicas, definindo roadmaps tecnológicos de longo prazo. Arquitetou estudos de viabilidade abrangentes e avaliações de risco para garantir a escalabilidade da infraestrutura.",
+      "summary": "Apoiei diretores estratégicos sobre o discovery e mapeamento para viabilidade tecnológica das startups internas em ambiente B2B complexo corporativo e legado.",
+      "highlights": [
+        "Determinei grandes guias e roadmaps documentados (Feasibility studies) construindo clareza para migrações robustas de grandes infraestruturas legadas da companhia rumo as integrações de ponta.",
+        "Mentorizei as equipes a alcançarem e tomarem rumos definindo arquiteturas a longo prazo para o constante alinhamento em metas e escalabilidade operacional em alavancar projetos vitais."
+      ],
       "techStack": [
-        "Descoberta Técnica",
+        "Technical Discovery",
         "Benchmarking",
-        "Arquitetura",
-        "Estratégia"
+        "Architecture",
+        "Strategy",
+        "Technical Leadership",
+        "Legacy Assessment"
       ]
     },
     {
@@ -110,7 +152,12 @@
       "startDate": "06/2019",
       "endDate": "12/2020",
       "location": "Recife, PE, Brasil",
-      "description": "Progressão Rápida: Promovido de Desenvolvedor Frontend a Tech Lead em 12 meses. Liderou uma equipe de 6 desenvolvedores na construção de um SaaS baseado em microsserviços para análise de dados sociais, processando mais de 2 Terabytes de dados por semana. Gerenciou a infraestrutura em nuvem na AWS e utilizou Elasticsearch para consultas complexas, garantindo escalabilidade de 99.9% para uma base de usuários em crescimento.",
+      "summary": "Coordenei a entrega ponta a ponta do gigantesco SaaS com intensividade máxima focada processamentos sociais focados em big data.",
+      "highlights": [
+        "Fui elevado cargo gerencial sobre metodologias ágeis em dentro do meu décimo segundo mês guiando cross-functional sprints em mais de meia dúzia de dev com intuito de entregar e evoluir o monolito legado do SaaS.",
+        "Escalei em tempo real o núcleo reescrito usando recursos Microservices e Node.js em extensas REST APIs preparadas para engolir sobre impressionantes métricas diárias, processando robustamente mais de 2TB do escopo total da plataforma nas semanas de ápice.",
+        "Calibrei clusters analíticos (Elasticsearch) nas instâncias clouds da AWS de modo orgânico estabilizando 99.9% de resiliência e Uptime do sistema complexo global de assinantes massivos."
+      ],
       "techStack": [
         "Next.js",
         "React",
@@ -119,22 +166,30 @@
         "Elasticsearch",
         "AWS",
         "Microservices",
-        "Node.js"
+        "Node.js",
+        "REST API",
+        "Agile",
+        "SaaS Architecture"
       ]
     },
     {
       "company": "TJRN - Tribunal de Justiça do Rio Grande do Norte",
-      "role": "Desenvolvedor de Software Estagiário",
+      "role": "Estagiário de Desenvolvimento de Software",
       "startDate": "08/2017",
       "endDate": "12/2018",
       "location": "Natal, RN, Brasil",
-      "description": "Desenvolveu e manteve ferramentas internas para o sistema judiciário, melhorando a eficiência e a acessibilidade para juízes e funcionários.",
+      "summary": "Contribui para a modernização das integrações críticas e antigas baseadas em rotinas judiciais restritas, modernizando e garantindo o funcionamento limpo de recursos massivos diários dos fóruns estaduais.",
+      "highlights": [
+        "Reestruturei a manutenção pesada via grandes transições mantendo backends de Java sob transações em SQL, aplicando também novas frentes responsivas em modernas ferramentas em React Native para facilitar acesso ao publico jurídico.",
+        "Eliminei horas infinitas e de grande valor repedidas mensalmente com digitalização tecnológica assertiva do software legado que acelerou brutalmente o retorno analítico na gerência local."
+      ],
       "techStack": [
         "Java",
         "React Native",
         "Angular",
-        "Ferramentas Internas",
-        "SQL"
+        "Internal Tools",
+        "SQL",
+        "Legacy Systems"
       ]
     },
     {
@@ -143,13 +198,19 @@
       "startDate": "02/2016",
       "endDate": "12/2018",
       "location": "Natal, RN, Brasil",
-      "description": "Liderou a prototipagem rápida e entrega de aplicações de pesquisa inovadoras para estudantes de mestrado profissional. Mentoria de estudantes de pós-graduação em desenvolvimento web (React, Node.js), permitindo a implantação bem-sucedida de projetos de missão crítica.",
+      "summary": "Criamos elos entre os ecossistemas acadêmicos com o viés estritamente industrial entregando e consolidando plataformas ricas em web dev e aplicações interativas ricas.",
+      "highlights": [
+        "Impactei prazos dos longos papers acadêmicos fornecendo aceleradíssimos mockups e completas MVPs gerando softwares com usabilidade e lógica central estruturadas via ecossistemas dinâmicos React.",
+        "Fomentei a absorção acadêmica para integrações de frameworks atuais nos orientando alunos novos para que eles não precisem mais reinventar a roda ao aplicar pesquisas acadêmicas reais."
+      ],
       "techStack": [
-        "Desenvolvimento Web",
+        "Web Development",
         "HTML/CSS",
         "JavaScript",
         "React",
-        "Node.js"
+        "Node.js",
+        "MVPs",
+        "Academic Research"
       ]
     }
   ],

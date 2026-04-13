@@ -1,42 +1,66 @@
 {
   "name": "Alek Tobias",
   "title": [
-    "Engenheiro Full Stack Sênior",
+    "Especialista em Engenharia Full Stack",
     "Arquiteto de Soluções",
-    "Especialista em Limpeza de IA",
-    "Pensador Crítico"
+    "Especialista em Codificação com IA",
+    "Pensador Orientado ao Produto"
   ],
   "location": "Natal, RN, Brasil",
-  "summary": "Engenheiro Full Stack Sênior com mais de 8 anos de experiência e uma forte mentalidade de dono do produto (product-ownership), com histórico comprovado na entrega de soluções de alto impacto para clientes Tier-1 globais e grandes empresas. Conhecido por conectar a execução técnica aos objetivos de negócios, sou obstinado em fazer as coisas funcionarem e focado em escrever código limpo e sustentável ao mesmo tempo em que oriento colegas e melhoro a produtividade da equipe. Especialista no ecossistema JavaScript (Next.js, Node.js, Bun, React Native) e Infraestrutura como Código (Terraform, AWS).",
+  "contact": {
+    "email": "hello@alektobias.com",
+    "linkedin": "https://linkedin.com/in/alektobias",
+    "github": "https://github.com/alektobias",
+    "portfolio": "https://alektobias.github.io"
+  },
+  "languages": [
+    {
+      "language": "Português",
+      "level": "Nativo"
+    },
+    {
+      "language": "Inglês",
+      "level": "Fluente"
+    },
+    {
+      "language": "Espanhol",
+      "level": "Intermediário"
+    },
+    {
+      "language": "Francês",
+      "level": "Básico"
+    }
+  ],
+  "summary": "Especialista em Engenharia Full Stack e Arquiteto de Soluções com mais de 8 anos de experiência na entrega de sistemas críticos para clientes globais Tier-1. Sou especialista em conectar a complexidade técnica ao crescimento do negócio, impulsionado por uma mentalidade implacável de dono do produto. Sou obstinado em fazer as coisas funcionarem, escrevendo código excepcionalmente limpo e servindo como um multiplicador de força para minha equipe através de mentoria e liderança arquitetônica. Profundamente especializado no ecossistema JavaScript (Next.js, Node.js, Bun) e Infraestrutura em Nuvem (AWS, Terraform).",
   "interests": [
     {
-      "name": "Artes Marciais e Resiliência Mental",
+      "name": "Artes Marciais e Fortaleza Estratégica",
       "icon": "Gi/Fist",
-      "description": "Minha paixão por MMA e Jiu-Jitsu Brasileiro (BJJ) vai além do condicionamento físico. É um exercício de fortaleza mental: aprender a manter a calma, ser analítico e estratégico mesmo sob imensa pressão. Ensina que técnica e alavancagem muitas vezes triunfam sobre a força bruta.",
+      "description": "Minha dedicação às Artes Marciais Mistas (MMA) e ao Jiu-Jitsu Brasileiro (BJJ) é um testemunho de fortitude mental. É um laboratório para manter o pensamento analítico e estratégico sob pressão, provando que técnica e alavancagem triunfam consistentemente sobre a força bruta.",
       "items": [
         "Jiu-Jitsu Brasileiro: O xadrez da mecânica corporal.",
         "MMA: Adaptando-se a cenários dinâmicos e caóticos.",
-        "Resiliência: Sentir-se confortável com o desconfortável."
+        "Resiliência: Prosperando no desconfortável."
       ]
     },
     {
-      "name": "Natureza, Culinária e Comunidade",
+      "name": "Sustentabilidade, Culinária e Comunidade",
       "icon": "Leaf/Bowl",
-      "description": "Acredito em um estilo de vida fundamentado que nos conecta ao nosso ambiente e uns aos outros. Começa com sustentabilidade: observar animais, jardinagem e cultivar plantas; e flui para a cozinha. Cozinhar é minha maneira de transformar os dons da natureza em momentos compartilhados de alegria com amigos e família.",
+      "description": "Adoto um estilo de vida fundamentado que reconecta a complexidade técnica com o equilíbrio ambiental. Da observação de ecossistemas ao ato criativo de cozinhar, encontro alegria em transformar elementos brutos em momentos compartilhados de conexão.",
       "items": [
-        "Jardinagem & Sustentabilidade: Entendendo ecossistemas e paciência.",
-        "Culinária: O ato criativo de nutrir os outros.",
-        "Comunidade: Fortalecendo laços através de refeições compartilhadas."
+        "Jardinagem & Ecossistemas: Paciência e compreensão sistêmica.",
+        "Artes Culinárias: O ato criativo de nutrir a comunidade.",
+        "Equilíbrio: Mantendo-se conectado ao meio ambiente."
       ]
     },
     {
-      "name": "Quebra-cabeças Estratégicos & Desafios Cognitivos",
+      "name": "Quebra-cabeças Complexos e Desafios Cognitivos",
       "icon": "Cube/Chess",
-      "description": "Tenho uma curiosidade inata por 'coisas difíceis' e sistemas complexos. Seja resolvendo um cubo mágico, mergulhando em um jogo de tabuleiro estratégico ou desvendando um mistério em um jogo de investigação, eu gosto do desafio. Não é apenas sobre vencer; é sobre o processo investigativo e a satisfação de superar obstáculos.",
+      "description": "Eu prospero em desafios cognitivos e na 'mecânica do porquê'. Seja decifrando sistemas complexos, resolvendo quebra-cabeças espaciais ou desvendando mistérios estratégicos, sou movido pelo processo investigativo e pela satisfação de superar obstáculos arquitetônicos.",
       "items": [
-        "Quebra-cabeças Mecânicos: Cubos mágicos e lógica espacial.",
-        "Estratégia de Tabuleiro: Jogos de tabuleiro que exigem profunda previsão e investigação.",
-        "Curiosidade: O impulso para entender como as coisas funcionam e como consertá-las."
+        "Lógica Espacial: Quebra-cabeças mecânicos e cubos mágicos.",
+        "Previsão Profunda: Jogos de estratégia que exigem pensamento investigativo.",
+        "Curiosidade: Um impulso vitalício para entender e consertar sistemas complexos."
       ]
     }
   ]
