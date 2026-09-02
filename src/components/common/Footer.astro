@@ -5,7 +5,6 @@ import Contact from "../home/Contact.astro";
 import contact from "../../../docs/data/contact.json";
 import skills from "../../../docs/data/techskills.json"; // Direct import like HeroSection
 import { loadUiData } from "../../utils/loadData";
-import { AuroraText } from "../ui/aurora-text";
 
 interface Props {
   lang?: string;
@@ -37,39 +36,17 @@ const navLinks = [
 ];
 ---
 
-<footer
-  class="bg-black border-t border-white/10 py-12 relative overflow-hidden"
->
-  {/* Background glow similar to other sections but subtle */}
-  <div
-    class="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[200px] bg-emerald-900/10 blur-[80px] rounded-full pointer-events-none"
-  >
-  </div>
-
+<footer class="bg-background border-t border-white/10 py-16 relative overflow-hidden">
   <div class="container relative z-10">
     <div
       class="flex flex-col md:flex-row justify-between items-start md:items-center gap-8"
     >
       {/* Brand Section */}
       <div class="space-y-2">
-        <h2 class="text-3xl font-bold tracking-tight">
-          <AuroraText
-            className="text-3xl font-bold tracking-tight inline-block"
-            colors={["#34d399", "#10b981", "#064e3b"]}
-            client:only="react"
-          >
-            {profile.name}
-          </AuroraText>
+        <h2 class="text-3xl font-bold tracking-tight text-white">
+          {profile.name}
         </h2>
-        <p
-          class="text-gray-400 font-medium text-sm tracking-wide"
-          style={{
-            backgroundImage: "linear-gradient(to bottom right, #ccc 70%, #333)", // emerald-300 to emerald-900
-            backgroundClip: "text",
-            WebkitBackgroundClip: "text",
-            color: "transparent",
-          }}
-        >
+        <p class="text-gradient-emerald font-semibold text-sm tracking-wide">
           {mainTitle}
         </p>
       </div>

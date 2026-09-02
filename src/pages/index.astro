@@ -1,15 +1,11 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Navbar from "../components/common/Navbar.astro";
 import Footer from "../components/common/Footer.astro";
 import HeroSection from "../components/home/HeroSection.astro";
 import JourneySection from "../components/home/JourneySection.astro";
-import BlogShowcase from "../components/home/BlogShowcase.astro";
 import SkillSets from "../components/home/SkillSets.astro";
-import ProjectsShowcase from "../components/home/ProjectsShowcase.astro";
 import TimelineSection from "../components/home/TimelineSection.astro";
 import ContactSection from "../components/home/ContactSection.astro";
-import { LanguagePicker } from "../components/common/LanguagePicker";
 ---
 
 <Layout
@@ -17,12 +13,10 @@ import { LanguagePicker } from "../components/common/LanguagePicker";
 	description="Senior Full Stack Engineer with 8+ years of experience. Specialist in the JavaScript ecosystem (Node, Bun, React) and AWS infrastructure."
 	summary="Full Stack Engineer building and modernizing web systems, from startups to enterprise environments like TOTVS. Core stack: TypeScript, React, Next.js, Node.js, AWS."
 >
-	<main class="bg-black relative">
+	<main class="bg-background relative">
 		<HeroSection lang="en" />
 		<JourneySection lang="en" />
-		<!-- <BlogShowcase /> -->
 		<SkillSets lang="en" />
-		<!-- <ProjectsShowcase /> -->
 		<TimelineSection lang="en" />
 		<ContactSection lang="en" />
 	</main>

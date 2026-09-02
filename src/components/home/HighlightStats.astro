@@ -1,6 +1,5 @@
 ---
 import { Globe, Sparkles } from "lucide-react";
-import { AuroraText } from "../ui/aurora-text";
 
 interface Props {
   stats: any[];
@@ -12,31 +11,12 @@ const { stats = [], id = "highlight-stats", className = "" } = Astro.props;
 const gradientId = `${id}-icon-gradient`;
 ---
 
-{/* Define gradient for icons matching AuroraText effect */}
 <svg width="0" height="0" class="absolute pointer-events-none">
   <defs>
     <linearGradient id={gradientId} x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#34d399">
-        <animate
-          attributeName="stop-color"
-          values="#34d399; #10b981; #064e3b; #34d399"
-          dur="10s"
-          repeatCount="indefinite"></animate>
-      </stop>
-      <stop offset="50%" stop-color="#10b981">
-        <animate
-          attributeName="stop-color"
-          values="#10b981; #064e3b; #34d399; #10b981"
-          dur="10s"
-          repeatCount="indefinite"></animate>
-      </stop>
-      <stop offset="100%" stop-color="#064e3b">
-        <animate
-          attributeName="stop-color"
-          values="#064e3b; #34d399; #10b981; #064e3b"
-          dur="10s"
-          repeatCount="indefinite"></animate>
-      </stop>
+      <stop offset="0%" stop-color="#34d399"></stop>
+      <stop offset="55%" stop-color="#10b981"></stop>
+      <stop offset="100%" stop-color="#059669"></stop>
     </linearGradient>
   </defs>
 </svg>
@@ -56,13 +36,9 @@ const gradientId = `${id}-icon-gradient`;
           <div class="shrink-0 w-16">
             {highlight.metric ? (
               <div class="flex flex-col items-center w-16">
-                <AuroraText
-                  className="text-4xl md:text-5xl font-bold"
-                  colors={["#34d399", "#10b981", "#064e3b"]}
-                  client:only="react"
-                >
+                <span class="text-4xl md:text-5xl font-bold text-gradient-emerald">
                   {highlight.metric}
-                </AuroraText>
+                </span>
                 {highlight.label && (
                   <span class="text-xs text-gray-500 mt-1 uppercase tracking-wide">
                     {highlight.label}
@@ -75,10 +51,7 @@ const gradientId = `${id}-icon-gradient`;
                   <Globe className="w-12 h-12" stroke={`url(#${gradientId})`} />
                 )}
                 {highlight.icon === "sparkles" && (
-                  <Sparkles
-                    className="w-12 h-12"
-                    stroke={`url(#${gradientId})`}
-                  />
+                  <Sparkles className="w-12 h-12" stroke={`url(#${gradientId})`} />
                 )}
               </div>
             )}

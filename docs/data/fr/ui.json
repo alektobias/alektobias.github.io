@@ -55,6 +55,10 @@
   "skills": {
     "title": "Mes Compétences",
     "subtitle": "Raffinées par l'expérience.",
+    "tabs": {
+      "core": "Stack Principale",
+      "ecosystem": "Écosystème"
+    },
     "softSkillsTitle": "Compétences Humaines",
     "softSkillsHeading": "L'Élément Humain",
     "techSkillsTitle": "Arsenal Technique",

@@ -55,10 +55,14 @@
   "skills": {
     "title": "Mis Habilidades",
     "subtitle": "Refinadas a través de la experiencia.",
+    "tabs": {
+      "core": "Stack Principal",
+      "ecosystem": "Ecosistema"
+    },
     "softSkillsTitle": "Habilidades Blandas",
     "softSkillsHeading": "El Elemento Humano",
     "techSkillsTitle": "Arsenal Técnico",
-    "techSkillsHeading": "El Oficio Técnico",
+    "techSkillsHeading": "El Dominio Técnico",
     "categories": {
       "runtime": "Runtime",
       "frontend": "Frontend",

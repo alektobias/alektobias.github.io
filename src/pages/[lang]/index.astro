@@ -1,6 +1,5 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import Navbar from "../../components/common/Navbar.astro";
 import Footer from "../../components/common/Footer.astro";
 import HeroSection from "../../components/home/HeroSection.astro";
 import JourneySection from "../../components/home/JourneySection.astro";
@@ -26,12 +25,10 @@ const { lang } = Astro.params;
   description="Senior Full Stack Engineer with 8+ years of experience. Specialist in the JavaScript ecosystem (Node, Bun, React) and AWS infrastructure."
   summary="Full Stack Engineer building and modernizing web systems, from startups to enterprise environments like TOTVS. Core stack: TypeScript, React, Next.js, Node.js, AWS."
 >
-  <main class="bg-black">
+  <main class="bg-background">
     <HeroSection lang={lang} />
     <JourneySection lang={lang} />
-    <!-- <BlogShowcase /> -->
     <SkillSets lang={lang} />
-    <!-- <ProjectsShowcase /> -->
     <TimelineSection lang={lang} />
     <ContactSection lang={lang} />
   </main>

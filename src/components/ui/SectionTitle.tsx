@@ -20,46 +20,19 @@ export const SectionTitle: React.FC<SectionTitleProps> = ({
   };
 
   return (
-    <div className={`pt-18 mb-16 flex flex-col ${alignmentClasses[align]} ${className}`}>
-      <h2 className="flex flex-col leading-tight w-fit relative group">
-
-        {/* Main Title with Gradient Shadow Effect */}
-        <div className="relative">
-          {/* Main Text Layer */}
-          <span
-            className="relative z-10  text-4xl md:text-5xl lg:text-6xl font-light tracking-tight text-white/90 italic mt-2 transition-colors duration-300"
-            style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}
-          >
-            {title}
-          </span>
-
-        </div>
-        {/* Subtitle */}
+    <div
+      className={`pt-28 md:pt-36 mb-14 md:mb-20 flex flex-col ${alignmentClasses[align]} ${className}`}
+    >
+      <h2 className="flex flex-col leading-tight w-fit">
+        <span className="text-3xl md:text-4xl lg:text-5xl font-semibold tracking-tight text-white">
+          {title}
+        </span>
         {subtitle && (
-          <span
-            className="relative z-10 text-2xl md:text-4xl lg:text-4xl font-light"
-            style={{
-              fontFamily: "Georgia, 'Times New Roman', serif",
-              backgroundImage: "linear-gradient(to bottom right, #ccc 70%, #333)", // purple-500, pink-500, blue-500
-              backgroundClip: "text",
-              WebkitBackgroundClip: "text",
-              color: "transparent",
-
-            }}
-          >
+          <span className="mt-2 text-lg md:text-xl font-normal text-white/40">
             {subtitle}
           </span>
         )}
-
       </h2>
-
-      {/* Inline Style for Animation */}
-      <style>{`
-        @keyframes gradient-move {
-          0% { background-position: 0% center; }
-          100% { background-position: 200% center; }
-        }
-      `}</style>
     </div>
   );
 };

@@ -36,18 +36,8 @@ const iconMap: Record<string, any> = {
 
 <section
   id="about"
-  class="py-24 text-white relative overflow-hidden bg-gray-950"
+  class="py-32 md:py-40 text-white relative overflow-hidden bg-background"
 >
-  <!-- Stitch Background -->
-  <div class="absolute inset-0 overflow-hidden pointer-events-none">
-    <!-- Grid pattern -->
-    <div
-      class="absolute inset-0"
-      style="background-image: linear-gradient(rgba(16, 185, 129, 0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(16, 185, 129, 0.03) 1px, transparent 1px); background-size: 60px 60px; mask-image: radial-gradient(ellipse at center, rgba(0,0,0,0.5) 0%, transparent 70%);"
-    >
-    </div>
-  </div>
-
   <div class="container relative z-10">
     <!-- Elegant Header -->
     <SectionTitle
@@ -75,30 +65,27 @@ const iconMap: Record<string, any> = {
 
           return (
             <article
-              class={`group bg-emerald-950/20 border border-emerald-500/10 rounded-2xl p-8 transition-all duration-700 ease-out relative overflow-hidden hover:border-emerald-500/30 hover:-translate-y-1 ${colSpanClass} ${
+              class={`group bg-card border border-white/8 rounded-2xl p-8 md:p-10 transition-colors duration-300 relative overflow-hidden hover:border-white/15 ${colSpanClass} ${
                 index < 2 ? "md:min-h-[320px]" : "md:min-h-[280px]"
               } opacity-0 translate-y-8 animate-on-scroll`}
               style={`transition-delay: ${index * 150}ms`}
             >
-              {/* Hover glow effect */}
-              <div class="absolute inset-0 bg-linear-to-br from-emerald-500/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
-
               {/* Background Blended Icon */}
-              <div class="absolute right-[-20px] bottom-[-20px] opacity-[0.03] group-hover:opacity-[0.08] transition-all duration-500 transform group-hover:scale-110  pointer-events-none">
+              <div class="absolute right-[-20px] bottom-[-20px] opacity-[0.03] pointer-events-none">
                 <IconComponent
                   size={240}
-                  className="text-emerald-300"
+                  className="text-white"
                   strokeWidth={0.8}
                 />
               </div>
 
               <div class="relative z-10 h-full flex flex-col">
                 <div class="mb-6">
-                  <h3 class="text-2xl font-medium text-white/90 tracking-tight group-hover:text-emerald-100 transition-colors duration-300">
+                  <h3 class="text-2xl font-medium text-white/90 tracking-tight">
                     {item.title}
                   </h3>
                 </div>
-                <p class="text-base md:text-md lg:text-lg leading-relaxed text-white/60 font-light group-hover:text-white/70 transition-colors duration-300">
+                <p class="text-base md:text-md lg:text-lg leading-relaxed text-white/60 font-light">
                   {item.content}
                 </p>
               </div>

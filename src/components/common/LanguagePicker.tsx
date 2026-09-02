@@ -80,7 +80,7 @@ export const LanguagePicker: React.FC<Props> = ({ currentLang }) => {
               animate={{ opacity: 1, y: 0, scale: 1 }}
               exit={{ opacity: 0, y: 10, scale: 0.95 }}
               transition={{ duration: 0.2 }}
-              className="absolute top-full left-0 mt-2 w-48 bg-[#0a0a0c] border border-white/10 rounded-xl shadow-xl backdrop-blur-xl overflow-hidden z-50"
+              className="absolute top-full left-0 mt-2 w-48 bg-card border border-white/10 rounded-xl shadow-xl overflow-hidden z-50"
             >
               <div className="p-1">
                 {languages.map((lang) => {

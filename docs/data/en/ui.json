@@ -55,6 +55,10 @@
   "skills": {
     "title": "My Skill Sets",
     "subtitle": "Refined through experience.",
+    "tabs": {
+      "core": "Core Stack",
+      "ecosystem": "Ecosystem"
+    },
     "softSkillsTitle": "Soft Skills",
     "softSkillsHeading": "The Human Element",
     "techSkillsTitle": "Technical Arsenal",
