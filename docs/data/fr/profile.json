@@ -1,10 +1,10 @@
 {
   "name": "Alek Tobias",
   "title": [
-    "Ingénieur Full Stack Senior",
+    "Ingénieur Full Stack",
     "Architecte de Solutions",
-    "Spécialiste du Nettoyage IA",
-    "Penseur Critique"
+    "Tech Lead",
+    "Spécialiste en IA Appliquée"
   ],
   "location": "Natal, RN, Brésil",
   "contact": {
@@ -31,7 +31,7 @@
       "level": "Basique"
     }
   ],
-  "summary": "Ingénieur Full Stack Senior avec plus de 8 ans d'expérience et une forte mentalité d'appropriation du produit, ayant fait ses preuves dans la livraison de solutions à fort impact pour des clients mondiaux de niveau 1 et de grandes entreprises. Connu pour combler le fossé entre l'exécution technique et les objectifs commerciaux, je m'obstine à faire fonctionner les choses et me concentre sur l'écriture d'un code propre et maintenable tout en encadrant mes pairs et en améliorant la productivité de l'équipe. Expert de l'écosystème JavaScript (Next.js, Node.js, Bun, React Native) et de l'Infrastructure as Code (Terraform, AWS).",
+  "summary": "Ingénieur Full Stack avec plus de 8 ans d'expérience dans la construction et la modernisation de systèmes web, des startups aux environnements d'entreprise comme TOTVS. Stack principal : TypeScript, React, Next.js, Node.js et AWS. À l'aise aussi bien en développement, qu'en architecture système et en leadership technique.",
   "interests": [
     {
       "name": "Arts Martiaux & Résilience Mentale",

@@ -1,10 +1,19 @@
 ---
 import fs from "node:fs/promises";
 import path from "node:path";
-import Layout from "../layouts/Layout.astro";
-import CVPreviewComponent from "../components/cv/CVPreview";
+import Layout from "../../layouts/Layout.astro";
+import CVPreviewComponent from "../../components/cv/CVPreview";
 
-const lang = "en";
+export function getStaticPaths() {
+  return [
+    { params: { lang: "en" } },
+    { params: { lang: "es" } },
+    { params: { lang: "fr" } },
+    { params: { lang: "pt" } },
+  ];
+}
+
+const { lang } = Astro.params;
 
 // Load Profile Data Dynamically
 const profilePath = path.join(process.cwd(), `docs/data/${lang}/profile.json`);

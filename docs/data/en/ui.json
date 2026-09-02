@@ -16,18 +16,18 @@
       {
         "metric": "+8",
         "label": "Years",
-        "title": "Battle-Tested Engineer",
+        "title": "Full Stack Engineer",
         "subtitle": "From startups to enterprise"
       },
       {
         "icon": "globe",
-        "title": "International Collaborator",
-        "subtitle": "Delivering worldwide"
+        "title": "International Experience",
+        "subtitle": "Brazil, Canada & the US"
       },
       {
         "icon": "sparkles",
-        "title": "High-End Delivery",
-        "subtitle": "Building to last at global scale"
+        "title": "End-to-End Ownership",
+        "subtitle": "From architecture to deployment"
       }
     ]
   },
@@ -39,10 +39,13 @@
       "technicalSkills": "Technical Skills",
       "experience": "Experience",
       "education": "Education",
-      "coreStack": "Core Stack & Expertise",
-      "professionalExperience": "Professional Experience & Familiarity",
-      "toolsPractices": "Tools & Practices",
-      "personalProjects": "Exploratory & Personal Projects"
+      "languages": "Languages",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "cloudInfra": "Cloud & Infra",
+      "data": "Data",
+      "testing": "Testing",
+      "ai": "AI"
     }
   },
   "journey": {

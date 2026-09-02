@@ -1,10 +1,10 @@
 {
   "name": "Alek Tobias",
   "title": [
-    "Expert Full Stack Engineer",
+    "Full Stack Engineer",
     "Solution Architect",
-    "AI-Powered Coding Specialist",
-    "Product-Oriented Thinker"
+    "Tech Lead",
+    "Applied AI Specialist"
   ],
   "location": "Natal, RN, Brazil",
   "contact": {
@@ -21,17 +21,9 @@
     {
       "language": "English",
       "level": "Fluent"
-    },
-    {
-      "language": "Spanish",
-      "level": "Intermediate"
-    },
-    {
-      "language": "French",
-      "level": "Basic"
     }
   ],
-  "summary": "Expert Full Stack Engineer & Solution Architect with 8+ years of experience delivering mission-critical systems for global Tier-1 clients. I specialize in bridging the gap between technical complexity and business growth, powered by a relentless product-owner mindset. I am obstinate about making things work, writing exceptionally clean code, and serving as a force multiplier for my team through mentorship and architectural leadership. Deeply specialized in the JavaScript ecosystem (Next.js, Node.js, Bun) and Cloud Infrastructure (AWS, Terraform).",
+  "summary": "Full Stack Engineer with 8+ years of experience building and modernizing web systems, from startups to enterprise environments like TOTVS. Core stack: TypeScript, React, Next.js, Node.js, AWS. Comfortable moving between hands-on development, system architecture, and technical leadership.",
   "interests": [
     {
       "name": "Martial Arts & Strategic Fortitude",

@@ -12,11 +12,11 @@
   {
     "title": "Restless Craftsmanship",
     "icon": "Puzzle",
-    "content": "I have a restless curiosity for the 'why' behind complex systems. Operating on a global scale has given me the canvas to solve puzzles at massive volumes—optimizing performance for millions and architecting bulletproof infrastructures. For me, the true thrill lies in the craftsmanship: taking a messy, high-stakes problem and refining it until it hums with efficiency."
+    "content": "I have a restless curiosity for the 'why' behind complex systems. Working across different scales — from internal tools to platforms with real production traffic — has given me plenty of puzzles to solve. For me, the real thrill is in the craftsmanship: taking a messy problem and refining it until it just works."
   },
   {
     "title": "Architecture for Posterity",
     "icon": "Castle",
-    "content": "Software should be built to endure. My focus has naturally gravitated toward the structural integrity of code: architecting systems that don't just ship, but scale. I build for the future, creating environments where teams can move with velocity without sacrificing stability. My goal is to leave every codebase more robust, more readable, and more prepared for the next million users."
+    "content": "Software should be built to endure. My focus has naturally gravitated toward the structural integrity of code: architecting systems that don't just ship, but scale. I build for the future, creating environments where teams can move with velocity without sacrificing stability. My goal is to leave every codebase more robust, more readable, and easier for the next person to build on."
   }
 ]

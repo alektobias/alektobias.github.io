@@ -16,18 +16,18 @@
       {
         "metric": "+8",
         "label": "Años",
-        "title": "Ingeniero Probado en Batalla",
+        "title": "Ingeniero Full Stack",
         "subtitle": "Desde startups hasta empresas"
       },
       {
         "icon": "globe",
-        "title": "Colaborador Internacional",
-        "subtitle": "Entregando en todo el mundo"
+        "title": "Experiencia Internacional",
+        "subtitle": "Brasil, Canadá y EE. UU."
       },
       {
         "icon": "sparkles",
-        "title": "Entrega de Alto Nivel",
-        "subtitle": "Construyendo para durar a escala global"
+        "title": "De Principio a Fin",
+        "subtitle": "De la arquitectura al despliegue"
       }
     ]
   },
@@ -39,10 +39,13 @@
       "technicalSkills": "Habilidades Técnicas",
       "experience": "Experiencia",
       "education": "Educación",
-      "coreStack": "Stack Principal y Experiencia",
-      "professionalExperience": "Experiencia Profesional y Familiaridad",
-      "toolsPractices": "Herramientas y Prácticas",
-      "personalProjects": "Proyectos Exploratorios y Personales"
+      "languages": "Lenguajes",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "cloudInfra": "Cloud e Infra",
+      "data": "Datos",
+      "testing": "Pruebas",
+      "ai": "IA"
     }
   },
   "journey": {

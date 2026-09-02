@@ -16,18 +16,18 @@
       {
         "metric": "+8",
         "label": "Ans",
-        "title": "Ingénieur Expérimenté",
+        "title": "Ingénieur Full Stack",
         "subtitle": "Des startups aux grandes entreprises"
       },
       {
         "icon": "globe",
-        "title": "Collaborateur International",
-        "subtitle": "Livraison mondiale"
+        "title": "Expérience Internationale",
+        "subtitle": "Brésil, Canada et États-Unis"
       },
       {
         "icon": "sparkles",
-        "title": "Livraison Haut de Gamme",
-        "subtitle": "Construire pour durer à l'échelle mondiale"
+        "title": "De Bout en Bout",
+        "subtitle": "De l'architecture au déploiement"
       }
     ]
   },
@@ -39,10 +39,13 @@
       "technicalSkills": "Compétences Techniques",
       "experience": "Expérience",
       "education": "Éducation",
-      "coreStack": "Stack Principal et Expertise",
-      "professionalExperience": "Expérience Professionnelle et Familiarité",
-      "toolsPractices": "Outils et Pratiques",
-      "personalProjects": "Projets Personnels et Exploratoires"
+      "languages": "Langages",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "cloudInfra": "Cloud & Infra",
+      "data": "Données",
+      "testing": "Tests",
+      "ai": "IA"
     }
   },
   "journey": {

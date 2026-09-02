@@ -16,18 +16,18 @@
       {
         "metric": "+8",
         "label": "Anos",
-        "title": "Engenheiro Testado em Combate",
+        "title": "Engenheiro Full Stack",
         "subtitle": "De startups a grandes empresas"
       },
       {
         "icon": "globe",
-        "title": "Colaborador Internacional",
-        "subtitle": "Entregando para o mundo todo"
+        "title": "Experiência Internacional",
+        "subtitle": "Brasil, Canadá e EUA"
       },
       {
         "icon": "sparkles",
-        "title": "Entrega de Alto Nível",
-        "subtitle": "Construindo para durar em escala global"
+        "title": "Do Início ao Fim",
+        "subtitle": "Da arquitetura ao deploy"
       }
     ]
   },
@@ -39,10 +39,13 @@
       "technicalSkills": "Habilidades Técnicas",
       "experience": "Experiência",
       "education": "Educação",
-      "coreStack": "Stack Principal & Especialidades",
-      "professionalExperience": "Experiência Profissional & Familiaridade",
-      "toolsPractices": "Ferramentas & Práticas",
-      "personalProjects": "Projetos Exploratórios & Pessoais"
+      "languages": "Linguagens",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "cloudInfra": "Cloud & Infra",
+      "data": "Dados",
+      "testing": "Testes",
+      "ai": "IA"
     }
   },
   "journey": {

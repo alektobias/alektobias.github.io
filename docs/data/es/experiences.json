@@ -1,15 +1,28 @@
 {
   "work": [
     {
+      "company": "Certta",
+      "role": "Ingeniero Full Stack",
+      "startDate": "05/2026",
+      "endDate": "Present",
+      "location": "Remoto",
+      "summary": "Estoy desarrollando una plataforma interactiva para construir flujos de autenticación multi-tenant, simplificando flujos de identidad y acceso.",
+      "highlights": [
+        "Me enfoco en el desarrollo frontend, impulsando mejoras de UX y construyendo interfaces alineadas con el design system.",
+        "Participo en todo el ciclo del proyecto: levantamiento de requisitos, revisión de diseño, implementación full-stack y pruebas."
+      ],
+      "techStack": ["TypeScript", "React", "Next.js", "Tailwind CSS", "Arquitectura Multi-tenant", "Ingeniería de UI/UX", "Design Systems", "Autenticación"]
+    },
+    {
       "company": "AlertD",
       "role": "Ingeniero Full Stack (Contrato)",
       "startDate": "09/2025",
       "endDate": "12/2025",
       "location": "San Francisco, CA, EE. UU.",
-      "summary": "Diseñé el ecosistema de experiencia de usuario y la arquitectura de integración de inteligencia artificial para impulsar rápidamente la madurez inicial del MVP para una startup de riesgo.",
+      "summary": "Diseñé la capa de UI y la integración de IA para una startup en modo stealth, apoyando la validación inicial del producto en el mercado.",
       "highlights": [
-        "Implementé un ecosistema de sistema de diseño orientado al rendimiento y a los componentes, reduciendo la ventana de tiempo de diseño de interfaces web en un 50%.",
-        "Integre profundamente potentes modelos de lenguaje a través de LangChain y Claude, fortaleciendo masivamente la confianza dentro de los primeros inversores e indicadores de adopción de plataformas."
+        "Diseñé un design system basado en componentes desde cero, reduciendo los ciclos de desarrollo de UI en un 50%.",
+        "Integré funcionalidades de IA con LangChain y LLMs, contribuyendo al MVP presentado a inversores durante la validación inicial."
       ],
       "techStack": ["React", "TypeScript", "Bun", "AWS", "LangChain", "Tailwind CSS", "Shadcn/UI", "MVP Builder", "LLM Integrations", "Agile"]
     },
@@ -19,11 +32,11 @@
       "startDate": "11/2023",
       "endDate": "06/2025",
       "location": "São Paulo, SP, Brasil",
-      "summary": "Me encargué de liderar las plataformas del núcleo generador de recuperación estratégica para operaciones de ecosistemas B2B dentro de los canales comerciales complejos y gigantescos corporativos.",
+      "summary": "Lideré iniciativas de ingeniería dentro del equipo de recuperación de ingresos, en un ecosistema B2B de gran escala.",
       "highlights": [
-        "Ejecuté y mantuve herramientas algorítmicas de ingeniería de misión crítica impactando y analizando masivos flujos de recuperación para desmantelar pérdidas operativas valoradas en cientos de millones.",
-        "Refiné herramientas de reportes web e intranet al acortar los cuellos de botella mediante las soluciones tecnológicas precisas y la productividad fluida impulsando directamente áreas y ventas alineadas en sincronía real.",
-        "Modernicé profundos proyectos heredados complejos usando metodologías estables que incluían amplias construcciones REST API para asegurar arquitecturas limpias y código de microservicios con un fuerte seguimiento TDD."
+        "Desarrollé herramientas para identificar y corregir pérdidas de ingresos en un sistema legado complejo, con un impacto directo de millones de reales recuperados.",
+        "Diseñé y entregué aplicaciones internas e informes operativos usados por varios departamentos, acercando las áreas de ventas e ingeniería.",
+        "Modernicé sistemas legados complejos aplicando TDD y Clean Architecture sobre REST APIs, mejorando la estabilidad de las aplicaciones."
       ],
       "techStack": ["Next.js", "Angular", "NestJS", "TypeScript", "PostgreSQL", "Docker", "AWS", "Agile", "CI/CD", "TDD", "Clean Architecture", "Legacy Modernization", "REST API", "Microservices"]
     },
@@ -33,11 +46,11 @@
       "startDate": "01/2022",
       "endDate": "07/2023",
       "location": "Montreal, QC, Canadá",
-      "summary": "Elaboré campañas de innovación redefiniendo las entregas multiplataforma e IoT construidas sobre demandas altamente exclusivas exigidas por pioneros clave (Samsung, Sonos).",
+      "summary": "Desarrollé experiencias digitales interactivas y plataformas con hardware integrado para clientes como Spotify, Sonos y Samsung.",
       "highlights": [
-        "Equipé innovadoras experiencias interactivas y pantallas físicas de hardware con asombrosas capacidades en tiempo real respaldadas por conexiones seguras sub-milisegundo usando tecnologías WebSockets puras.",
-        "Lideré el control y las extensas transiciones orientadas en SEO refactorizando plataformas anticuadas orientando a equipos y reemplazándolas fluidamente con arquitecturas de Svelte y ecosistemas react.",
-        "Produje y mejoré aplicaciones visuales intensivas de marketing y aceleré los ciclos agresivos y rápidos para que el TTM para proyectos personalizados estuviera disponible por el mercado publicitario."
+        "Desarrollé la comunicación en tiempo real entre dispositivos IoT y aplicaciones web usando WebSockets, reduciendo la latencia a menos de 1 ms.",
+        "Lideré la migración de bases de código heredadas a React y Svelte, mejorando las métricas de SEO de los proyectos.",
+        "Construí interfaces con animaciones para campañas de marketing B2B, reduciendo el tiempo de entrega (TTM) de los proyectos."
       ],
       "techStack": ["React", "Svelte", "Tailwind CSS", "TypeScript", "SEO", "Motion", "Shopify", "WebSockets", "Real-time Systems", "Legacy Migration"]
     },
@@ -47,11 +60,11 @@
       "startDate": "06/2021",
       "endDate": "12/2021",
       "location": "Río de Janeiro, RJ, Brasil",
-      "summary": "Dirigí integraciones para optimizar componentes bajo micro arquitecturas orientadas a múltiples visuales distribuidos a nivel nacional dentro de mercados de comparación inmensos.",
+      "summary": "Diseñé la arquitectura de UI y la infraestructura de frontend compartida para las plataformas del grupo Mosaico, especializado en comparación de precios en Brasil.",
       "highlights": [
-        "Definí y abstraí arquitecturas reutilizables empaquetadas combinando el desarrollo ágil reduciendo enormes cargas pesadas mediante un modelo global design system distribuido y unificado en torno de tokens escalables.",
-        "Instauré en el núcleo de la ingeniería estructuras desacopladas robustas permitiendo un brutal y asombroso repunte del 40% del tiempo de despliegue apoyado fuertemente por enfoques en componentes y estrategias metodológicas tipo agile micro-frontends.",
-        "Construí recursos REST API sin estado en gran medida impulsando los microservicios sin servidor dentro de integraciones AWS Lambda que resultan en entregas de contenido escalable e inquebrantables con puntuaciones SEO extremas."
+        "Creé un design system con tokens de marca, permitiendo publicar múltiples marcas visuales sobre la misma base de código.",
+        "Implementé una arquitectura de micro-frontends que dio autonomía a los equipos, aumentando la velocidad de los ciclos ágiles en un 40%.",
+        "Construí, junto al equipo, integraciones backend serverless en AWS combinadas con un CMS headless (Strapi) para acelerar la entrega de contenido."
       ],
       "techStack": ["React", "Tailwind CSS", "AWS Lambda", "Serverless", "SEO", "Strapi", "TypeScript", "CI/CD", "Micro-frontends", "System Architecture", "Agile"]
     },
@@ -61,10 +74,10 @@
       "startDate": "01/2021",
       "endDate": "05/2021",
       "location": "São Paulo, SP, Brasil",
-      "summary": "Empoderé fuertemente ecosistemas nativos comerciales creando software capaz de mantener la lógica empresarial para grandes operaciones multirregión con plataformas de alto impacto (VTEX, Shopify).",
+      "summary": "Desarrollé soluciones de e-commerce para operaciones de retail internacional con picos de tráfico elevados.",
       "highlights": [
-        "Estructuré tiendas front de amplio panorama utilizando plataformas en la nube comerciales altamente potentes mientras garantizaba un reflejo perfecto con las marcas estéticas rigurosas solicitadas de alta escala.",
-        "Me extendí e inyecté las amplias funcionalidades conectando integraciones REST altamente construidas con arquitecturas serverless orientando con los negocios B2C multinacionales expandiendo los recursos comerciales nativamente integrando el alto volumen transfronterizo AWS."
+        "Implementé tiendas Shopify y vitrinas serverless en VTEX IO alineadas con la identidad de cada marca.",
+        "Construí integraciones serverless en AWS y REST APIs para conectar operaciones comerciales no cubiertas por el SaaS principal."
       ],
       "techStack": ["VTEX IO", "Shopify", "React", "Node.js", "AWS", "TypeScript", "REST API", "Serverless"]
     },
@@ -74,10 +87,10 @@
       "startDate": "12/2020",
       "endDate": "02/2021",
       "location": "São Paulo, SP, Brasil",
-      "summary": "Sintecicé un control estructurado analizando para trazar la vía estratégica del departamento y un descubrimiento complejo entre la iniciativa empresarial directiva y de alta ingeniería.",
+      "summary": "Apoyé a equipos directivos en el discovery técnico y la evaluación de viabilidad de iniciativas internas en un entorno corporativo B2B.",
       "highlights": [
-        "Entregué elaborados mapeos corporativos estableciendo transiciones seguras permitiéndoles entender profundamente el paso crítico en migrar sistemas de misión crítica obsoletos a través de infraestructuras actuales innovadoras seguras.",
-        "Supervisé un enfoque colaborativo orientado desde la infraestructura para alinear constantemente que la elección puramente digital cumplirá rigurosamente escalando horizontes comerciales viables directos de directivas gerenciales."
+        "Documenté estudios de viabilidad y roadmaps técnicos para guiar la migración de infraestructuras heredadas.",
+        "Mentoricé a equipos en la definición de arquitecturas a largo plazo, alineadas con los objetivos de escalabilidad de la empresa."
       ],
       "techStack": ["Technical Discovery", "Benchmarking", "Architecture", "Strategy", "Technical Leadership", "Legacy Assessment"]
     },
@@ -87,11 +100,11 @@
       "startDate": "06/2019",
       "endDate": "12/2020",
       "location": "Recife, PE, Brasil",
-      "summary": "Fui propietario integral liderando ciclos dinámicos de equipos construyendo herramientas analíticas nativas web de inteligencia en las redes sociales distribuidas muy populares.",
+      "summary": "Lideré la entrega end-to-end de una plataforma SaaS de monitoreo de redes sociales, con procesamiento intensivo de datos.",
       "highlights": [
-        "Logré progresos de liderazgo agresivos siendo un líder para múltiples escuadrones en ambientes ágiles capacitando a decenas de desarrolladores, logrando entregar servicios consistentes SaaS a tiempo siempre.",
-        "Modernicé recursos implementando en un sistema con la migración exitosa que escalaba los ecosistemas de API impulsados en tiempo real integrando Node.js lo que apoyó robustamente transferencias sociales logrando un control total en conjuntos inmensos que representaban datos sobre pasaje por los dos TB y superiores y superiores a lo extenso del marco semanal.",
-        "Mantuve indicadores operativos con fiabilidad 99.9% asegurados reinyectando clusters potentes re-optimizados (Elasticsearch via microservicios) dentro de infraestructuras complejas distribuidas (AWS) proporcionados masivamente hacia bases y consumidores analíticos internacionales en línea amplios."
+        "Fui promovido a Tech Lead tras 12 meses, liderando un equipo multidisciplinario de 6 desarrolladores en la evolución del SaaS.",
+        "Reescribí el núcleo de la plataforma en una arquitectura de microservicios con Node.js y REST APIs, procesando más de 2TB de datos por semana en los picos.",
+        "Configuré y ajusté clusters de Elasticsearch en AWS, manteniendo un 99,9% de uptime para una base global de suscriptores."
       ],
       "techStack": ["Next.js", "React", "Tailwind CSS", "TypeScript", "Elasticsearch", "AWS", "Microservices", "Node.js", "REST API", "Agile", "SaaS Architecture"]
     },
@@ -101,10 +114,9 @@
       "startDate": "08/2017",
       "endDate": "12/2018",
       "location": "Natal, RN, Brasil",
-      "summary": "Trabajé y fortalecí aplicaciones internas y sistemas vitales orientados hacia optimizar las repetidas labores de burocracias para procesos públicos estatales profundos locales en la gestión interna.",
+      "summary": "Contribuí a la modernización de los sistemas internos del tribunal, usados a diario por las oficinas judiciales del estado.",
       "highlights": [
-        "Fomenté las refactorizaciones dentro de una gran arquitectura en lenguajes Java de tipo legacy implementando también bases y plataformas modernizadas con Angular o con sistemas de interfaces de móvil vía integraciones eficaces en torno de React Native.",
-        "Casi aplasté grandes volúmenes diarios en procesos lentos manuales optimizando y logrando grandes eficiencias digitales incrementadas facilitando las complejas resoluciones internas al estado central y jurídico."
+        "Migré interfaces heredadas en Java a React Native y Angular, facilitando el acceso a las herramientas del tribunal para el personal y el público."
       ],
       "techStack": ["Java", "React Native", "Angular", "Internal Tools", "SQL", "Legacy Systems"]
     },
@@ -114,10 +126,9 @@
       "startDate": "02/2016",
       "endDate": "12/2018",
       "location": "Natal, RN, Brasil",
-      "summary": "Promovi desarrollos aplicables integrando el ambiente universitario al ambiente exigente del software creando plataformas modernas e ideas innovadoras robustas probadas en laboratorios en tiempo ágil.",
+      "summary": "Conecté la investigación académica con aplicaciones web reales, prototipando herramientas para proyectos del laboratorio.",
       "highlights": [
-        "Forjé y empujé las metodologías iterativas con velocidad bruta disminuyendo la larga cadencia académica demostrándolas en MVPs escalables e íntegros creados alrededor de grandes integraciones web.",
-        "Transferí el panorama maduro del mundo para investigadores enseñándoles integraciones dinámicas y modernas para ayudar a la investigación en interfaces y código backend con grandes integraciones y robustas API."
+        "Desarrollé MVPs y prototipos web en React para acelerar publicaciones de investigación, y ayudé a otros estudiantes a adoptar estas herramientas."
       ],
       "techStack": ["Web Development", "HTML/CSS", "JavaScript", "React", "Node.js", "MVPs", "Academic Research"]
     }

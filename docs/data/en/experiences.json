@@ -1,15 +1,37 @@
 {
   "work": [
     {
+      "company": "Certta",
+      "role": "Full Stack Engineer",
+      "startDate": "05/2026",
+      "endDate": "Present",
+      "location": "Remote",
+      "summary": "Developing an interactive platform for building multi-tenant authentication flows, simplifying identity and access workflows.",
+      "highlights": [
+        "Focused on frontend development, driving UX improvements and building interfaces aligned with the design system.",
+        "Involved across the full project lifecycle: requirements gathering, design review, full-stack implementation, and testing."
+      ],
+      "techStack": [
+        "TypeScript",
+        "React",
+        "Next.js",
+        "Tailwind CSS",
+        "Multi-tenant Architecture",
+        "UI/UX Engineering",
+        "Design Systems",
+        "Authentication"
+      ]
+    },
+    {
       "company": "AlertD",
       "role": "Full Stack Engineer (Contract)",
       "startDate": "09/2025",
       "endDate": "12/2025",
       "location": "San Francisco, CA, USA",
-      "summary": "Architected the UI ecosystem and AI-integration layer for a high-stakes stealth-mode startup, driving early product-market validation.",
+      "summary": "Architected the UI layer and AI integration for a stealth-mode startup, supporting early product validation in the market.",
       "highlights": [
-        "Engineered a robust, component-driven design system from the ground up, reducing UI development cycles by 50% and ensuring rapid MVP market readiness.",
-        "Integrated AI capabilities using LangChain and LLMs to deliver a premium user experience that secured critical investor confidence and boosted early user retention."
+        "Designed a component-driven design system from scratch, reducing UI development cycles by 50%.",
+        "Integrated AI features using LangChain and LLMs, contributing to the MVP presented to investors during early validation."
       ],
       "techStack": [
         "React",
@@ -30,11 +52,11 @@
       "startDate": "11/2023",
       "endDate": "06/2025",
       "location": "São Paulo, SP, Brazil",
-      "summary": "Led software engineering initiatives within the core revenue recovery team in a massive enterprise software ecosystem.",
+      "summary": "Led engineering initiatives within the revenue recovery team, inside a large-scale B2B enterprise ecosystem.",
       "highlights": [
-        "Spearheaded the engineering of mission-critical revenue recovery tools, uncovering hundreds of millions in untapped revenue by detecting complex system usage leaks.",
-        "Designed and deployed high-performance internal web applications optimized for cross-departmental productivity, bridging the gap between strategic sales and tech execution.",
-        "Modernized legacy systems by introducing Clean Architecture and TDD best practices, enhancing application observability and operational stability."
+        "Built tools to identify and fix revenue leakage in a complex legacy system, with a direct impact of millions of reais recovered.",
+        "Designed and shipped internal applications and operational reports used across multiple departments, bridging sales and engineering.",
+        "Modernized complex legacy systems by applying TDD and Clean Architecture over REST APIs, improving application stability."
       ],
       "techStack": [
         "Next.js",
@@ -59,11 +81,11 @@
       "startDate": "01/2022",
       "endDate": "07/2023",
       "location": "Montreal, QC, Canada",
-      "summary": "Orchestrated premium, bespoke digital experiences and real-time hardware-software IoT interfaces for global giants including Spotify, Sonos, and Samsung.",
+      "summary": "Built interactive digital experiences and hardware-integrated platforms for clients including Spotify, Sonos, and Samsung.",
       "highlights": [
-        "Engineered high-performance, real-time state synchronization for physical IoT devices using WebSockets, achieving sub-millisecond latency for interactive installations.",
-        "Led mission-critical platform migrations from legacy frontend codebases to modern Svelte and React ecosystems, significantly optimizing Core Web Vitals and boosting SEO performance.",
-        "Delivered dynamic, motion-heavy user interfaces for highly visible global campaigns, accelerating time-to-market for bespoke B2B initiatives."
+        "Built real-time communication between IoT devices and web apps using WebSockets, reducing latency to under 1ms.",
+        "Led the migration of legacy codebases to React and Svelte, improving projects' SEO metrics.",
+        "Built animated interfaces for B2B marketing campaigns, reducing projects' time-to-market."
       ],
       "techStack": [
         "React",
@@ -84,11 +106,11 @@
       "startDate": "06/2021",
       "endDate": "12/2021",
       "location": "Rio de Janeiro, RJ, Brazil",
-      "summary": "Architected frontend infrastructure and shared UI libraries for Brazil's leading price comparison platform.",
+      "summary": "Designed the UI architecture and shared frontend infrastructure for Mosaico Group's platforms, focused on price comparison in Brazil.",
       "highlights": [
-        "Architected a scalable, token-driven design system and shared UI library that powered the rapid deployment of multiple branded frontends.",
-        "Implemented a micro-frontends strategy, drastically reducing infrastructure overhead and accelerating engineering velocity by 40% across remote agile teams.",
-        "Created an SEO-optimized serverless backend on AWS Lambda and Strapi, vastly improving content delivery speed and scalability."
+        "Built a design system with brand tokens, enabling multiple brand visuals to ship from the same codebase.",
+        "Implemented a micro-frontends architecture that gave teams autonomy, increasing agile cycle speed by 40%.",
+        "Built, with the team, serverless backend integrations on AWS combined with a headless CMS (Strapi) to speed up content delivery."
       ],
       "techStack": [
         "React",
@@ -110,10 +132,10 @@
       "startDate": "01/2021",
       "endDate": "05/2021",
       "location": "São Paulo, SP, Brazil",
-      "summary": "Engineered complex, multi-regional e-commerce engines for international high-volume markets.",
+      "summary": "Built e-commerce solutions for international retail operations with high traffic peaks.",
       "highlights": [
-        "Built robust, tailored e-commerce platforms using VTEX IO and Shopify, ensuring bespoke storefronts perfectly mirrored unique brand identities.",
-        "Developed custom serverless integrations and REST APIs on AWS to extend platform capabilities and meet high-volume business requirements without compromising performance."
+        "Implemented Shopify stores and serverless VTEX IO storefronts aligned with each brand's identity.",
+        "Built serverless integrations on AWS and REST APIs to connect business operations not covered by the core SaaS."
       ],
       "techStack": [
         "VTEX IO",
@@ -132,10 +154,10 @@
       "startDate": "12/2020",
       "endDate": "02/2021",
       "location": "São Paulo, SP, Brazil",
-      "summary": "Directed technical discovery and architectural benchmarking for strategic internal enterprise initiatives.",
+      "summary": "Supported leadership teams on technical discovery and feasibility assessment for internal initiatives in a corporate B2B environment.",
       "highlights": [
-        "Authored comprehensive feasibility studies and technological roadmaps, establishing clear paths for legacy migrations and future tech stack adoption.",
-        "Mentored stakeholders to ensure long-term architectural scalability remained perfectly aligned with high-level business objectives."
+        "Documented feasibility studies and technical roadmaps to guide legacy infrastructure migrations.",
+        "Mentored teams on long-term architecture decisions aligned with the company's scalability goals."
       ],
       "techStack": [
         "Technical Discovery",
@@ -151,11 +173,11 @@
       "startDate": "06/2019",
       "endDate": "12/2020",
       "location": "Recife, PE, Brazil",
-      "summary": "Led the end-to-end development of a data-intensive social intelligence platform.",
+      "summary": "Led end-to-end delivery of a social media monitoring SaaS platform with intensive data processing.",
       "highlights": [
-        "Promoted to Tech Lead within 12 months, managing a cross-functional agile team of 6 engineers to deliver a robust SaaS platform.",
-        "Designed and scaled a microservices architecture processing over 2TB of social data weekly, utilizing Node.js and REST APIs to ensure rapid data ingestion.",
-        "Optimized AWS cloud infrastructure and Elasticsearch clusters to maintain 99.9% uptime for a rapidly expanding global user base."
+        "Promoted to Tech Lead after 12 months, leading a cross-functional team of 6 engineers evolving the SaaS.",
+        "Rewrote the platform's core into a microservices architecture using Node.js and REST APIs, processing over 2TB of data weekly at peak.",
+        "Configured and tuned Elasticsearch clusters on AWS, maintaining 99.9% uptime for a global subscriber base."
       ],
       "techStack": [
         "Next.js",
@@ -177,10 +199,9 @@
       "startDate": "08/2017",
       "endDate": "12/2018",
       "location": "Natal, RN, Brazil",
-      "summary": "Contributed to the modernization of mission-critical internal tools for the state judicial system.",
+      "summary": "Contributed to modernizing the court's internal systems, used daily by the state's judicial offices.",
       "highlights": [
-        "Engineered and maintained legacy Java and SQL applications, migrating key interfaces to React Native and Angular.",
-        "Significantly enhanced operational efficiency for judges and administrative staff through technical modernization of slow, repetitive digital processes."
+        "Migrated legacy Java interfaces to React Native and Angular, making the court's tools easier to access for staff and the public."
       ],
       "techStack": [
         "Java",
@@ -197,10 +218,9 @@
       "startDate": "02/2016",
       "endDate": "12/2018",
       "location": "Natal, RN, Brazil",
-      "summary": "Bridged academic research with industrial-grade technical execution through rapid web application prototyping.",
+      "summary": "Connected academic research with real web applications, prototyping tools for lab projects.",
       "highlights": [
-        "Accelerated research delivery by designing robust MVPs and innovative web applications from scratch.",
-        "Mentored graduate students in modern engineering practices, fostering the adoption of React and Node.js in academic environments."
+        "Built MVPs and web prototypes in React to speed up research publications, and helped other students adopt these tools."
       ],
       "techStack": [
         "Web Development",

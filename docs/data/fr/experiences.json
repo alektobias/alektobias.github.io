@@ -1,15 +1,28 @@
 {
   "work": [
     {
+      "company": "Certta",
+      "role": "Ingénieur Full Stack",
+      "startDate": "05/2026",
+      "endDate": "Present",
+      "location": "À distance",
+      "summary": "Je développe une plateforme interactive pour construire des flux d'authentification multi-tenant, simplifiant des flux d'identité et d'accès.",
+      "highlights": [
+        "Concentré sur le développement frontend, en pilotant des améliorations UX et en construisant des interfaces alignées avec le design system.",
+        "Impliqué sur tout le cycle du projet : recueil des besoins, revue de conception, implémentation full-stack et tests."
+      ],
+      "techStack": ["TypeScript", "React", "Next.js", "Tailwind CSS", "Architecture Multi-tenant", "Ingénierie UI/UX", "Design Systems", "Authentification"]
+    },
+    {
       "company": "AlertD",
       "role": "Développeur Full Stack (Contrat)",
       "startDate": "09/2025",
       "endDate": "12/2025",
       "location": "San Francisco, CA, États-Unis",
-      "summary": "J'ai orchestré et architecturé l'intégration d'intelligence artificielle et l'interface applicative pour un projet à hauts risques de démarrage industriel, permettant de faire valider les bases en un temps impressionnant.",
+      "summary": "J'ai conçu la couche UI et l'intégration IA d'une startup en mode stealth, en soutenant la validation initiale du produit sur le marché.",
       "highlights": [
-        "J'ai conçu au grand complet le robuste et profond Design System orienté composants garantissant l'élaboration et la distribution massive pour diviser le cycle par deux et valider l'impact d'un MVP accéléré.",
-        "J'ai doté l'ensemble de puissants mécanismes grâce des architectures dynamiques comme LangChain afin de sécuriser des fonds par intégrations de LLMs qui se reflète par l'incroyable conversion des usagers sur l'écosystème agile de l'ensemble."
+        "J'ai conçu un design system basé sur des composants, réduisant les cycles de développement UI de 50%.",
+        "J'ai intégré des fonctionnalités d'IA avec LangChain et des LLMs, contribuant au MVP présenté aux investisseurs pendant la validation initiale."
       ],
       "techStack": ["React", "TypeScript", "Bun", "AWS", "LangChain", "Tailwind CSS", "Shadcn/UI", "MVP Builder", "LLM Integrations", "Agile"]
     },
@@ -19,11 +32,11 @@
       "startDate": "11/2023",
       "endDate": "06/2025",
       "location": "São Paulo, SP, Brésil",
-      "summary": "J'ai dirigé les noyaux informatiques cruciaux, gérant la puissante reprise et capture monétaire perdue, sur d'énormes infrastructures industrielles privées et corporatives de vente inter-structures.",
+      "summary": "J'ai dirigé des initiatives d'ingénierie au sein de l'équipe de récupération de revenus, dans un vaste écosystème B2B.",
       "highlights": [
-        "J'ai piloté l'infrastructure technologique en détectant, avec grande performance, d'énormes lacunes et des déficits cachés d'architecture, récuperant une manne monétaire vitale pour les finances.",
-        "J'ai refaçonné et déployé au long terme des outils interactifs optimisés fermant la grande marge présente avec les directrices corporatives poussant la forte accélération avec des outils Web fiables et complets.",
-        "J'ai guidé des révisions approfondies au travers de modernisation technologiques et un remplacement des immenses secteurs hérités en adoptant et développant les protocoles Clean Architecture via de puissantes API web pour stabiliser toutes les actions des systèmes complexes et microservices locaux."
+        "J'ai développé des outils pour identifier et corriger des pertes de revenus dans un système hérité complexe, avec un impact direct de millions de reais récupérés.",
+        "J'ai conçu et livré des applications internes et des rapports opérationnels utilisés par plusieurs départements, rapprochant les équipes commerciales et techniques.",
+        "J'ai modernisé des systèmes hérités complexes en appliquant TDD et Clean Architecture sur des API REST, améliorant la stabilité des applications."
       ],
       "techStack": ["Next.js", "Angular", "NestJS", "TypeScript", "PostgreSQL", "Docker", "AWS", "Agile", "CI/CD", "TDD", "Clean Architecture", "Legacy Modernization", "REST API", "Microservices"]
     },
@@ -33,11 +46,11 @@
       "startDate": "01/2022",
       "endDate": "07/2023",
       "location": "Montréal, QC, Canada",
-      "summary": "J'ai encadré les conceptions pour rendre au point unique des services et interfaces connectables à grande réactivité hardware et de IoT dans des vitrines colossales tel que Samsung et Spotify.",
+      "summary": "J'ai développé des expériences numériques interactives et des plateformes avec matériel intégré pour des clients comme Spotify, Sonos et Samsung.",
       "highlights": [
-        "J'ai injecté de formidables temps d'action en deçà des contraintes sur le hardware réel lors de conception interactives grâce et la maîtrise exclusive d'API des technologies utilisant WebSocket favorisant d'extravagante rapidité.",
-        "J'ai soutenu fermement les refactorisation décisives lors du réusinage vers de nouveaux systèmes intégrés front sur réact apportant un apport inestimé à la portée SEO du trafic vital commercial.",
-        "J'ai mis sur les plates-formes une myriade d'effets visuels pour renforcer au maximum les conceptions graphiques uniques réduisant considérablement et incroyablement l'attente lors d'implémentations agiles de stratégies marketing B2B réelles pour un effet accéléré constant."
+        "J'ai développé la communication temps réel entre appareils IoT et applications web via WebSockets, réduisant la latence à moins d'1 ms.",
+        "J'ai dirigé la migration de bases de code héritées vers React et Svelte, améliorant les métriques SEO des projets.",
+        "J'ai construit des interfaces animées pour des campagnes marketing B2B, réduisant le délai de mise sur le marché (TTM) des projets."
       ],
       "techStack": ["React", "Svelte", "Tailwind CSS", "TypeScript", "SEO", "Motion", "Shopify", "WebSockets", "Real-time Systems", "Legacy Migration"]
     },
@@ -47,11 +60,11 @@
       "startDate": "06/2021",
       "endDate": "12/2021",
       "location": "Rio de Janeiro, RJ, Brésil",
-      "summary": "J'ai modelé le réseau partagé orienté infrastructure et les ressources réutilisables d'un système front de leader permettant au grand monstre de marché en ligne d'harmoniser ses plates-formes étendues.",
+      "summary": "J'ai conçu l'architecture UI et l'infrastructure frontend partagée pour les plateformes du groupe Mosaico, spécialisé dans la comparaison de prix au Brésil.",
       "highlights": [
-        "J'ai conçu et débloqué une architecture design orienté token pour générer, concevoir, modéliser la plate-forme partagée favorisant une expéditive réplicabilité.",
-        "J'ai débloqué les goulets pour optimiser au travers de puissantes logiques d'infrastructure agiles micro-frontends et baisser au minimum absolu des lenteurs en propulsant à hauteur des quarante pourcents supplémentaires le temps de déploiement réel corporatif.",
-        "J'ai structuré des bases techniques backend hautement efficaces couplées pour une efficience majeure à de complexes services sans serveur orienté Amazon ainsi que l'utilisation native des atouts d'un cms pour des notes incroyables à long termes (SEO) distribué par API rapides intégrée par la base."
+        "J'ai créé un design system avec des tokens de marque, permettant de déployer plusieurs identités visuelles sur la même base de code.",
+        "J'ai mis en place une architecture en micro-frontends donnant de l'autonomie aux équipes, augmentant la vitesse des cycles agiles de 40%.",
+        "J'ai construit, avec l'équipe, des intégrations backend serverless sur AWS combinées à un CMS headless (Strapi) pour accélérer la livraison de contenu."
       ],
       "techStack": ["React", "Tailwind CSS", "AWS Lambda", "Serverless", "SEO", "Strapi", "TypeScript", "CI/CD", "Micro-frontends", "System Architecture", "Agile"]
     },
@@ -61,37 +74,37 @@
       "startDate": "01/2021",
       "endDate": "05/2021",
       "location": "São Paulo, SP, Brésil",
-      "summary": "J'ai développé la très délicate orchestration et architecture web d'applications de commerce massives et d'e-commerce destinées à une haute fréquentation pour répondre aux besoins opérationnels sur dimensionnés aux réseaux régionaux mondiaux de grandes envergures.",
+      "summary": "J'ai développé des solutions e-commerce pour des opérations de vente au détail internationales avec des pics de trafic élevés.",
       "highlights": [
-        "J'ai établi et implémenté l'expérience d'achats immersives au niveau code via une structure SaaS modifiée poussant aux limites Shopify ainsi tout que l'exigent VTEX sans dégrader l'art des expériences visuelles.",
-        "J'ai créé de puissantes extensions en concevant des architectures distribuées sans serveur pour fournir hors limites ce qui n'est pas permis via la demande grandissante pour les capacités d'infrastructures commerciales colossales au travers des REST intégrés par la plate-forme."
+        "J'ai mis en place des boutiques Shopify et des vitrines serverless VTEX IO alignées avec l'identité de chaque marque.",
+        "J'ai construit des intégrations serverless sur AWS et des API REST pour connecter des opérations commerciales non couvertes par le SaaS principal."
       ],
       "techStack": ["VTEX IO", "Shopify", "React", "Node.js", "AWS", "TypeScript", "REST API", "Serverless"]
     },
     {
       "company": "Bossabox",
-      "role": "Directeur Technique (Contrat)",
+      "role": "Tech Lead (Contrat)",
       "startDate": "12/2020",
       "endDate": "02/2021",
       "location": "São Paulo, SP, Brésil",
-      "summary": "J'ai encadré la refonte analytique structurelle, permettant l'évaluation décisive de grandes logiques sur le point critique liants à un écosystème profond hérité dans des domaines industriels stratégiques primordiaux.",
+      "summary": "J'ai accompagné des équipes de direction sur le discovery technique et l'évaluation de faisabilité d'initiatives internes dans un environnement B2B corporate.",
       "highlights": [
-        "J'ai formulé des évaluations de migration complexes (feasibility studies) proposant clarté sur la base de choix orientées des grandes implémentations de structures à long terme et modernisant radicalement dans la refonte.",
-        "J'ai coordonné de multiples départements visant à intégrer sans heurt des méthodes en définissant la perspective à maturités croissantes dans ces plans logiciels massifs menés pour des échelles globales directrices et fiables."
+        "J'ai rédigé des études de faisabilité et des feuilles de route techniques pour guider la migration d'infrastructures héritées.",
+        "J'ai encadré des équipes sur les décisions d'architecture à long terme, alignées avec les objectifs de scalabilité de l'entreprise."
       ],
       "techStack": ["Technical Discovery", "Benchmarking", "Architecture", "Strategy", "Technical Leadership", "Legacy Assessment"]
     },
     {
       "company": "Buzzmonitor",
-      "role": "Líder Technique et Développeur Full Stack",
+      "role": "Tech Lead et Développeur Full Stack",
       "startDate": "06/2019",
       "endDate": "12/2020",
       "location": "Recife, PE, Brésil",
-      "summary": "J'ai été l'élément garant du pilotage au cycle final d'un colossal SaaS permettant les interactions complexes par l'analyse sociale lourde en informations orienté et exploité en environnement Big Data continu.",
+      "summary": "J'ai dirigé la livraison de bout en bout d'une plateforme SaaS de veille sur les réseaux sociaux, avec un traitement de données intensif.",
       "highlights": [
-        "J'ai intégré le niveau complet de gestion dans cette transition managériale (promu en quelques trimestres), en guidant les pôles agiles complets, pour assurer du cycle logiciel du monopole des modules via un grand dévouement cross-functional d'experts du web intégrés dans six départements reliés.",
-        "J'ai dimensionné l'architectural interne en construisant sans retenue pour engloutir sur une échelle vertigineuse plus des millions de données via de l'utilisation structurée du microservice et des intégrations REST, favorisant la collecte instantanées hebdomadaires massives de donnés (2TB +).",
-        "J'ai surveillé et équilibré au grain prés la gestion dynamique de clusters gigantesques élastiques Amazon, en favorisant fortement et permettant une robustesse et continuité continue inébranlable garantie du SaaS."
+        "Promu Tech Lead après 12 mois, j'ai dirigé une équipe pluridisciplinaire de 6 ingénieurs faisant évoluer le SaaS.",
+        "J'ai réécrit le cœur de la plateforme en architecture microservices avec Node.js et des API REST, traitant plus de 2 To de données par semaine aux pics.",
+        "J'ai configuré et optimisé des clusters Elasticsearch sur AWS, maintenant 99,9% de disponibilité pour une base d'abonnés mondiale."
       ],
       "techStack": ["Next.js", "React", "Tailwind CSS", "TypeScript", "Elasticsearch", "AWS", "Microservices", "Node.js", "REST API", "Agile", "SaaS Architecture"]
     },
@@ -101,10 +114,9 @@
       "startDate": "08/2017",
       "endDate": "12/2018",
       "location": "Natal, RN, Brésil",
-      "summary": "J'ai dynamisé techniquement et structurellement le réseau massif lié aux anciens outils très restrictifs des grands forums pour les rendre stables aux actions des tribunaux et autres grandes sphères internes de gestion du domaine local en le modernisant activement.",
+      "summary": "J'ai contribué à la modernisation des systèmes internes du tribunal, utilisés quotidiennement par les services judiciaires de l'État.",
       "highlights": [
-        "J'ai poussé au fond des remplacements avec des modernisations via d'importants codes gérés, intégrant sur des langages orientés composants la grande et massives ressources locales de données sans impacter négativement l'ensemble par un travail complet sur les structures React Native de pointe liées d'outils administratifs existant aux anciennes données.",
-        "J'ai effacé une dimension et les immenses barrières par simple rehaussement technologique en effaçant une montagne d'éxécution fastidieuse et redondante."
+        "J'ai migré des interfaces héritées en Java vers React Native et Angular, facilitant l'accès aux outils du tribunal pour le personnel et le public."
       ],
       "techStack": ["Java", "React Native", "Angular", "Internal Tools", "SQL", "Legacy Systems"]
     },
@@ -114,10 +126,9 @@
       "startDate": "02/2016",
       "endDate": "12/2018",
       "location": "Natal, RN, Brésil",
-      "summary": "J'ai structuré des prototypes favorisant aux cadres de chercheurs un pont fondamental aux ressources industrielles web leur évitant des tracas à travers le codage de base fonctionnel ultra dynamique des MVP innovant complexes et concrets liés au recherche de points de vues académique.",
+      "summary": "J'ai relié la recherche académique à des applications web réelles, en prototypant des outils pour des projets de laboratoire.",
       "highlights": [
-        "J'ai accéléré de multiples semaines d'incertitudes pour transformer techniquement parlant le cadre formel apportant en main des fondations architecturales fonctionnelles viables pour d'incroyables implémentations de plates-formes via la modernité du développement web de pointe.",
-        "J'ai diffusé des bases et une architecture moderne inculquant au chercheur des pratiques de conceptions modernes agiles évitant les retards tout orientant aux technologies réactives Node des ressources vitales robustes d'exécution et du futur d'ingénierie au monde de la découverte universitaires de ces grandes architectures orientés industrielles."
+        "J'ai développé des MVPs et prototypes web en React pour accélérer les publications de recherche, et aidé d'autres étudiants à adopter ces outils."
       ],
       "techStack": ["Web Development", "HTML/CSS", "JavaScript", "React", "Node.js", "MVPs", "Academic Research"]
     }

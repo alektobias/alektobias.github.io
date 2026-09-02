@@ -36,12 +36,27 @@ export const LanguagePicker: React.FC<Props> = ({ currentLang }) => {
 
   const handleSelect = (langCode: string) => {
     setIsOpen(false);
-    // Redirect logic
+    
+    // Get current path segments
+    const path = window.location.pathname;
+    const segments = path.split('/').filter(Boolean);
+    
+    // Check if current path starts with a language code
+    const currentLangCode = segments[0];
+    const isLocalized = languages.some(l => l.code === currentLangCode);
+    
+    // Extract the subpath (everything after the language code, if present)
+    const subPath = isLocalized ? segments.slice(1).join('/') : segments.join('/');
+    
+    let newPath = '';
     if (langCode === 'en') {
-      window.location.href = '/';
+      // For English, we usually omit the language code from the URL
+      newPath = subPath ? `/${subPath}` : '/';
     } else {
-      window.location.href = `/${langCode}`;
+      newPath = subPath ? `/${langCode}/${subPath}` : `/${langCode}`;
     }
+    
+    window.location.href = newPath;
   };
 
   return (

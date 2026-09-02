@@ -133,6 +133,16 @@ interface Props {
   ui?: any;
 }
 
+const skillGroups: { key: keyof typeof cvSkills; fallback: string }[] = [
+  { key: 'languages', fallback: 'Languages' },
+  { key: 'frontend', fallback: 'Frontend' },
+  { key: 'backend', fallback: 'Backend' },
+  { key: 'cloudInfra', fallback: 'Cloud & Infra' },
+  { key: 'data', fallback: 'Data' },
+  { key: 'testing', fallback: 'Testing' },
+  { key: 'ai', fallback: 'AI' },
+];
+
 const formatDate = (dateStr: string, lang: string = 'en') => {
   if (!dateStr || dateStr.toLowerCase() === 'present') return dateStr;
 
@@ -152,7 +162,7 @@ const formatDate = (dateStr: string, lang: string = 'en') => {
 };
 
 export const CVDocument: React.FC<Props> = ({ profile, experiences, contact, lang = 'en', ui }) => (
-  <Document author="Alek Tobias Barreira Lima" title="Alek Tobias Barreira Lima - CV">
+  <Document author="Alek Tobias Barreira Lima" title={`Alek Tobias Barreira Lima - CV${lang && lang !== 'en' ? ` - ${lang.toUpperCase()}` : ''}`}>
     <Page size="A4" style={styles.page}>
 
       {/* Header */}
@@ -180,22 +190,12 @@ export const CVDocument: React.FC<Props> = ({ profile, experiences, contact, lan
       <View style={styles.section} wrap={false}>
         <Text style={styles.sectionTitle}>{ui?.cv?.document?.technicalSkills || "Technical Skills"}</Text>
         <View style={[styles.skillsContainer, { justifyContent: 'space-between' }]}>
-          <View style={{ width: '48%', marginBottom: 12 }}>
-            <Text style={styles.skillCategory}>{ui?.cv?.document?.coreStack || "Core Stack & Expertise"}</Text>
-            <Text style={styles.skillList}>{cvSkills.mainStack.join(', ')}</Text>
-          </View>
-          <View style={{ width: '48%', marginBottom: 12 }}>
-            <Text style={styles.skillCategory}>{ui?.cv?.document?.professionalExperience || "Professional Experience & Familiarity"}</Text>
-            <Text style={styles.skillList}>{cvSkills.workedWith.join(', ')}</Text>
-          </View>
-          <View style={{ width: '48%', marginBottom: 8 }}>
-            <Text style={styles.skillCategory}>{ui?.cv?.document?.toolsPractices || "Tools & Practices"}</Text>
-            <Text style={styles.skillList}>{cvSkills.toolsAndPractices.join(', ')}</Text>
-          </View>
-          <View style={{ width: '48%', marginBottom: 8 }}>
-            <Text style={styles.skillCategory}>{ui?.cv?.document?.personalProjects || "Exploratory & Personal Projects"}</Text>
-            <Text style={styles.skillList}>{cvSkills.hobbyist.join(', ')}</Text>
-          </View>
+          {skillGroups.map(({ key, fallback }) => (
+            <View key={key} style={{ width: '48%', marginBottom: 8 }}>
+              <Text style={styles.skillCategory}>{ui?.cv?.document?.[key] || fallback}</Text>
+              <Text style={styles.skillList}>{cvSkills[key].join(', ')}</Text>
+            </View>
+          ))}
         </View>
       </View>
 

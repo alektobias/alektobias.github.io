@@ -1,10 +1,10 @@
 {
   "name": "Alek Tobias",
   "title": [
-    "Especialista em Engenharia Full Stack",
+    "Engenheiro Full Stack",
     "Arquiteto de Soluções",
-    "Especialista em Codificação com IA",
-    "Pensador Orientado ao Produto"
+    "Tech Lead",
+    "Especialista em IA Aplicada"
   ],
   "location": "Natal, RN, Brasil",
   "contact": {
@@ -31,7 +31,7 @@
       "level": "Básico"
     }
   ],
-  "summary": "Especialista em Engenharia Full Stack e Arquiteto de Soluções com mais de 8 anos de experiência na entrega de sistemas críticos para clientes globais Tier-1. Sou especialista em conectar a complexidade técnica ao crescimento do negócio, impulsionado por uma mentalidade implacável de dono do produto. Sou obstinado em fazer as coisas funcionarem, escrevendo código excepcionalmente limpo e servindo como um multiplicador de força para minha equipe através de mentoria e liderança arquitetônica. Profundamente especializado no ecossistema JavaScript (Next.js, Node.js, Bun) e Infraestrutura em Nuvem (AWS, Terraform).",
+  "summary": "Engenheiro Full Stack com mais de 8 anos de experiência construindo e modernizando sistemas web, de startups a ambientes corporativos como a TOTVS. Stack principal: TypeScript, React, Next.js, Node.js e AWS. Transito bem entre desenvolvimento hands-on, arquitetura de sistemas e liderança técnica.",
   "interests": [
     {
       "name": "Artes Marciais e Fortaleza Estratégica",

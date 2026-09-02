@@ -38,7 +38,9 @@ export const CVDownloader: React.FC<Props> = ({ variant = 'small', className = '
     if (shouldAutoDownload && pdfState.url && !pdfState.loading) {
       const link = document.createElement('a');
       link.href = pdfState.url;
-      link.download = ui?.cv?.filename || "alek-tobias-resume.pdf";
+      const defaultFilename = ui?.cv?.filename || "alek-tobias-resume.pdf";
+      const finalFilename = lang && lang !== 'en' ? defaultFilename.replace('.pdf', `-${lang}.pdf`) : defaultFilename;
+      link.download = finalFilename;
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
@@ -102,7 +104,7 @@ export const CVDownloader: React.FC<Props> = ({ variant = 'small', className = '
 
       <a
         href={pdfState.url ? pdfState.url : undefined}
-        download={ui?.cv?.filename || "alek-tobias-resume.pdf"}
+        download={lang && lang !== 'en' ? (ui?.cv?.filename || "alek-tobias-resume.pdf").replace('.pdf', `-${lang}.pdf`) : (ui?.cv?.filename || "alek-tobias-resume.pdf")}
         onClick={handleDownload}
         // Removed mouseEnter/focus/touchStart triggers for pure "click-only" behavior
         className={`${baseClasses} ${variants[variant]} ${className} ${isLoading ? 'cursor-wait opacity-80' : ''}`}
