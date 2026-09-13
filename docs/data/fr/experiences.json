@@ -9,9 +9,10 @@
       "summary": "Je développe une plateforme interactive pour construire des flux d'authentification multi-tenant, simplifiant des flux d'identité et d'accès.",
       "highlights": [
         "Concentré sur le développement frontend, en pilotant des améliorations UX et en construisant des interfaces alignées avec le design system.",
-        "Impliqué sur tout le cycle du projet : recueil des besoins, revue de conception, implémentation full-stack et tests."
+        "Impliqué sur tout le cycle du projet : recueil des besoins, revue de conception, implémentation full-stack et tests.",
+        "Je suis le modèle Spec Driven Development pour mener un développement avec l'IA de façon gérable et sécurisée, en recueillant des documents de spécification et en améliorant l'orchestration des agents pour qu'ils fonctionnent de façon efficace et sans échec."
       ],
-      "techStack": ["TypeScript", "React", "Next.js", "Tailwind CSS", "Architecture Multi-tenant", "Ingénierie UI/UX", "Design Systems", "Authentification"]
+      "techStack": ["TypeScript", "React", "Next.js", "Tailwind CSS", "Architecture Multi-tenant", "UI/UX", "Design Systems", "Spec Driven Development"]
     },
     {
       "company": "AlertD",
@@ -22,7 +23,8 @@
       "summary": "J'ai conçu la couche UI et l'intégration IA d'une startup en mode stealth, en soutenant la validation initiale du produit sur le marché.",
       "highlights": [
         "J'ai conçu un design system basé sur des composants, réduisant les cycles de développement UI de 50%.",
-        "J'ai intégré des fonctionnalités d'IA avec LangChain et des LLMs, contribuant au MVP présenté aux investisseurs pendant la validation initiale."
+        "J'ai intégré des fonctionnalités d'IA avec LangChain et des LLMs, contribuant au MVP présenté aux investisseurs pendant la validation initiale.",
+        "J'ai utilisé l'IA générative au quotidien dans le développement, en automatisant des tâches de processus et en soutenant l'écriture de tests fonctionnels."
       ],
       "techStack": ["React", "TypeScript", "Bun", "AWS", "LangChain", "Tailwind CSS", "Shadcn/UI", "MVP Builder", "LLM Integrations", "Agile"]
     },

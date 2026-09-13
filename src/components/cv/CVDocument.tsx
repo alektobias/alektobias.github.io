@@ -135,10 +135,10 @@ interface Props {
 
 const skillGroups: { key: keyof typeof cvSkills; fallback: string }[] = [
   { key: 'languages', fallback: 'Languages' },
-  { key: 'frontend', fallback: 'Frontend' },
-  { key: 'backend', fallback: 'Backend' },
-  { key: 'cloudInfra', fallback: 'Cloud & Infra' },
   { key: 'data', fallback: 'Data' },
+  { key: 'frontend', fallback: 'Frontend' },
+  { key: 'cloudInfra', fallback: 'Cloud & Infra' },
+  { key: 'backend', fallback: 'Backend' },
   { key: 'testing', fallback: 'Testing' },
   { key: 'ai', fallback: 'AI' },
 ];

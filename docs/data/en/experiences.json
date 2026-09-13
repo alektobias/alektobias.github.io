@@ -9,7 +9,8 @@
       "summary": "Developing an interactive platform for building multi-tenant authentication flows, simplifying identity and access workflows.",
       "highlights": [
         "Focused on frontend development, driving UX improvements and building interfaces aligned with the design system.",
-        "Involved across the full project lifecycle: requirements gathering, design review, full-stack implementation, and testing."
+        "Involved across the full project lifecycle: requirements gathering, design review, full-stack implementation, and testing.",
+        "Follow a Spec Driven Development approach to keep AI-assisted development manageable and secure, gathering spec documents and refining agent orchestration so it runs efficiently and without failures."
       ],
       "techStack": [
         "TypeScript",
@@ -17,9 +18,9 @@
         "Next.js",
         "Tailwind CSS",
         "Multi-tenant Architecture",
-        "UI/UX Engineering",
+        "UI/UX",
         "Design Systems",
-        "Authentication"
+        "Spec Driven Development"
       ]
     },
     {
@@ -31,7 +32,8 @@
       "summary": "Architected the UI layer and AI integration for a stealth-mode startup, supporting early product validation in the market.",
       "highlights": [
         "Designed a component-driven design system from scratch, reducing UI development cycles by 50%.",
-        "Integrated AI features using LangChain and LLMs, contributing to the MVP presented to investors during early validation."
+        "Integrated AI features using LangChain and LLMs, contributing to the MVP presented to investors during early validation.",
+        "Used generative AI throughout day-to-day development, automating process tasks and supporting functional test creation."
       ],
       "techStack": [
         "React",

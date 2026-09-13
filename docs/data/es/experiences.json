@@ -9,9 +9,10 @@
       "summary": "Estoy desarrollando una plataforma interactiva para construir flujos de autenticación multi-tenant, simplificando flujos de identidad y acceso.",
       "highlights": [
         "Me enfoco en el desarrollo frontend, impulsando mejoras de UX y construyendo interfaces alineadas con el design system.",
-        "Participo en todo el ciclo del proyecto: levantamiento de requisitos, revisión de diseño, implementación full-stack y pruebas."
+        "Participo en todo el ciclo del proyecto: levantamiento de requisitos, revisión de diseño, implementación full-stack y pruebas.",
+        "Sigo el patrón Spec Driven Development para mantener el desarrollo con IA de forma gestionable y segura, levantando documentos de especificación y mejorando la orquestación de los agentes para que funcionen de forma eficiente y sin fallos."
       ],
-      "techStack": ["TypeScript", "React", "Next.js", "Tailwind CSS", "Arquitectura Multi-tenant", "Ingeniería de UI/UX", "Design Systems", "Autenticación"]
+      "techStack": ["TypeScript", "React", "Next.js", "Tailwind CSS", "Arquitectura Multi-tenant", "UI/UX", "Design Systems", "Spec Driven Development"]
     },
     {
       "company": "AlertD",
@@ -22,7 +23,8 @@
       "summary": "Diseñé la capa de UI y la integración de IA para una startup en modo stealth, apoyando la validación inicial del producto en el mercado.",
       "highlights": [
         "Diseñé un design system basado en componentes desde cero, reduciendo los ciclos de desarrollo de UI en un 50%.",
-        "Integré funcionalidades de IA con LangChain y LLMs, contribuyendo al MVP presentado a inversores durante la validación inicial."
+        "Integré funcionalidades de IA con LangChain y LLMs, contribuyendo al MVP presentado a inversores durante la validación inicial.",
+        "Utilicé IA generativa en el día a día del desarrollo, automatizando tareas de proceso y apoyando la creación de pruebas funcionales."
       ],
       "techStack": ["React", "TypeScript", "Bun", "AWS", "LangChain", "Tailwind CSS", "Shadcn/UI", "MVP Builder", "LLM Integrations", "Agile"]
     },

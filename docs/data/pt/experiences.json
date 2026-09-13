@@ -9,7 +9,8 @@
       "summary": "Desenvolvo uma plataforma interativa para construção de fluxos de autenticação multi-tenant, simplificando fluxos de identidade e acesso.",
       "highlights": [
         "Foco no desenvolvimento frontend, implementando melhorias de UX e construindo interfaces alinhadas ao design system.",
-        "Atuo em todo o ciclo do projeto: levantamento de requisitos, design, construção full-stack e testes."
+        "Atuo em todo o ciclo do projeto: levantamento de requisitos, design, construção full-stack e testes.",
+        "Sigo o padrão Spec Driven Development para desenvolver com IA de forma gerenciável e segura, levantando documentos de especificação e melhorando a orquestração dos agentes para que funcionem de forma eficiente e sem falhas."
       ],
       "techStack": [
         "TypeScript",
@@ -17,9 +18,9 @@
         "Next.js",
         "Tailwind CSS",
         "Arquitetura Multi-tenant",
-        "Engenharia de UI/UX",
+        "UI/UX",
         "Design Systems",
-        "Autenticação"
+        "Spec Driven Development"
       ]
     },
     {
@@ -31,7 +32,8 @@
       "summary": "Arquitetei a camada de UI e a integração de IA de uma startup em modo stealth, apoiando a validação inicial do produto no mercado.",
       "highlights": [
         "Projetei um design system orientado a componentes do zero, reduzindo os ciclos de desenvolvimento de UI em 50%.",
-        "Integrei funcionalidades de IA com LangChain e LLMs, contribuindo para o MVP apresentado a investidores durante a fase de validação inicial."
+        "Integrei funcionalidades de IA com LangChain e LLMs, contribuindo para o MVP apresentado a investidores durante a fase de validação inicial.",
+        "Utilizei IA generativa no desenvolvimento das tarefas do dia a dia, automatizando processos e apoiando a criação de testes funcionais."
       ],
       "techStack": [
         "React",
